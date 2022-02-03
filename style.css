@@ -1,0 +1,800 @@
+/* Basic page style resets */
+
+* {
+  box-sizing: border-box;
+}
+
+@charset "UTF-8";
+
+/* Body */
+body {
+  background-color: #ffffff;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* Body text size-variants */
+.b1,
+.b2,
+.b3,
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+p,
+.b1 {
+  font-size: 20px;
+}
+.b2 {
+  font-size: 1rem;
+}
+.b3 {
+  font-size: 14px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Roboto Slab', serif;
+/*   font-family: "Ubuntu", sans-serif; */
+  font-weight: 500;
+}
+.h1 {
+  font-size: 60px;
+}
+.h2 {
+  font-size: 48px;
+}
+.h3 {
+  font-size: 36px;
+}
+.h4 {
+  font-size: 24px;
+}
+.h5 {
+  font-size: 20px;
+}
+.h6 {
+  font-size: 16px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* -------------------------------------------------------------------------------- */
+@media (min-width: 20rem) {  
+  /* --------- Splash screen --------- */
+  .splash {
+    position: fixed;
+    z-index: 250;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: 0.9s;
+  }
+  .splash-header {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    /* transition: translate(-50%, -50%); */
+  }
+  .splash-logo {
+    position: relative;
+    display: block;
+  }
+  .splash-logo img {
+    width: 60%;
+    height: 60%;
+  }
+  .splash-logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .splash-logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* --------- Navigation --------- */
+  .my-nav {
+    transition: 0.3s all ease;
+  }
+  .navlogo {
+    width: 48%;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav ul li {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+/*     width: 100%; */
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    /* 	text-transform: uppercase; */
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+  nav ul li i {
+    font-size: 1.25rem;
+  }
+  nav ul li:hover a {
+    color: #ee5555 !important;
+  }
+  
+  /* --------- Header/Hero --------- */  
+  .bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  /*   border-radius: 0px 0px 0% 50%; */
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+  .hero {
+    display: grid;
+    grid-template: 12% repeat(6, 15%) / 2rem 1fr 1fr 1fr 1fr 1fr;
+  }
+  .hero-first {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+  }
+  .hero .huge-type {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+/*     margin-top: 2.5rem; */
+/*   text-decoration: wavy underline rgba(255,247,25, 0.6); */
+  }
+  p.tagline {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+  .hero .lemon-btn {
+    background: transparent;
+    border: 4px solid #fff719;
+    font-weight: 500;
+    color: #fff719;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .hero .lemon-btn:hover {
+    border-color: #fff719;
+    background-color: #fff719;
+    color: rgba(102,0,255, 0.8
+    );
+  }
+  .hero-second {
+    grid-row: 7;
+    grid-column-start: 3;
+    grid-column-end: span 3;
+  }
+  .laughing-us {
+    overflow: visible;
+  }  
+  
+  /* --------- Service section --------- */
+  .services {
+    min-height: 90vh;
+    padding-top: 9vh;
+  }
+  .services h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #333333;
+  }
+  .services-grid {
+    padding-top: 2vh;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 0.6rem 1fr 0.6rem;
+/*     gap: 1.1rem; */
+  }
+  .services-grid a {
+    text-decoration: none;
+  }
+  .services-grid a:hover {
+    cursor: cell;
+  }
+  .services-grid-item1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .services-grid-item2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .services-grid-item3{
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .services-grid-item4 {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  .service-wrap {
+    height: 85%;
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+  }
+  .service-wrap img{
+    width: 100%;
+/*     margin: 0 auto; */
+  /*   border-left: 6px solid #6600FF; */
+  }
+  .service-wrap .card-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #050203;
+  }
+  .service-wrap .card-body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #050203;
+  }
+/*   .service-wrap p.card-text {
+    font-size: 1.1rem;
+  } */
+  .services .golden-btn {
+    background: transparent;
+    border: 4px solid #ecb000;
+    font-weight: 500;
+    color: #ecb000;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .services .golden-btn:hover {
+    border-color: #ecb000;
+    background-color: #ecb000;
+    color: rgba(255,255,255, 1.0);
+  }
+
+  /* .services .indigo-btn {
+    background: transparent;
+    border: 4px solid #6600FF;
+    font-weight: 500;
+    color: #6600FF;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  .services .indigo-btn:hover {
+    border-image: linear-gradient(160deg, #6600ff 0%, #FFF719 100%);
+    background-color: #6600FF;
+    background-image: linear-gradient(160deg, #FFF719 0%, #6600ff 100%);
+    color: rgba(255,247,25, 0.9);
+  } */
+  
+  
+  /* --------- Folio section --------- */
+  .folio {
+    min-height: 100vh; 
+  }
+  .folio .indigo-btn {
+    background: transparent;
+    border: 4px solid #6600ff;
+    font-weight: 500;
+    color: #6600ff;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .folio .indigo-btn:hover {
+    border-color: #6600ff;
+    background-color: #6600ff;
+    color: rgba(255,247,25, 0.9);
+  }
+  
+  /* --------- About Section --------- */
+  .about-wrap {
+    min-height: 90vh;
+  }
+  span.liink,
+  span.liink-dot {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+  span.liink-dot {
+    color: #ee5555;
+  }
+  p.asterisk {
+    font-size: 0.75rem;
+  }
+  .about-pics {
+    display: grid;
+  }
+  .about-pics img.nikki {
+    width: 100%;
+    grid-row: 1 / span 3;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+  .about-pics img.lisa {
+    width: 100%;
+    grid-row: 3 / span 3;
+    grid-column: 2 / span 2;
+  }
+  .about-tagline {
+    padding-top: 3rem;
+  }
+  .about-us .golden-btn {
+    background: transparent;
+    border: 4px solid #ecb000;
+    font-weight: 500;
+    color: #ecb000;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .about-us .golden-btn:hover {
+    border-color: #ecb000;
+    background-color: #ecb000;
+    color: rgba(255,255,255, 1.0);
+  }
+  
+  /* --------- Pricing info section --------- */
+  .pricing-section {
+    background-color: white;
+    min-height: 100vh;  
+  }
+/*   .overlay-pricing {
+    display: block;
+    position: fixed;
+    z-index: 250;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg, rgba(236, 176, 0, 0.9), rgba(102, 0, 255, 0.9) 100%);
+    transition: 0.9s;
+  } */
+
+  #pricing .indigo-btn {
+    background: transparent;
+    border: 4px solid #6600FF;
+    font-weight: 500;
+    color: #6600FF;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  #pricing .indigo-btn:hover {
+    border-color: #6600ff;
+    background-color: #6600ff;
+    color: rgba(255,247,25, 0.9);
+  }
+  .overlay-pricing-card {
+    border: 0;
+    background: linear-gradient(160deg, rgba(236, 176, 0, 0.3), rgba(102, 0, 255, 0.3) 100%);
+  }
+  .triple-i {
+    width: 20%;
+    height: 20%;
+  }
+  .pricing-list-wrap {
+    display: grid;
+    grid-template: 4fr / 3rem 1fr;
+    padding: 2rem;
+  }
+  .pricing-checkmark-wrap {
+  }
+  /* .checkmark-image{
+    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
+  } */
+  .pricing-list-item {
+    text-align: left;
+  }
+
+  /* #pricing ul {
+    padding-left: 2rem;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+  #pricing ul li {
+    padding-left: 2rem;
+    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
+    background-position: 0 20%;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+  } */
+  /* #pricing .bi {
+    margin-right: 12px;
+  } */
+  
+  
+  /* --------- Contact section --------- */ 
+  .contact-head {
+    padding-top: 4rem;
+    background-color: #6600ff;
+    /* 	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#fff947,#fff947 50%,#fff947); */
+    color: #fff719;
+  }
+  .huge-type {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    font-size: 7rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.1;
+  }  
+  .huge-type span.cursor-blinker {
+    margin-bottom: 3rem;
+  }
+  @keyframes cursor-blinker {
+    from,
+    to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .cursor-blinker::after {
+    /* 	content: "\FEFF_"; */
+    content: "_";
+    display: inline;
+    color: #fff719;
+    animation: cursor-blinker 1.5s step-end infinite;
+  }
+
+  .contact-area {
+    background-color: white;
+    color: #6600ff;
+  }  
+  .contact-form input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 4px solid #6600ff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #333333 !important;
+    font-size: 16px;
+  }
+  .contact-form .input-group-text {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 4px solid #6600ff;
+  }
+  .contact-form i {
+    color: #6600ff;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    font-size: 20px;
+  }
+  .contact-form input::-webkit-input-placeholder {
+    color: #333333;
+    opacity: 0.4;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    font-size: 16px;
+  }
+  .contact-form input:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  .contact-form input:focus,
+  .contact-form input:active {
+    box-shadow: none;
+    /* Or use this separate instead ! (This is applied in BS's .form-control) */
+    /* .form-control {
+    transition: none !important;
+    box-shadow: none !important;
+    } */
+    border-bottom: 4px solid #fff719;
+  }
+  .contact-area .btn {
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 4px solid #6600ff !important;
+    transition: none !important;
+    box-shadow: none !important;
+  }
+  .contact-area .btn a {
+    text-decoration: none;
+    color: #6600ff;
+  }
+  .contact-area .btn a:hover {
+    background-color: #6600ff;
+    color: white;
+    border-bottom: 4px solid #6600ff !important;
+    transition: 0.4s linear;
+  }
+  
+  /* --------- Footer section --------- */
+  footer {
+    font-size: 1rem;
+  /*     background: linear-gradient(-65deg, #62c27b, #f04a12 );
+      background-size: 400% 400%;
+      animation:  10s ease infinite; */
+  }
+  /* .footer-nav-group {
+      border-right: 2px solid #ffffff;
+  } */
+  footer ul {
+    list-style: none;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: #999999 !important;
+  }
+  footer ul li a:hover {
+    color: #6600ff !important;
+  }
+  footer i {
+    font-size: 1.3rem;
+  }
+  img.footer-logo {
+    width: 24%;
+    height: 24%;
+  }
+  .carbonbadge {
+  /*   font-size: 0.6rem; */
+    color: #999999 !important;
+  }
+  .copyright {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  /*   background-color: #ffffff; */
+    color: #999999;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }  
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Small devices (up to 576px) */
+
+/* -------------------------------------------------------------------------------- */
+/* Small devices (landscape phones) */
+@media (min-width: 321px) and (max-width: 767px) {
+  header nav ul {
+    padding: 0px;
+    float: none;
+  }
+  nav ul li {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Small Tablets */
+
+
+/* -------------------------------------------------------------------------------- */
+/* Medium devices (like tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Large Tablets/Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+  
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* --------- Splash screen --------- */
+  .splash-logo {
+    position: relative;
+    display: inline;
+    bottom: -20px;
+    opacity: 0;
+  }
+  .splash-logo img {
+    width: 24%;
+    height: 24%;
+  }
+
+  /* --------- Navigation --------- */
+  .navlogo {
+    width: 20%;
+  }  
+  nav ul li {
+    margin-right: 24px;
+  }
+  
+  /* --------- Header/Hero --------- */
+  /* #intro {
+	  margin-top: -100px;
+	} */
+  .hero {
+    display: grid;
+    grid-template: 90px repeat(6, 15%) / 9% 6% 34% repeat(12, 5%);
+  }
+  .hero-first {
+    grid-row: 3;
+    grid-column-start: 3;
+    grid-column-end: span 6;
+  }
+  .hero .huge-type {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+  }
+  p.tagline {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+  .hero-second {
+    grid-row: 3;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+  }
+  .laughing-us {
+/*     width:; */
+/*     bottom: -120px; */
+  }
+
+  /* --------- Service section --------- */
+  .services-grid {
+    padding-top: 2vh;
+    display: grid;
+    grid-template: 2fr / repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .services-grid-item1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .services-grid-item2 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .services-grid-item3{
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .services-grid-item4 {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  
+  .service-wrap {
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+  }
+
+  /* --------- Folio section --------- */
+  
+
+  /* --------- About Section --------- */
+  
+
+  /* --------- Pricing info section --------- */
+  .pricing-cats {
+    padding-top: 6vh;
+    padding-bottom: 9vh;
+    grid-template-columns: 1fr 170px 170px 1fr;
+    gap: 3rem;
+  }
+  .pricing-catg1,
+  .pricing-catg2,
+  .pricing-catg3,
+  .pricing-catg4 {
+    
+  }
+  .pricing-list-wrap {
+    display: grid;
+    grid-template: 4fr / 3rem 1fr;
+    padding: 2rem;
+  }
+  .catg-wrap .h5 {
+    position: absolute;
+    z-index: 3;
+  }
+
+  /* --------- Contact section --------- */
+  .contact-head {
+    padding-top: 4rem;
+  }
+  .huge-type {
+    font-size: 9rem;
+    letter-spacing: 0.4rem;
+  }
+  .contact-form input {    
+    font-size: 24px;
+  }  
+  .contact-form i {
+    font-size: 30px;    
+  }
+  .contact-form input::-webkit-input-placeholder {    
+    font-size: 24px;
+  }  
+
+  /* --------- Footer section --------- */
+  img.footer-logo {
+    width: 24%;
+    height: 24%;
+  }  
+}
+
+/* -------------------------------------------------------------------------------- */
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* --------- Header/Hero --------- */
+  .hero .huge-type {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+  }
+  .hero-first {
+    grid-row: 4;
+    grid-column-start: 3;
+    grid-column-end: span 6;
+  }
+  .hero-second {
+    grid-row: 4;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}
