@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LIINK.</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body>
+  <!-- Main Container -->
+  <!-- <div class="container-fluid"> -->
+    <div class="splash">
+      <span class="splash-header">
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FIcon_LIINK_DEF.png?v=1639054889678"/>
+        </span>
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FLIINK_DEF_crop.png?v=1639169260632"/>
+        </span>
+      </span>
+    </div>
+
+    <header class="">
+      <!-- Navigation -->
+      <nav class="my-nav nav navbar navbar-expand-md fixed-top navbar-dark" style="z-index: 240;">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand navlogo" href="#intro">
+            <img class="d-inline-block" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icoon_LIINK-wit.png?v=1643813514667" width="60%" height="60%" alt="logo"/>
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div id="main-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+<!--               <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#intro">Home</a>
+              </li> -->
+<!--               <li class="nav-item">
+                <a class="nav-link" href="#services" target="">Services</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/webdev.html">Website-ontwikkeling</a></li>
+                  <li><a class="dropdown-item" href="#">Grafisch Ontwerp</a></li>
+                  <li><a class="dropdown-item" href="#">Web Copy</a></li>
+                  <li><a class="dropdown-item" href="#">Fotografie</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio" target="">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" target="">Over Ons</a>
+              </li>            
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" target="">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <!-- navbar Icons -->
+              <li class="nav-item me-3 me-lg-1 d-none d-md-inline">
+                <a class="nav-link" href="https://www.instagram.com/studioliink" rel="nofollow"
+                  target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-1 d-none d-md-inline">
+                <a class="nav-link" href="https://www.facebook.com/studioliink" rel="nofollow" target="_blank">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-1 d-none d-md-inline">
+                <a class="nav-link" href="https://www.linkedin.com/company/studioliink" rel="nofollow" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-1 d-none d-md-inline">
+                <a class="nav-link" href="https://www.whatsapp.com/business" rel="nofollow" target="_blank">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+           
+      <div id="intro" class="bg-image vh-100">
+        <video style="" playsinline autoplay muted loop>
+          <source class="h-100" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/white_abstract-pattern.mp4?v=1641412037769" type="video/mp4"/>
+        </video>
+        <!-- mask overlay -->
+        <div class="mask" style="background: linear-gradient(160deg, rgba(102, 0, 255, 0.8), rgba(102, 0, 255, 0.8) 100%);">
+          <!-- hero content -->
+          <!--      d-flex align-middle justify-content-center text-center h-100 on div below      -->
+          <div class="hero text-white">  
+            <div class="hero-first">
+              <p class="huge-type text-start">
+                digital<br>creative <span class="cursor-blinker">studio</span>
+              </p>
+              <p class="tagline text-start">
+                webdevelopment &nbsp;&amp;&nbsp; design
+              </p>
+              <div class="text-start mt-4 mb-5">
+                <a class="lemon-btn btn btn-lg"
+                href="#contact"
+                role="button"
+                rel="nofollow"
+                target="">Maak contact !</a>
+              </div>
+            </div>
+            <div class="hero-second">
+              <img class="laughing-us img-fluid" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/coding_girls.png?v=1643833813421" alt=""/>
+            </div>
+          <!-- end hero content -->
+          </div>
+        <!-- end mask overlay -->
+        </div>
+      </div>
+    <!-- end #intro bg-image -->
+    </header>
+
+    <!-- Services section -->
+    <section id="services" class="services py-5">
+      <div class="container-fluid py-3">
+        <div class="text-center my-5">
+          <h2 class="h2">Hier kunnen we je mee helpen</h2>
+        </div>
+        <div class="services-grid my-5">
+          <div class="services-grid-item1">
+            <div class="service-wrap align-items-start">
+              <div class="">
+                <img class="" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icon_webdev.png?v=1643827896318" alt="">
+              </div>
+              <div class="ms-4 mt-3">
+                <h4 class="h4 card-title">Webdevelopment</h4>
+                <p>Geen standaard templates, altijd een uniek design.</p>
+                <a href="#" class="golden-btn btn btn-md">Meer...</a>
+              </div>
+            </div>
+          </div>          
+          <div class="services-grid-item2">
+            <div class="service-wrap align-items-start">
+              <div class="">
+                <img class="" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icon_graphic-design.png?v=1643827896318" alt="">
+              </div>
+              <div class="ms-4 mt-3">
+                <h4 class="h4 card-title">Grafisch ontwerp</h4>
+                <p>Stand out from the crowd met een passend logo en huisstijl.</p>
+                <a href="#" class="golden-btn btn btn-md">Meer...</a>
+              </div>
+            </div>
+          </div>          
+          <div class="services-grid-item3">
+            <div class="service-wrap align-items-start">
+              <div class="">
+                <img class="" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icon_web-copy.png?v=1643827896317" alt="">
+              </div>
+              <div class="ms-4 mt-3">
+                <h4 class="h4 card-title">Web copy</h4>
+                <p>De woorden spreek voor zich.</p>
+                <a href="#" class="golden-btn btn btn-md">Meer...</a>
+              </div>
+            </div>            
+          </div>          
+          <div class="services-grid-item4">
+            <div class="service-wrap align-items-start">
+              <div class="">
+                <img class="" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icon_fotografie.png?v=1643827896318" alt="">
+              </div>
+              <div class="ms-4 mt-3">
+                <h4 class="h4 card-title">Fotografie</h4>
+                <p>Ook voor pixel-perfecte fotografie kunnen we snel schakelen.</p>
+                <a href="#" class="golden-btn btn btn-md">Meer...</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+<!--         <div class="text-center my-5">
+          <a href="#" class="golden-btn btn btn-lg mt-3">Maak contact !</a>
+        </div> -->
+      </div>
+    </section>
+  
+    <!-- Folio section -->
+<!--     <section id="portfolio" class="folio container py-5 bg-light">
+      <div class="row text-center">
+        <div class="">
+          <div class="">
+            <h2 class="h2 my-3">
+              Folio
+            </h2>
+          </div>
+          <div class="text-center my-5">
+            <a href="#" class="indigo-btn btn btn-lg mt-3">There's more</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  
+    <!-- About Section -->
+    <section id="about" class="about-us container py-5">      
+      <div class="about-wrap row justify-content-center pt-5">
+        <h2 class="h2 text-center">
+          Wie zijn <span class="liink"><strong>LIINK<span class="liink-dot">.</span></strong></span>?
+        </h2>
+        <h4 class="h4 text-center pb-3">
+          Een mix tussen techniek en design.
+        </h4>
+        <div class="about-pics col-10 col-md-7">
+          <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/nikki.png?v=1643893911184" class="nikki" />
+          <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/lisa.png?v=1643893911070" class="lisa" />
+        </div>
+        <div class="about-tagline col-10 col-md-5 align-items-center">
+          <div class="">
+            <p>
+              Lisa en Nikki, twee nichtjes en vriendinnen met een passie voor digital design.
+            </p>
+            <p>
+              We houden van mooie dingen maken en helpen ondernemingen met het bereiken van hun doel.
+            </p>
+            <p>
+              Of het nu gaat om een website, webshop, logo of huisstijl, <i>we're your pals</i>.
+            </p>
+            <p>
+              Ook voor het schrijven van teksten en bedrijfsfotografie kun je bij ons terecht.
+            </p>
+            <p>
+              Are we your missing <span class="liink"><strong>LIINK<span class="liink-dot">.</span></strong></span>?
+            </p>
+            <div class="text-center my-5">
+              <a href="#" class="golden-btn btn btn-lg mt-3">There's more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+   
+    <!-- contact section -->
+    <section id="contact" class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="contact-head col-md-6">        
+          <div class="container">
+            <div class="huge-type row">
+              <span class="col-10 offset-xs-1 col-md-5 offset-md-2 pt-5">Let's</span>
+            </div>
+            <div class="huge-type row">
+              <span class="cursor-blinker col-10 offset-xs-2 col-md-5 offset-md-3 pb-5">talk</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-area col-md-6 py-5">
+<!--           <h2 class="h2 text-center p-2 mb-5">Can't wait to LIINK. with you</h2> -->
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-xs-12 col-10">
+                <form class="contact-form">
+                  <div class="input-group mb-4">
+                    <span class="input-group-text"><i class="input-icon bi bi-person"></i></span>
+                    <input class="form-control" type="text" id="name" required="" placeholder="Hoe noemen we je?">
+                  </div>
+                  <div class="input-group mb-4">
+                    <span class="input-group-text"><i class="input-icon bi bi-at"></i></span>
+                    <input class="form-control" type="email" id="email" required="" placeholder="En je e-mailadres?">
+                  </div>
+                  <div class="text-end">
+                    <button type="button" class="btn btn-md">
+                      <a href="#" class="mt-3"><i class="bi bi-arrow-right"></i></a>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid bg-light pt-3">
+      <div class="row justify-content-center align-items-center mt-5 py-5">
+        <ul class="footer-one footer-nav-group col-md-4 text-center">
+          <li class="">
+            <a class="nav-link" href="https://www.instagram.com/studioliink" rel="nofollow"
+              target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="">
+            <a class="nav-link" href="https://www.facebook.com/studioliink" rel="nofollow" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="">
+            <a class="nav-link" href="https://www.linkedin.com/company/studioliink" rel="nofollow" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li class="">
+            <a class="nav-link" href="https://www.whatsapp.com/business" rel="nofollow" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-two footer-nav-group col-md-4 text-center">
+          <li>
+            <a class="" href="#" target="">Top <i class="bi bi-arrow-up-circle"></i></a>
+          </li>
+          <li>
+            <a class="" href="#contact" target="">Contact</a>
+          </li>
+          <li>
+            <a class="" href="#" target="">Prijzen</a>
+          </li>
+          <li>
+            <a class="" href="#" target="">FAQ's/Veelgestelde vragen</a>
+          </li>
+          <li>
+            <a class="" href="#" target="">Algemene Voorwaarden</a>
+          </li>
+        </ul>
+        <ul class="footer-three footer-nav-group col-md-4 text-center">
+          <li>
+            <a class="" href="#intro">
+              <img class="footer-logo my-3" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/Logo_LIINK_no%20tagline_DEF.png?v=1641744181342" alt="LIINK. logo" />
+            </a>
+          </li>
+          <li>
+            <div id="wcb" class="carbonbadge"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright Section (footer built-in) -->
+      <div class="container-fluid">
+        <div class="copyright row justify-content-center align-items-center">
+          <div class="col-10">
+            &copy;2021-2022 <strong>LIINK.</strong> | info@studioliink.com | KvK: 85086754
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- </div> -->
+  <!-- Main Container Ends -->
+
+
+  
+  <!--------- Custom JavaScript --------->
+  <script src="script.js"></script>
+  <script>
+    var nav = document.querySelector('.my-nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 40) {
+        nav.classList.add('bg-white', 'navbar-light');
+        nav.classList.remove('navbar-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-white', 'navbar-light');
+        nav.classList.add('navbar-dark');
+      }
+    });
+  </script>
+  
+  <!--  Hide navbar when tapped script  -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('main-nav')
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
+  </script>
+</body>
+</html>
