@@ -372,9 +372,12 @@ p,
   }
   
   /* --------- Pricing info section --------- */
+  #pricing {
+    margin-top: 240px;
+  }
   .pricing-section {
     background-color: white;
-    min-height: 100vh;  
+    min-height: 100vh;
   }
 /*   .overlay-pricing {
     display: block;
