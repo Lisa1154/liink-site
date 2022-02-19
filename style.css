@@ -57,10 +57,15 @@ p,
   font-size: 36px;
 }
 .h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+.h5b {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 .h6 {
   font-size: 16px;
@@ -72,6 +77,9 @@ p,
 /* -------------------------------------------------------------------------------- */
 @media (min-width: 20rem) {  
   /* --------- Splash screen --------- */
+  .liink-btn {
+    min-width: 12rem;
+  }
   .splash {
     position: fixed;
     z-index: 250;
@@ -145,6 +153,38 @@ p,
     color: #ee5555 !important;
   }
   
+/*   .dropdown-menu {
+    position: absolute;
+    z-index: 900;
+    display: none;
+    min-width: 9em;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1rem;
+    color:#fff719;
+    text-align: center;
+    list-style: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+  } */
+  
+/*   .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: -2em;
+    padding: 0;
+    box-shadow: 0 25px 30px 0 rgb(44 24 108 / 20%);
+    z-index: 300;
+    min-width: 200px;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    color: #fff719;    
+  } */
+  
   /* --------- Header/Hero --------- */  
   .bg-image {
     position: relative;
@@ -215,7 +255,7 @@ p,
   /* --------- Service section --------- */
   .services {
     min-height: 90vh;
-    padding-top: 9vh;
+    padding: 9vh 0;
   }
   .services h2 {
     font-family: 'Roboto Slab', serif;
@@ -223,9 +263,9 @@ p,
     color: #333333;
   }
   .services-grid {
-    padding-top: 2vh;
+    padding: 3vh 0;
     display: grid;
-    grid-template: repeat(4, 1fr) / 0.6rem 1fr 0.6rem;
+    grid-template: repeat(5, 1fr) / 0.6rem 1fr 0.6rem;
 /*     gap: 1.1rem; */
   }
   .services-grid a {
@@ -234,24 +274,44 @@ p,
   .services-grid a:hover {
     cursor: cell;
   }
-  .services-grid-item1 {
+  .services-grid-headings {
     grid-row: 1;
     grid-column: 2;
   }
-  .services-grid-item2 {
+  .underbar {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .underbar::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    height: 4px;
+    width: 100%;
+    left: 0%;
+    background-color: rgba(238, 85, 85, 0.9);
+  }
+  .headings-combi .h2 {
+  line-height: 0.9;
+  }
+  .services-grid-item1 {
     grid-row: 2;
     grid-column: 2;
   }
-  .services-grid-item3{
+  .services-grid-item2 {
     grid-row: 3;
     grid-column: 2;
   }
-  .services-grid-item4 {
+  .services-grid-item3{
     grid-row: 4;
     grid-column: 2;
   }
+  .services-grid-item4 {
+    grid-row: 5;
+    grid-column: 2;
+  }
   .service-wrap {
-    height: 85%;
     display: grid;
     grid-template: 1fr / 30% 70%;
   }
@@ -270,9 +330,6 @@ p,
     font-weight: 300;
     color: #050203;
   }
-/*   .service-wrap p.card-text {
-    font-size: 1.1rem;
-  } */
   .services .golden-btn {
     background: transparent;
     border: 4px solid #ecb000;
@@ -285,7 +342,7 @@ p,
   .services .golden-btn:hover {
     border-color: #ecb000;
     background-color: #ecb000;
-    color: rgba(255,255,255, 1.0);
+    color: rgba(255,255,255, 1);
   }
 
   /* .services .indigo-btn {
@@ -304,10 +361,29 @@ p,
     color: rgba(255,247,25, 0.9);
   } */
   
+  /* --------- liink-icon spacer --------- */
+  .liink_icon_spacer {
+    display: grid;
+    grid-template: 6vh / 32% 36% 32%;
+    padding: 2em 0 4em;
+  }
+  .spacer_icon_wrap {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template: repeat(3, 33%) / 30% 35% 35%;
+  }
+  .spacer_icon {
+    grid-row: 2;
+    grid-column: 2;
+/*     margin-left: -1vw; */
+  }
+  
   
   /* --------- Folio section --------- */
   .folio {
-    min-height: 100vh; 
+    min-height: 100vh;
+    padding: 9vh 0 6vh;
   }
   .folio .indigo-btn {
     background: transparent;
@@ -327,6 +403,7 @@ p,
   /* --------- About Section --------- */
   .about-wrap {
     min-height: 90vh;
+    padding: 12vh 0 6vh;
   }
   span.liink,
   span.liink-dot {
@@ -341,6 +418,7 @@ p,
   }
   .about-pics {
     display: grid;
+    padding: 4vh 0;
   }
   .about-pics img.nikki {
     width: 100%;
@@ -354,7 +432,7 @@ p,
     grid-column: 2 / span 2;
   }
   .about-tagline {
-    padding-top: 3rem;
+    padding: 1em 0 0;
   }
   .about-us .golden-btn {
     background: transparent;
@@ -369,82 +447,57 @@ p,
     border-color: #ecb000;
     background-color: #ecb000;
     color: rgba(255,255,255, 1.0);
-  }
-  
-  /* --------- Pricing info section --------- */
-  #pricing {
-    margin-top: 420px;
-  }
-  .pricing-section {
-    background-color: white;
-    min-height: 100vh;
-  }
-/*   .overlay-pricing {
-    display: block;
-    position: fixed;
-    z-index: 250;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(160deg, rgba(236, 176, 0, 0.9), rgba(102, 0, 255, 0.9) 100%);
-    transition: 0.9s;
-  } */
-
-  #pricing .indigo-btn {
-    background: transparent;
-    border: 4px solid #6600FF;
-    font-weight: 500;
-    color: #6600FF;
-    border-radius: 0;
-    text-transform: uppercase;
-  /*   letter-spacing: 0.1rem; */
-  }
-  #pricing .indigo-btn:hover {
-    border-color: #6600ff;
-    background-color: #6600ff;
-    color: rgba(255,247,25, 0.9);
-  }
-  .overlay-pricing-card {
-    border: 0;
-    background: linear-gradient(160deg, rgba(236, 176, 0, 0.3), rgba(102, 0, 255, 0.3) 100%);
-  }
-  .triple-i {
-    width: 20%;
-    height: 20%;
-  }
-  .pricing-list-wrap {
+  }  
+  .why-us {
+    /*   adjust simultaneously with min-height of reasons-wrap!?   */
+    min-height: 80vh; 
     display: grid;
-    grid-template: 4fr / 3rem 1fr;
-    padding: 2rem;
+    grid-template: 2fr  / 0.6rem 1fr 0.6rem;
   }
-  .pricing-checkmark-wrap {
+  .why-headings {
+    grid-row: 1;
+    grid-column: 2;
   }
-  /* .checkmark-image{
-    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
+  .why-reasons-wrap {
+    min-height: 80vh;
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    background-image: url('/wavy.svg');
+    background-size: cover;
+  }
+  .why-reasons {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+    margin: 4em 0 0;
+  }
+  .reason {
+    color: #ee5555;
+    text-decoration: none;
+  }
+/*   .reason1,
+  .reason2,
+  .reason3,
+  .reason4{
+    min-height: 100%;
   } */
-  .pricing-list-item {
-    text-align: left;
+  .reason1 {
+    grid-row: 1;
+    grid-column: 1 / span 4;
   }
-
-  /* #pricing ul {
-    padding-left: 2rem;
-    list-style-type: none;
-    list-style-position: outside;
+  .reason2 {
+    grid-row: 2;
+    grid-column: -5 / -1;
   }
-  #pricing ul li {
-    padding-left: 2rem;
-    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
-    background-position: 0 20%;
-    background-size: 1.2rem 1.2rem;
-    background-repeat: no-repeat;
-  } */
-  /* #pricing .bi {
-    margin-right: 12px;
-  } */
-  
+  .reason3 {
+    grid-row: 3;
+    grid-column: 1 / span 4;
+  }
+  .reason4 {
+    grid-row: 4;
+    grid-column: -5 / -1;
+  }
   
   /* --------- Contact section --------- */ 
   .contact-head {
@@ -547,6 +600,14 @@ p,
     transition: 0.4s linear;
   }
   
+  /* --------- SUB page Contact --------- */
+  .contactpage-wrap {
+    margin-top: 6rem;
+    min-height: 80vh;
+/*     background: linear-gradient(0deg,#ffffff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#6600ff,#6600ff 50%,#6600ff); */
+  }
+  
+  
   /* --------- Footer section --------- */
   footer {
     font-size: 1rem;
@@ -587,11 +648,256 @@ p,
     color: #999999;
     font-size: 0.9rem;
     letter-spacing: 1px;
+  }
+  .liink_phone-nmbr,
+  .liink_email {
+    text-decoration: none;
+    color: rgba(238, 85, 85, 0.6);
+    transition: all 0.3s ease;
+  }
+  .liink_phone-nmbr:hover,
+  .liink_email:hover {
+    color: #050203;
+  }
+  
+  /* ----------------------------------- */
+  /* --------- SUB page webdev --------- */
+  /* ----------------------------------- */
+  .subpage-header-bg-wrap {
+/*     min-height: 40vh; */
+    display: grid;
+    grid-template: 7.5rem 30vh 12vh / 1.2em repeat(9, 1fr) 1.2em;
+  }
+  .subpage-header-bg {
+    grid-row: 1 / span 3;
+    grid-column: 1 / -1;
+    background-image: url('/blob-header_indigo.svg');    
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+/*     background-position: 50%; */
+    margin: 0 0 0 -20vw;
+  }
+  .subpage-header-bg-img {
+    grid-row: 1 / span 3;
+    grid-column: 1 / -1;
+    background-image: url('https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/women_laptops.png?v=1645090350446');    
+    background-repeat: no-repeat;
+    background-size: 115% auto;
+/*     background-position: 0% 50%; */
+    margin: 0 0vw 0 -13vw;
+  }
+  .subpage-header {
+    grid-row: 2 / span 1;
+    grid-column: 3 / -1;
+    display: grid;
+    grid-template: 5.5rem 2.7rem / 1fr 1fr 1fr;
+  }
+  .subpage-header p.huge-type {
+    grid-row: 1;
+    font-size: 2.4rem;
+  }
+  .subpage-header p.tagline {
+    grid-row: 2;
+  }
+  
+  .howwedo_wrap {
+    display: grid;
+    grid-template: 2rem 1rem 4rem repeat(2, min-content) 2rem / repeat(5, 1fr);
+  }
+  .howwedo-img {
+    grid-row: 2 / span 3;
+    grid-column: 3 / -1;
+    background-image: url('https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/woman_code_bg.png?v=1645092916871');
+    background-repeat: no-repeat;
+    background-size: 85% auto;
+  }
+  .grey-highlight {
+    grid-row: 4 / -1;
+    grid-column: 1 / -1;
+    background-color: #f8f8f8;
+    padding: 6em 0 0;
+    display: grid;
+    grid-template: 3fr 14vh 2rem 3fr min-content 4rem/ repeat(5, 1fr);
+  }
+  .howwedo_websites {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+  .howwedo_liink-icon {
+    grid-row: 2;
+    grid-column: 3;
+    background-image: url('/liink-icon_black.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+/*     margin: 0 0 3rem 0; */
+  }
+  .howwedo_webshops {
+    grid-row: 4;
+    grid-column: 1 / -1;
+  }
+  .howwedo_list {
+    display: grid;
+    grid-template: repeat(6, min-content) / 3rem 1fr;
+    grid-row-gap: 0.9em;
+    margin: 1.2em 0 2em  1.2em;
+  }
+  .howwedo_list .liink_checkmark-wrap {
+    grid-column: 1;
+  }
+  .liink_checkmark {
+    height: 1.2rem;
+  }
+  .howwedo_list .howwedo_list-item {
+    grid-column: 2;
+/*     margin: 1rem 0; */
+    text-align: left;
+  }
+  .howwedo_a_wrap {
+    grid-row: 5;
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template: 1fr / 1fr;
+  }
+  .howwedo_a_wrap .golden-btn {
+    grid-row: 1;
+    grid-column: 1;
+    background: transparent;
+    border: 4px solid #ecb000;
+    font-weight: 500;
+    color: #ecb000;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .howwedo_a_wrap .golden-btn:hover {
+    border-color: #ecb000;
+    background-color: #ecb000;
+    color: rgba(255,255,255, 1.0);
+  }
+    
+  
+/*   .overlay-pricing {
+    display: block;
+    position: fixed;
+    z-index: 250;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg, rgba(236, 176, 0, 0.9), rgba(102, 0, 255, 0.9) 100%);
+    transition: 0.9s;
+  } */
+  
+  .packages_webdev_wrap {
+    display: grid;
+    grid-template: 2em repeat(2, min-content) / 1fr;
   }  
+  .subpage_huge-icon_bg {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background-image: url('/liink-icon_red-salsa.svg');
+    background-repeat: no-repeat;
+/*     background-size: 100% auto; */
+  }
+  .packages_webdev_grid {
+    grid-row: 3 / -1;
+    display: grid;
+    grid-template: 6em repeat(6, min-content) 2em / 2em 1fr 2em;
+    grid-row-gap: 4em;
+  }
+  .package {
+    grid-column: 2;
+    border: none;
+    border-radius: 0;
+    padding: 1em;
+/*     background: linear-gradient(160deg, rgba(236, 176, 0, 0.3), rgba(102, 0, 255, 0.3) 100%); */
+  }
+  .package1 {
+    grid-row: 2;
+  }
+  .package2 {
+    grid-row: 3;
+  }
+  .package3 {
+    grid-row: 4;
+  }
+  .package4 {
+    grid-row: 5;
+  }
+  .package5 {
+    grid-row: 6;
+    background-color: #6600ff;
+    color: white;
+  }
+  
+/*   .triple-i {
+    width: 20%;
+    height: 20%;
+  } */
+  .package-card-title {
+    padding: 1.2em 0.4em 1em;
+    text-align: center;
+  }
+  .package-list-wrap {
+    display: grid;
+    grid-template: 4fr / min-content 1fr;
+    padding: 0 0.7em 1.2em;
+  }
+  .package-checkmark-wrap {
+  }
+  /* .checkmark-image{
+    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
+  } */
+  .package-list-item {
+    text-align: left;
+    margin: 0 0 0 1rem;
+  }
+  
+  
+  .subpage_ctct-highlight {
+    background-color: #F8F8F8;
+  }
+  .subpage_ctct-card {
+    border-radius: 0;
+    border: none;
+    padding: 2em;
+    margin: 4em 0 9em;
+  }
+  .subpage_ctct-icons-wrapper {
+    padding: 3em 0;
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr;
+    grid-row-gap: 2.4em;
+    border-top: 4px solid #ee5555;
+  }
+  .subpage_ctct_icon-wrap {
+    grid-column: 2;
+    text-align: center;
+  }
+  .subpage_ctct_icon-wrap img {
+    width: 75%;
+  }
+/*   .liink_phone-nmbr_subp,
+  .liink_email_subp {
+    text-decoration: none;
+    color: #050203;
+    transition: all 0.3s ease;
+  }
+  .liink_phone-nmbr_subp:hover,
+  .liink_email_subp:hover {
+    color: #050203;
+  } */
+  p.icon_subtitle {
+    margin: 0.4em 0 0 0;
+  }
 }
+
 
 /* -------------------------------------------------------------------------------- */
 /* Small devices (up to 576px) */
+
 
 /* -------------------------------------------------------------------------------- */
 /* Small devices (landscape phones) */
@@ -637,6 +943,9 @@ p,
 /* -------------------------------------------------------------------------------- */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .liink-btn {
+    min-width: 12rem;
+  }
   /* --------- Splash screen --------- */
   .splash-logo {
     position: relative;
@@ -654,7 +963,7 @@ p,
     width: 20%;
   }  
   nav ul li {
-    margin-right: 24px;
+/*     margin-right: 24px; */
   }
   
   /* --------- Header/Hero --------- */
@@ -663,7 +972,7 @@ p,
 	} */
   .hero {
     display: grid;
-    grid-template: 90px repeat(6, 15%) / 9% 6% 34% repeat(12, 5%);
+    grid-template: 90px 20% 20% 20% 20% 20% / 9% 6% 34% repeat(12, 5%);
   }
   .hero-first {
     grid-row: 3;
@@ -682,7 +991,7 @@ p,
     line-height: 1.6;
   }
   .hero-second {
-    grid-row: 3;
+    grid-row: 3 / span 2;
     grid-column-start: 6;
     grid-column-end: span 5;
   }
@@ -692,27 +1001,38 @@ p,
   }
 
   /* --------- Service section --------- */
+  .services {
+    padding: 12vh 0;
+  }
   .services-grid {
-    padding-top: 2vh;
+    padding: 3vh 0;
     display: grid;
-    grid-template: 2fr / repeat(4, 1fr);
+    grid-template: 3fr / repeat(12, 1fr);
     gap: 2rem;
   }
-  .services-grid-item1 {
+  .services-grid-headings {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3 / span 7;
+    margin: 0 0 6vh;
+  }
+  .headings-combi .h2 {
+    line-height: 0.5;
+  }
+  .services-grid-item1 {
+    grid-row: 2;
+    grid-column: 4 /span 3;
   }
   .services-grid-item2 {
-    grid-row: 1;
-    grid-column: 3;
+    grid-row: 2;
+    grid-column: 7 /span 3;
   }
   .services-grid-item3{
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 3;
+    grid-column: 4 /span 3;
   }
   .services-grid-item4 {
-    grid-row: 2;
-    grid-column: 3;
+    grid-row: 3;
+    grid-column: 7 /span 3;
   }
   
   .service-wrap {
@@ -724,8 +1044,64 @@ p,
   
 
   /* --------- About Section --------- */
+  .about-wrap {
+    display: grid;
+    grid-template: 9rem 1fr / repeat(12, 1fr);
+    gap: 2rem;
+  }
+  .about-headings {    
+    grid-row: 1;
+    grid-column: 3 / span 7;
+  }
+  .about-pics {
+    grid-row: 2;
+    grid-column: 3 / span 5;    
+  }
+  .about-tagline {
+    grid-row: 2;
+    grid-column: 8 /span 3;
+  }
+  .why-us {
+    display: grid;
+    grid-template: 2fr  / repeat(12, 1fr);
+    padding: 3vh 0 0;
+  }
+  .why-headings {
+    grid-row: 1;
+    grid-column: 3 / span 5;
+  }
+  .headings-combi .h2 {
+    line-height: 0.5;
+  }
+  .why-reasons-wrap {
+    grid-row: 2;
+    grid-column: 1 / span 12;
+  }
+  .why-reasons {
+    grid-row: 2;
+    grid-column: 4 / span 6;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 1fr;
+    margin-top: 6rem;
+  }
+  .reason1 {
+    grid-row: 1;
+    grid-column: 1 / span 1;
+  }
+  .reason2 {
+    grid-row: 2;
+    grid-column: -2 / -1;
+  }
+  .reason3 {
+    grid-row: 3;
+    grid-column: 1 / span 1;
+  }
+  .reason4 {
+    grid-row: 4;
+    grid-column: -2 / -1;
+  }
   
-
+  
   /* --------- Pricing info section --------- */
   .pricing-cats {
     padding-top: 6vh;
