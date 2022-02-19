@@ -22,8 +22,8 @@
   <nav class="my-nav nav navbar navbar-expand-md fixed-top navbar-light" style="z-index: 240;">
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand navlogo" href="#intro">
-        <img class="d-inline-block" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/logo_LIINK.png?v=1643813514737" width="60%" height="60%" alt="logo"/>
+      <a class="navbar-brand navlogo" href="/index.html">
+        <img class="d-inline-block" id="js-imgsrc" src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icoon_LIINK-wit.png?v=1643813514667" width="60%" height="60%" alt="logo"/>
       </a>
       <!-- toggle button for mobile nav -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -44,20 +44,19 @@
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/webdev.html">Website-ontwikkeling</a></li>
-              <li><a class="dropdown-item" href="#">Grafisch Ontwerp</a></li>
-              <li><a class="dropdown-item" href="#">Web Copy</a></li>
-              <li><a class="dropdown-item" href="#">Fotografie</a></li>
+              <li><a class="dropdown-item" href="/webdev.html">Webdevelopment</a></li>
+              <li><a class="dropdown-item" href="/graphicdesign.html">Grafisch Ontwerp</a></li>
+              <li><a class="dropdown-item" href="/webcopy.html">Web Copy</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio" target="">Portfolio</a>
+            <a class="nav-link" href="/index.html#portfolio" target="">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" target="">Over Ons</a>
+            <a class="nav-link" href="/index.html#about" target="">Over Ons</a>
           </li>            
           <li class="nav-item">
-            <a class="nav-link" href="#contact" target="">Contact</a>
+            <a class="nav-link" href="/index.html#contact" target="">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav">
@@ -79,7 +78,7 @@
             </a>
           </li>
           <li class="nav-item me-3 me-lg-1 d-none d-md-inline">
-            <a class="nav-link" href="https://www.whatsapp.com/business" rel="nofollow" target="_blank">
+            <a class="nav-link" href="https://wa.me/31645433377" rel="nofollow" target="_blank">
               <i class="bi bi-whatsapp"></i>
             </a>
           </li>
@@ -88,154 +87,315 @@
     </div>
   </nav>
   
-  <!-- Pricing Section -->
-  <section id="pricing" class="container mb-5 py-5">
-    <div id="overlay-pricing-websites" class="overlay-pricing container">
-      <div class="row row-cols-1 row-cols-md-3 my-5 text-center">
-        <div class="col">
-          <div class="overlay-pricing-card card mb-4 py-5 rounded-3 shadow">
-            <div class="justify-content-center">
-              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
-            </div>
-            <div class="card-body justify-content-center py-3 mb-2">
-              <h3 class="h3 card-title pricing-card-title"><small class="text-white fw-light">vanaf</small>&nbsp;&euro;1499,-</h3>                
-              <div class="pricing-list-wrap">
-                <div class="pricing-checkmark-wrap">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Uniek design</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Tot 4 verschillende pagina-templates</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Sterke SEO</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Professioneel CMS</div>
-              </div>
-              <button type="button" class="indigo-btn w-50 btn btn-md">Pick me !</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="overlay-pricing-card card mb-4 py-5 rounded-3 shadow">
-            <div class="justify-content-center">
-              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket2.png?v=1642950949004" class="card-img-top triple-i">
-            </div>
-            <div class="card-body justify-content-center py-3 mb-2">
-              <h3 class="h3 card-title pricing-card-title"><small class="text-white fw-light">vanaf</small>&nbsp;&euro;2499,-</h3>                
-              <div class="pricing-list-wrap">
-                <div class="pricing-checkmark-wrap">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Unieker design</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Tot 10 verschillende pagina-templates</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Sterke SEO</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Professioneel CMS</div>
-              </div>
-              <button type="button" class="indigo-btn w-50 btn btn-md">Pick me !</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="overlay-pricing-card card mb-4 py-5 rounded-3 shadow">
-            <div class="justify-content-center">
-              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket3.png?v=1642950949004" class="card-img-top triple-i">
-            </div>
-            <div class="card-body justify-content-center py-3 mb-2">
-              <h3 class="h3 card-title pricing-card-title"><small class="text-white fw-light">vanaf</small>&nbsp;&euro;3299,-</h3>
-              <div class="pricing-list-wrap">
-                <div class="pricing-checkmark-wrap">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Uniekst design</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Inclusief webshop pagina-templates</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Sterke SEO</div>
-                <div class="pricing-checkmark-wrap ">
-                  <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068" class="checkmark-image"/>
-                </div>
-                <div class="pricing-list-item">Webshop CMS</div>
-              </div>
-              <button type="button" class="indigo-btn w-50 btn btn-md">Pick me !</button>
-            </div>
-          </div>
-        </div>
+  <!-- Header Section -->
+  <div class="subpage-header-bg-wrap">
+    <!--------- header image background --------->
+    <div class="subpage-header-bg-img"></div>
+    <!--------- header image background --------->
+    <!--------- indigo blob header svg background --------->
+    <div class="subpage-header-bg"></div>
+    <!--------- indigo blob header svg background --------->
+    <div class="subpage-header hero text-white">
+      <p class="huge-type text-start">
+        websites &amp;&nbsp;<span class="cursor-blinker">webshops</span>
+      </p>
+      <p class="tagline text-start">
+        from scratch
+      </p>
+    </div>
+  </div>
+  
+  <!-- Intro-bit Section -->
+  <section id="webdev_intro-bit" class="intro-bit container-fluid px-0">      
+    <div class="justify-content-center">
+      <div class="headings-combi text-start px-4">
+        <h5 class="h5b underbar fw-lighter">
+          Laat zien hoe uniek je bent
+        </h5>
+        <h2 class="h2">
+          Maatwerk development en design<strong><span class="liink-dot">.</span></strong>
+        </h2>
       </div>
-      <!--     Comparison Table     -->
-      <h2 class="text-center my-5">Vergelijk het hier</h2>
-      <div class="table-responsive">
-        <table class="table text-center">
-          <thead>
-            <tr>
-              <th style="width: 34%;"></th>
-              <th style="width: 22%;">I.</th>
-              <th style="width: 22%;">II.</th>
-              <th style="width: 22%;">III.</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" class="text-start">Setup</th>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-start">Design</th>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row" class="text-start">Webshop</th>
-              <td></td>
-              <td></td>
-              <td><i class="bi bi-check-lg"></i></td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-start">SEO</th>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-              <td><i class="bi bi-check-lg"></i></td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-start">Professioneel CMS</th>
-              <td></td>
-              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-              <td><i class="bi bi-check-lg"></i></td>
-            </tr>
-            <tr>
-              <th scope="row" class="text-start">Extra security</th>
-              <td></td>
-              <td></td>
-              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-10 col-md-8 ps-4">
+        <p>
+          Tegenwoordig zijn websites niet meer weg te denken. Vooral als je als bedrijf online gevonden wilt worden, dan is een website of webshop cruciaal. Maar dat is niet genoeg, want b&eacute;n je gevonden dan is het belangrijk dat de bezoeker een reden heeft om te blijven plakken en uiteindelijk overgaat tot een gewenste actie. Dit realiseren we door een professionele website of website geheel op maat te bouwen met eigen code, passend bij de huisstijl van jouw bedrijf en de behoeftes van je doelgroep.
+        </p>
       </div>
     </div>
   </section>
+  
+  <!-- How we do Section -->
+  <section id="howwedo" class="howwedo_wrap container-fluid px-0">    
+    <div class="grey-highlight">
+      <div class="howwedo_websites">
+        <div class="headings-combi text-start px-4">
+          <h5 class="h5b underbar fw-lighter">
+            This is how we do
+          </h5>
+          <h2 class="h2">
+            Websites<strong><span class="liink-dot">.</span></strong>
+          </h2>
+        </div>
+        <div class="col-10 col-md-8 ps-4">
+          <p>
+            Onze websites bouwen we met custom code en koppelen die aan Craft CMS. Een overzichtelijk en gebruiksvriendelijk content management systeem dat, in tegenstelling tot websitebuilders, alle flexibiliteit en vrijheid in huis heeft om een professionele website te bouwen.
+          </p>
+          <h5 class="h5">Waarom Craft CMS een slimme  keuze is</h5>
+          <div class="howwedo_list">
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Kosteneffectief</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Gebruiksvriendelijk</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Je website heeft een snelle laadtijd</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Alle vrijheid om te customizen</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Makkelijk uitbreidbaar</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Geschikt voor omvangrijke en meertalige websites</div>
+          </div>
+        </div>
+      </div>
+      <div class="howwedo_liink-icon"></div>
+      <div class="howwedo_webshops">
+        <div class="__-headings headings-combi text-start px-4">
+          <h5 class="h5b underbar fw-lighter">
+            This is how we do
+          </h5>
+          <h2 class="h2">
+            Webshops<strong><span class="liink-dot">.</span></strong>
+          </h2>
+        </div>
+        <div class="__-tagline col-10 col-md-8 ps-4">
+          <p>
+            Onze websites bouwen we met custom code en koppelen die aan Craft CMS. Een overzichtelijk en gebruiksvriendelijk content management systeem dat, in tegenstelling tot websitebuilders, alle flexibiliteit en vrijheid in huis heeft om een professionele website te bouwen.
+          </p>
+          <h5 class="h5">Waarom Craft Commerce een slimme  keuze is</h5>
+          <div class="howwedo_list">
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Kosteneffectief</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Gebruiksvriendelijk</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Je website heeft een snelle laadtijd</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Alle vrijheid om te customizen</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Makkelijk uitbreidbaar</div>
+            <div class="liink_checkmark-wrap">
+              <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+            </div>
+            <div class="howwedo_list-item">Geschikt voor omvangrijke en meertalige websites</div>
+          </div>
+        </div>
+      </div>      
+      <!--    put a-tag in div!!    -->
+      <div class="howwedo_a_wrap">
+        <a class="golden-btn liink-btn btn btn-lg text-nowrap"
+          href="/ourmethod.html"
+          role="button"
+          rel="nofollow"
+          target="">Onze werkwijze</a>
+      </div>
+    </div>
+    <div class="howwedo-img"></div>
+  </section>
+  
+  <!-- Packages Section -->
+  <section id="" class="container-fluid px-0">
+    <div class="packages_webdev_wrap">
+      <div class="subpage_huge-icon_bg"></div>
+      <div class="packages_webdev_grid">
+        <div class="package package1 card shadow-lg">
+<!--           <div class="justify-content-center">
+            <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
+          </div> -->
+          <div class="card-body">
+            <h4 class="h4 card-title package-card-title"><strong>Website<span class="liink-dot">.</span></strong><small class="fw-light">&nbsp;basic</small></h4>
+            <div class="package-list-wrap">
+              <div class="package-checkmark-wrap">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Uniek design</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Tot 4 verschillende pagina-templates</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Sterke SEO</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Professioneel CMS</div>
+            </div>
+          </div>
+        </div>        
+        <div class="package package2 card shadow-lg">
+<!--           <div class="justify-content-center">
+            <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
+          </div> -->
+          <div class="card-body">
+            <h4 class="h4 card-title package-card-title"><strong>Website<span class="liink-dot">.</span></strong><small class="fw-light">&nbsp;extra</small></h4>
+            <div class="package-list-wrap">
+              <div class="package-checkmark-wrap">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Unieker design</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Tot 10 verschillende pagina-templates</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Sterke SEO</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Professioneel CMS</div>
+            </div>
+          </div>
+        </div>        
+        <div class="package package3 card shadow-lg">
+<!--           <div class="justify-content-center">
+            <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
+          </div> -->
+          <div class="card-body">
+            <h4 class="h4 card-title package-card-title"><strong>Website<span class="liink-dot">.</span></strong><small class="fw-light">&nbsp;extra extra</small><strong>&nbsp;+ Webshop<span class="liink-dot">.</span></strong></h4>
+            <div class="package-list-wrap">
+              <div class="package-checkmark-wrap">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Uniekst design</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Inclusief webshop pagina-templates</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Sterke SEO</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Webshop CMS</div>
+            </div>
+          </div>
+        </div>        
+        <div class="package package4 card shadow-lg">
+<!--           <div class="justify-content-center">
+            <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
+          </div> -->
+          <div class="card-body">
+            <h4 class="h4 card-title package-card-title"><strong>Webshop only<span class="liink-dot">.</span></strong></h4>
+            <div class="package-list-wrap">
+              <div class="package-checkmark-wrap">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Uniek design</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">(bijna) unlimited pagina-templates</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Sterke SEO</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Webshop CMS</div>
+            </div>
+          </div>
+        </div>        
+        <div class="package package5 card shadow-lg">
+<!--           <div class="justify-content-center">
+            <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/pakket1.png?v=1642950949004" class="card-img-top triple-i">
+          </div> -->
+          <div class="card-body">
+            <h4 class="h4 card-title package-card-title"><strong>Extra</strong><small class="fw-light">&nbsp;services<span class="liink-dot">.</span></small></h4>
+            <div class="package-list-wrap">
+              <div class="package-checkmark-wrap">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Bedrijfsfotografie</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Productfotografie</div>
+              <div class="package-checkmark-wrap ">
+                <img src="https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/liink_checkmark.png?v=1645090349922" class="liink_checkmark"/>
+              </div>
+              <div class="package-list-item">Web copy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- contact-highlight Section -->
+  <section id="" class="container-fluid">
+    <div class="subpage_ctct-highlight row justify-content-center">
+      <div class="subpage_ctct-card col-9 col-md-4 card shadow-lg">
+        <p class="text-center">
+          Heb je een vraag of ben je benieuwd wat we voor je kunnen betekenen?
+        </p>
+        <p class="text-center">
+          Let's link together!
+        </p>
+        <div class="subpage_ctct-icons-wrapper">
+          <div class="subpage_ctct_icon-wrap">
+            <a class="liink_phone-nmbr_subp" role="button" href="https://wa.me/31645433377" rel="nofollow" target="">
+              <img src="/icon_wa.svg" class=""/>
+            </a>
+            <p class="icon_subtitle">App</p>
+          </div>
+          <div class="subpage_ctct_icon-wrap">
+            <a class="liink_email_subp" role="button" href="mailto:info@studioliink.com" rel="nofollow" target="">
+              <img src="/icon_email.svg" class=""/>
+            </a>
+            <p class="icon_subtitle">Mail</p>
+          </div>
+          <div class="subpage_ctct_icon-wrap">
+            <a class="liink_phone-nmbr_subp" role="button" href="tel:0031645433377" rel="nofollow" target="">
+              <img src="/icon_phone.svg" class=""/>
+            </a>
+            <p class="icon_subtitle">Bel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <script src="script.js"></script>
   
 </body>
 </html>
