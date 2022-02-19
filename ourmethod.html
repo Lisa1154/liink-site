@@ -120,38 +120,14 @@
         </p>
       </div>
     </div>
-  </section>
-  
+  </section>  
   
   
   <!------------------------------------->
   <!--------- Custom JavaScript --------->
   <!------------------------------------->
-  <script>
-    const nav = document.querySelector('.my-nav');
-    const logo = document.getElementById('js-imgsrc');
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 40) {
-        nav.classList.add('bg-white', 'navbar-light');
-        nav.classList.remove('navbar-dark', 'shadow');
-        logo.src = 'https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/logo_LIINK.png?v=1643813514737';
-      } else {
-        nav.classList.remove('bg-white', 'navbar-light');
-        nav.classList.add('navbar-dark');
-        logo.src = 'https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icoon_LIINK-wit.png?v=1643813514667';
-      }
-    });
-  </script>
-  
-  <!--  Hide navbar when tapped script  -->
-  <script>
-    const navLinks = document.querySelectorAll('.nav-item:not(.dropdown)');
-    const menuToggle = document.getElementById('main-nav');
-    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
-    navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() });
-    });
-  </script>
+  <script src="script.js"></script>
   
 </body>
 </html>
+
