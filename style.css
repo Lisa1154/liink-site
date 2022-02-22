@@ -151,28 +151,50 @@ p,
   }
   nav ul li:hover a {
     color: #ee5555 !important;
-  }
+  }  
   
-  
-/*   .dropdown-menu {
-    display: none;
+  .dropdown-menu {
+/*     display: none; */
     list-style: none;
     position: absolute;
     z-index: 300;
-    top: calc(100% + 12px);
-    left: -2em;
+/*     top: calc(100% + 12px); */
+    left: -2.4em;
     min-width: 9em;
     padding: 0.5em 0;
     margin: 0;
-    background-clip: padding-box;
-    background-color: rgba(255, 255, 255, 0.9);
+/*     background-clip: padding-box; */
+    background-color: rgba(255, 255, 255, 1);
     text-align: center;
-    color:#fff719;
+/*     color: #fff719; */
     font-size: 1rem;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;
-    box-shadow: 0 25px 30px 0 rgb(44 24 108 / 20%);
-  } */
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 25px 30px 0 rgb(0 0 0 / 20%);
+    transition: 0.4s all ease;
+  }
+  .dropdown-menu:hover li {
+    color: rgba(236 176 0 / 0.7);
+  }
+  
+  /*  scroll progress line  */
+  .scroll_progress{
+    height: 4px;
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .scroll_progress_highlight{
+    transition: width 0.15s linear;
+    background: linear-gradient(225deg, #6600ff 4%, #ecb000 24%, #ee5555 60%, #fff719 80%);
+    background-image: linear-gradient(225deg, rgb(255, 247, 25) 4%, rgb(238, 85, 85) 24%, rgb(236, 176, 0) 60%, rgb(102, 0, 255) 88%);
+    height: 100%;
+    width: 0%;
+  }
+  
   
   /* --------- Header/Hero --------- */  
   .bg-image {
@@ -229,8 +251,7 @@ p,
   .hero .lemon-btn:hover {
     border-color: #fff719;
     background-color: #fff719;
-    color: rgba(102,0,255, 0.8
-    );
+    color: rgba(102,0,255, 0.8);
   }
   .hero-second {
     grid-row: 7;
@@ -370,7 +391,7 @@ p,
   
   
   /* --------- Folio section --------- */
-  .folio {
+/*   .folio {
     min-height: 100vh;
     padding: 9vh 0 6vh;
   }
@@ -380,14 +401,14 @@ p,
     font-weight: 500;
     color: #6600ff;
     border-radius: 0;
-    text-transform: uppercase;
+    text-transform: uppercase; */
   /*   letter-spacing: 0.1rem; */
-  }
+/*   }
   .folio .indigo-btn:hover {
     border-color: #6600ff;
     background-color: #6600ff;
     color: rgba(255,247,25, 0.9);
-  }
+  } */
   
   /* --------- About Section --------- */
   .about-wrap {
@@ -436,7 +457,9 @@ p,
     border-color: #ecb000;
     background-color: #ecb000;
     color: rgba(255,255,255, 1.0);
-  }  
+  }
+    
+  
   .why-us {
     /*   adjust simultaneously with min-height of reasons-wrap!?   */
     min-height: 80vh; 
@@ -447,49 +470,43 @@ p,
     grid-row: 1;
     grid-column: 2;
   }
-  .why-reasons-wrap {
+  .why-unqspt-wrap {
     min-height: 80vh;
     grid-row: 2;
     grid-column: 1 / span 3;
     background-image: url('/wavy.svg');
     background-size: cover;
   }
-  .why-reasons {
+  .why-unqspt {
     grid-row: 2;
     grid-column: 2;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(5, 1fr);
     margin: 4em 0 0;
   }
-  .reason {
+  .unqspt {
     color: #ee5555;
     text-decoration: none;
-  }
-/*   .reason1,
-  .reason2,
-  .reason3,
-  .reason4{
-    min-height: 100%;
-  } */
-  .reason1 {
+  }  
+  .unqspt1 {
     grid-row: 1;
     grid-column: 1 / span 4;
   }
-  .reason2 {
+  .unqspt2 {
     grid-row: 2;
     grid-column: -5 / -1;
   }
-  .reason3 {
+  .unqspt3 {
     grid-row: 3;
     grid-column: 1 / span 4;
   }
-  .reason4 {
+  .unqspt4 {
     grid-row: 4;
     grid-column: -5 / -1;
   }
   
   /* --------- Contact section --------- */ 
-  .contact-head {
+  .contact-chunk_head {
     padding-top: 4rem;
     background-color: #6600ff;
     /* 	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#fff947,#fff947 50%,#fff947); */
@@ -522,11 +539,11 @@ p,
     animation: cursor-blinker 1.5s step-end infinite;
   }
 
-  .contact-area {
+  .contact-chunk_area {
     background-color: white;
     color: #6600ff;
   }  
-  .contact-form input {
+  .contact-chunk_form input {
     background-color: transparent;
     border: none;
     border-radius: 0;
@@ -537,32 +554,32 @@ p,
     color: #333333 !important;
     font-size: 16px;
   }
-  .contact-form .input-group-text {
+  .contact-chunk_form .input-group-text {
     background-color: transparent;
     border: none;
     border-radius: 0;
     border-bottom: 4px solid #6600ff;
   }
-  .contact-form i {
+  .contact-chunk_form i {
     color: #6600ff;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
     font-size: 20px;
   }
-  .contact-form input::-webkit-input-placeholder {
+  .contact-chunk_form input::-webkit-input-placeholder {
     color: #333333;
     opacity: 0.4;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
     font-size: 16px;
   }
-  .contact-form input:focus::placeholder {
+  .contact-chunk_form input:focus::placeholder {
     opacity: 0;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
   }
-  .contact-form input:focus,
-  .contact-form input:active {
+  .contact-chunk_form input:focus,
+  .contact-chunk_form input:active {
     box-shadow: none;
     /* Or use this separate instead ! (This is applied in BS's .form-control) */
     /* .form-control {
@@ -571,30 +588,67 @@ p,
     } */
     border-bottom: 4px solid #fff719;
   }
-  .contact-area .btn {
+  .contact-chunk_area .btn {
     border-radius: 0;
     background: transparent;
     border-bottom: 4px solid #6600ff !important;
     transition: none !important;
     box-shadow: none !important;
   }
-  .contact-area .btn a {
+  .contact-chunk_area .btn a {
     text-decoration: none;
     color: #6600ff;
   }
-  .contact-area .btn a:hover {
+  .contact-chunk_area .btn a:hover {
     background-color: #6600ff;
     color: white;
     border-bottom: 4px solid #6600ff !important;
     transition: 0.4s linear;
   }
   
+  /*--------------------------------------*/
   /* --------- SUB page Contact --------- */
-  .contactpage-wrap {
-    margin-top: 6rem;
-    min-height: 80vh;
+  /*--------------------------------------*/
+  .contact-page_wrap {
+    margin: 0 0 1em;
+    padding: 0 1rem;
 /*     background: linear-gradient(0deg,#ffffff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#6600ff,#6600ff 50%,#6600ff); */
   }
+  .contact-page_inner-wrap  {
+    margin: 0 0 3em;
+    padding: 2rem;
+  }
+  .contact-page_inner-wrap textarea {
+    border: none;
+    border-radius: 0;
+    margin: 0 0 2em;
+    padding: 1em;
+  }
+  .contact-page_wrap .golden-btn {
+    background: transparent;
+    border: 4px solid #ecb000;
+    font-weight: 500;
+    color: #ecb000;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .contact-page_wrap .golden-btn:hover {
+    border-color: #ecb000;
+    background-color: #ecb000;
+    color: rgba(255,255,255, 1);
+  }
+  .contact-page_socials {
+    display: grid;
+    grid-template: 1fr / 20% 20% 20%;
+    grid-column-gap: 1rem;
+    justify-content: space-evenly;
+    padding: 2em 0;
+  }
+  .contact-page_social-icon-wrap {
+    
+  }
+  
   
   
   /* --------- Footer section --------- */
@@ -649,6 +703,9 @@ p,
     color: #050203;
   }
   
+  
+  
+  
   /* ----------------------------------- */
   /* --------- SUB page webdev --------- */
   /* ----------------------------------- */
@@ -668,12 +725,11 @@ p,
   }
   .subpage-header-bg-img {
     grid-row: 1 / span 3;
-    grid-column: 1 / -1;
-    background-image: url('https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/women_laptops.png?v=1645090350446');    
+    grid-column: 1 / -1;    
     background-repeat: no-repeat;
-    background-size: 115% auto;
+    background-size: 110% auto;
 /*     background-position: 0% 50%; */
-    margin: 0 0vw 0 -13vw;
+    margin: 0vh 0vw 0 -12vw;
   }
   .subpage-header {
     grid-row: 2 / span 1;
@@ -763,7 +819,6 @@ p,
     background-color: #ecb000;
     color: rgba(255,255,255, 1.0);
   }
-    
   
 /*   .overlay-pricing {
     display: block;
@@ -784,11 +839,11 @@ p,
     grid-template: 2em repeat(2, min-content) / 1fr;
   }  
   .subpage_huge-icon_bg {
-    grid-row: 2;
+    grid-row: 2 / -1;
     grid-column: 1 / -1;
     background-image: url('/liink-icon_red-salsa.svg');
     background-repeat: no-repeat;
-/*     background-size: 100% auto; */
+    background-size: 100%;
   }
   .packages_webdev_grid {
     grid-row: 3 / -1;
@@ -819,6 +874,7 @@ p,
     grid-row: 6;
     background-color: #6600ff;
     color: white;
+    box-shadow: 0 25px 30px 0 rgb(102 0 255 / 40%);
   }
   
 /*   .triple-i {
@@ -1062,30 +1118,30 @@ p,
   .headings-combi .h2 {
     line-height: 0.5;
   }
-  .why-reasons-wrap {
+  .why-unqspt-wrap {
     grid-row: 2;
     grid-column: 1 / span 12;
   }
-  .why-reasons {
+  .why-unqspt {
     grid-row: 2;
     grid-column: 4 / span 6;
     display: grid;
     grid-template: repeat(4, 1fr) / 1fr 1fr;
     margin-top: 6rem;
   }
-  .reason1 {
+  .unqspt1 {
     grid-row: 1;
     grid-column: 1 / span 1;
   }
-  .reason2 {
+  .unqspt2 {
     grid-row: 2;
     grid-column: -2 / -1;
   }
-  .reason3 {
+  .unqspt3 {
     grid-row: 3;
     grid-column: 1 / span 1;
   }
-  .reason4 {
+  .unqspt4 {
     grid-row: 4;
     grid-column: -2 / -1;
   }

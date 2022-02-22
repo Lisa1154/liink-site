@@ -46,12 +46,11 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/webdev.html">Webdevelopment</a></li>
               <li><a class="dropdown-item" href="/graphicdesign.html">Grafisch Ontwerp</a></li>
-              <li><a class="dropdown-item" href="/webcopy.html">Web Copy</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a class="nav-link" href="/index.html#portfolio" target="">Portfolio</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="/index.html#about" target="">Over Ons</a>
           </li>            
@@ -85,14 +84,115 @@
         </ul>
       </div>
     </div>
+    <!--     scroll progress line     -->
+    <div class="scroll_progress">
+      <div class="scroll_progress_highlight" id="js-scroll-highlight"></div>
+    </div>
   </nav>
   
-  <section id="contactpage" class="container-fluid p-0">
-    <div class="contactpage-wrap">
-      <p>
-        
+  <!-- Header Section -->
+  <div class="subpage-header-bg-wrap">
+    <!--------- header image background --------->
+    <div class="subpage-header-bg-img" style="background-image: url('https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/header-phone.png?v=1645439832677');"></div>
+    <!--------- header image background --------->
+    <!--------- indigo blob header svg background --------->
+    <div class="subpage-header-bg"></div>
+    <!--------- indigo blob header svg background --------->
+    <div class="subpage-header hero text-white">
+      <p class="huge-type text-start">
+        <span class="cursor-blinker">Contact</span>
+      </p>
+      <p class="tagline text-start text-nowrap">
+        let's link together
       </p>
     </div>
+  </div>
+  
+  <!--  Contact-page form section  -->
+  <section id="contact-page" class="container-fluid p-0">
+    <div class="contact-page_wrap">
+      <div class="contact-page_inner-wrap shadow-lg">
+        <h3 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">Jan!</span></h3>
+        <div class="contact-page_form-wrap">
+          <form class="contact-page_form">
+            <div class="">
+              <label for="contacter-name" class="form-label h5">Naam</label>
+              <input type="name" class="form-control" id="contacter-name" placeholder="">
+            </div>
+            <div class="">
+              <label for="contacter-email" class="form-label h5">Emailadres</label>
+              <input type="email" class="form-control" id="contacter-email" placeholder="">
+            </div>
+            
+            <div class="contacter-service_wrap">
+              <label for="" class="h5">Waar mogen we je mee helpen?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Website</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Webshop</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Logo</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Huisstijl</label>
+              </div>
+            </div>
+            
+            <div class="contacter-service_wrap">
+              <label for="" class="h5">Extra services</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Productfotografie</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Bedrijfsfotografie</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="flexCheckDefault">Web copy</label>
+              </div>
+            </div>
+                        
+            <div class="">
+              <label for="contacter-mssg" class="form-label h5">Omschrijf hieronder je specifieke wensen</label>
+              <textarea class="form-control shadow-sm" id="contacter-mssg" rows="9" placeholder="Schrijf hier je bericht..."></textarea>
+            </div>
+            <div class="text-center">
+              <a href="/" class="golden-btn btn liink-btn btn-lg">Verzenden</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="contact-page_socials">
+        <div class="contact-page_social-icon-wrap">
+          <a class="liink_phone-nmbr_subp" role="button" href="https://wa.me/31645433377" rel="nofollow" target="">
+            <img src="/icon_wa.svg" class=""/>
+          </a>
+        </div>
+        <div class="contact-page_social-icon-wrap">
+          <a class="liink_email_subp" role="button" href="mailto:info@studioliink.com" rel="nofollow" target="">
+            <img src="/icon_email.svg" class=""/>
+          </a>
+        </div>
+        <div class="contact-page_social-icon-wrap">
+          <a class="liink_phone-nmbr_subp" role="button" href="tel:0031645433377" rel="nofollow" target="">
+            <img src="/icon_phone.svg" class=""/>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
+  
+  <!--------- Custom JavaScript --------->
+  <script src="script.js"></script>
+  
 </body>
 </html>
