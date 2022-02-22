@@ -16,6 +16,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  color: #050203;
 }
 
 /* Body text size-variants */
@@ -46,6 +47,7 @@ p,
   font-family: 'Roboto Slab', serif;
 /*   font-family: "Ubuntu", sans-serif; */
   font-weight: 500;
+  color: #333333;
 }
 .h1 {
   font-size: 60px;
@@ -66,6 +68,7 @@ p,
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 1.25rem;
+  color: #333333;
 }
 .h6 {
   font-size: 16px;
@@ -606,51 +609,6 @@ p,
     transition: 0.4s linear;
   }
   
-  /*--------------------------------------*/
-  /* --------- SUB page Contact --------- */
-  /*--------------------------------------*/
-  .contact-page_wrap {
-    margin: 0 0 1em;
-    padding: 0 1rem;
-/*     background: linear-gradient(0deg,#ffffff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#6600ff,#6600ff 50%,#6600ff); */
-  }
-  .contact-page_inner-wrap  {
-    margin: 0 0 3em;
-    padding: 2rem;
-  }
-  .contact-page_inner-wrap textarea {
-    border: none;
-    border-radius: 0;
-    margin: 0 0 2em;
-    padding: 1em;
-  }
-  .contact-page_wrap .golden-btn {
-    background: transparent;
-    border: 4px solid #ecb000;
-    font-weight: 500;
-    color: #ecb000;
-    border-radius: 0;
-    text-transform: uppercase;
-  /*   letter-spacing: 0.1rem; */
-  }
-  .contact-page_wrap .golden-btn:hover {
-    border-color: #ecb000;
-    background-color: #ecb000;
-    color: rgba(255,255,255, 1);
-  }
-  .contact-page_socials {
-    display: grid;
-    grid-template: 1fr / 20% 20% 20%;
-    grid-column-gap: 1rem;
-    justify-content: space-evenly;
-    padding: 2em 0;
-  }
-  .contact-page_social-icon-wrap {
-    
-  }
-  
-  
-  
   /* --------- Footer section --------- */
   footer {
     font-size: 1rem;
@@ -704,6 +662,122 @@ p,
   }
   
   
+  
+  /*--------------------------------------*/
+  /* --------- SUB page Contact --------- */
+  /*--------------------------------------*/
+  .contact-page_wrap {
+    margin: 0 0 1em;
+    padding: 0 1rem;
+/*     background: linear-gradient(0deg,#ffffff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#6600ff,#6600ff 50%,#6600ff); */
+  }
+  .contact-page_inner-wrap  {
+    margin: 0 0 3em;
+    padding: 2rem;
+  }
+  .contact-page_inner-wrap .h3 {
+    padding: 1em 0;
+  }
+  .contact-page_form .input-wrap {
+    padding: 0.6em 0;
+  }
+  .contact-page_form input[type="name"],
+  .contact-page_form input[type="email"] {
+    background-color: transparent;
+    border: none ;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 4px solid #6600ff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #050203 !important;
+    font-size: 1rem;
+  }
+  .contact-page_form input::-webkit-input-placeholder {
+    color: #333333;
+    opacity: 0.4;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    font-size: 1rem;
+  }
+  .contact-page_form input:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  .contact-page_form input[type="name"]:focus,
+  .contact-page_form input[type="name"]:active,
+  .contact-page_form input[type="email"]:focus,  
+  .contact-page_form input[type="email"]:active {
+    box-shadow: none;
+    border-bottom: 4px solid #fff719;
+  }
+  input.custom-caret {
+    caret-color: rgba(102, 0, 255, 0.9);
+  }
+  textarea.p-custom-caret {
+    caret-color: #6600ff;
+  }
+  .form-check-input:focus,
+  .form-check-input:active,
+  .form-check-input:visited,
+  .form-check-input:checked {    
+    box-shadow: none;
+    background-color: #6600ff;
+    border: none;
+    border-color: #6600ff;
+  }
+  .contacter-service_wrap {
+    margin: 0.7em 0 0.4em;
+  }
+  .label-wrap {
+    padding: 0.4em 0;
+  }
+  .contact-page_inner-wrap textarea {
+    border: none;
+    border-radius: 0;
+    margin: 0 0 2em;
+    padding: 1em;
+  }
+  .contact-page_wrap .golden-btn {
+    background: transparent;
+    border: 4px solid #ecb000;
+    font-weight: 500;
+    color: #ecb000;
+    border-radius: 0;
+    text-transform: uppercase;
+  /*   letter-spacing: 0.1rem; */
+  }
+  .contact-page_wrap .golden-btn:hover {
+    border-color: #ecb000;
+    background-color: #ecb000;
+    color: rgba(255,255,255, 1);
+  }
+  .contact-page_socials {
+    display: grid;
+    grid-template: 1fr / 20% 20% 20%;
+    grid-column-gap: 1rem;
+    justify-content: space-evenly;
+    padding: 2em 0;
+  }
+  
+  /*--------------------------------------------*/
+  /*---------  SUB page Contact Thanks ---------*/
+  /*--------------------------------------------*/
+  .contact-thanks_wrap {
+    margin: 0em 1.2em 6em;
+    padding: 2.4em 1.2em;
+  }
+  .contact-thanks_inner-wrap {
+    padding: 0 0.4em 0.6em;
+  }
+  p.contact-thanks_tagline {
+    margin-top: 1em;
+  }
+  .contact-thanks_our-names_content {
+    font-family: "Ubuntu", sans-serif;
+/*     margin: 0 0 1em; */
+  }  
   
   
   /* ----------------------------------- */

@@ -107,7 +107,7 @@
       </p>
     </div>
   </div>
-  
+          
   <!--  Contact-page form section  -->
   <section id="contact-page" class="container-fluid p-0">
     <div class="contact-page_wrap">
@@ -115,17 +115,17 @@
         <h3 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">Jan!</span></h3>
         <div class="contact-page_form-wrap">
           <form class="contact-page_form">
-            <div class="">
+            <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
-              <input type="name" class="form-control" id="contacter-name" placeholder="">
+              <input type="name" class="form-control custom-caret" id="contacter-name" placeholder="" required autofocus>              
             </div>
-            <div class="">
+            <div class="input-wrap">
               <label for="contacter-email" class="form-label h5">Emailadres</label>
-              <input type="email" class="form-control" id="contacter-email" placeholder="">
+              <input type="email" class="form-control custom-caret" id="contacter-email" placeholder="" required>              
             </div>
             
             <div class="contacter-service_wrap">
-              <label for="" class="h5">Waar mogen we je mee helpen?</label>
+              <label for="" class="h5 label-wrap">Waar mogen we je mee helpen?</label>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">Website</label>
@@ -145,7 +145,7 @@
             </div>
             
             <div class="contacter-service_wrap">
-              <label for="" class="h5">Extra services</label>
+              <label for="" class="h5 label-wrap">Extra services</label>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="">
                 <label class="form-check-label" for="flexCheckDefault">Productfotografie</label>
@@ -160,12 +160,12 @@
               </div>
             </div>
                         
-            <div class="">
+            <div class="input-wrap">
               <label for="contacter-mssg" class="form-label h5">Omschrijf hieronder je specifieke wensen</label>
-              <textarea class="form-control shadow-sm" id="contacter-mssg" rows="9" placeholder="Schrijf hier je bericht..."></textarea>
+              <textarea class="form-control p-custom-caret shadow-sm" id="contacter-mssg" rows="9" placeholder="Schrijf hier je bericht..." required></textarea>
             </div>
             <div class="text-center">
-              <a href="/" class="golden-btn btn liink-btn btn-lg">Verzenden</a>
+              <button type="submit" href="/contact-thankyou.html" class="golden-btn btn liink-btn btn-lg" value="">Verzenden</button>
             </div>
           </form>
         </div>
