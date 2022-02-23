@@ -132,6 +132,7 @@ p,
   }
   nav ul {
     list-style: none;
+/*     justify-content: space-evenly; */
   }
   nav ul li {
     margin-top: 0px;
@@ -180,7 +181,7 @@ p,
     color: rgba(236 176 0 / 0.7);
   }
   
-  /*  scroll progress line  */
+  /*------  scroll progress line  ------*/
   .scroll_progress{
     height: 4px;
     background: transparent;
