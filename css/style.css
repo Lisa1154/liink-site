@@ -378,19 +378,22 @@ p,
   /* --------- liink-icon spacer --------- */
   .liink_icon_spacer {
     display: grid;
-    grid-template: 6vh / 32% 36% 32%;
-    padding: 2em 0 4em;
+    grid-template: minmax(120px, 6vh) / 32% 36% 32%;
+    margin: 4em 0 3em;
   }
   .spacer_icon_wrap {
     grid-row: 1;
     grid-column: 2;
     display: grid;
-    grid-template: repeat(3, 33%) / 30% 35% 35%;
+    grid-template: min-content / 30% 35% 35%;
   }
   .spacer_icon {
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 2;
 /*     margin-left: -1vw; */
+  }
+  .liink_icon_spacer img {
+    opacity: 0.4;
   }
   
   
