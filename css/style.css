@@ -478,7 +478,7 @@ p,
     min-height: 80vh;
     grid-row: 2;
     grid-column: 1 / span 3;
-    background-image: url('./assets/wavy.svg');
+    background-image: url('../assets/wavy.svg');
     background-size: cover;
   }
   .why-unqspt {
@@ -792,7 +792,7 @@ p,
   .subpage-header-bg {
     grid-row: 1 / span 3;
     grid-column: 1 / -1;
-    background-image: url('./assets/blob-header_indigo.svg');    
+    background-image: url('../assets/blob-header_indigo.svg');    
     background-repeat: no-repeat;
     background-size: 120% auto;
 /*     background-position: 50%; */
@@ -827,7 +827,7 @@ p,
   .howwedo-img {
     grid-row: 2 / span 3;
     grid-column: 3 / -1;
-    background-image: url('https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/woman_code_bg.png?v=1645092916871');
+    background-image: url('../assets/woman_code_bg.png');
     background-repeat: no-repeat;
     background-size: 85% auto;
   }
@@ -846,7 +846,7 @@ p,
   .howwedo_liink-icon {
     grid-row: 2;
     grid-column: 3;
-    background-image: url('./assets/liink-icon_black.svg');
+    background-image: url('../assets/liink-icon_black.svg');
     background-repeat: no-repeat;
     background-size: contain;
 /*     margin: 0 0 3rem 0; */
@@ -916,7 +916,7 @@ p,
   .subpage_huge-icon_bg {
     grid-row: 2 / -1;
     grid-column: 1 / -1;
-    background-image: url('./assets/liink-icon_red-salsa.svg');
+    background-image: url('../assets/liink-icon_red-salsa.svg');
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -968,7 +968,7 @@ p,
   .package-checkmark-wrap {
   }
   /* .checkmark-image{
-    background-image: url(https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/check-lg.svg?v=1643110715068);
+    background-image: url('');
   } */
   .package-list-item {
     text-align: left;
