@@ -784,9 +784,9 @@ p,
   }  
   
   
-  /* ----------------------------------- */
-  /* --------- SUB page webdev --------- */
-  /* ----------------------------------- */
+  /* -------------------------------------------- */
+  /* --------- SUB page general styling --------- */
+  /* -------------------------------------------- */
   .subpage-header-bg-wrap {
 /*     min-height: 40vh; */
     display: grid;
@@ -822,7 +822,48 @@ p,
   .subpage-header p.tagline {
     grid-row: 2;
   }
+
+  /* --------- SUB page contact highlight --------- */
+  .subpage_ctct-highlight {
+    background-color: #F8F8F8;
+  }
+  .subpage_ctct-card {
+    border-radius: 0;
+    border: none;
+    padding: 2em;
+    margin: 4em 0 9em;
+  }
+  .subpage_ctct-icons-wrapper {
+    padding: 3em 0;
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr;
+    grid-row-gap: 2.4em;
+    border-top: 4px solid #ee5555;
+  }
+  .subpage_ctct_icon-wrap {
+    grid-column: 2;
+    text-align: center;
+  }
+  .subpage_ctct_icon-wrap img {
+    width: 75%;
+  }
+/*   .liink_phone-nmbr_subp,
+  .liink_email_subp {
+    text-decoration: none;
+    color: #050203;
+    transition: all 0.3s ease;
+  }
+  .liink_phone-nmbr_subp:hover,
+  .liink_email_subp:hover {
+    color: #050203;
+  } */
+  p.icon_subtitle {
+    margin: 0.4em 0 0 0;
+  }
   
+  /* ----------------------------------- */
+  /* --------- SUB page webdev --------- */
+  /* ----------------------------------- */
   .howwedo_wrap {
     display: grid;
     grid-template: 2rem 1rem 4rem repeat(2, min-content) 2rem / repeat(5, 1fr);
@@ -979,42 +1020,7 @@ p,
   }
   
   
-  .subpage_ctct-highlight {
-    background-color: #F8F8F8;
-  }
-  .subpage_ctct-card {
-    border-radius: 0;
-    border: none;
-    padding: 2em;
-    margin: 4em 0 9em;
-  }
-  .subpage_ctct-icons-wrapper {
-    padding: 3em 0;
-    display: grid;
-    grid-template-columns: 1fr 30% 1fr;
-    grid-row-gap: 2.4em;
-    border-top: 4px solid #ee5555;
-  }
-  .subpage_ctct_icon-wrap {
-    grid-column: 2;
-    text-align: center;
-  }
-  .subpage_ctct_icon-wrap img {
-    width: 75%;
-  }
-/*   .liink_phone-nmbr_subp,
-  .liink_email_subp {
-    text-decoration: none;
-    color: #050203;
-    transition: all 0.3s ease;
-  }
-  .liink_phone-nmbr_subp:hover,
-  .liink_email_subp:hover {
-    color: #050203;
-  } */
-  p.icon_subtitle {
-    margin: 0.4em 0 0 0;
-  }
+  
 }
 
 
