@@ -74,15 +74,95 @@ p,
   font-size: 16px;
 }
 
+.liink-btn {
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+/*   letter-spacing: 0.1rem; */
+}
+.liink-btn a {
+  max-width: 14rem;
+  border-radius: 0;
+  padding: 0.7em 0.7em;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out,
+              background-color 0.4s ease-in-out,
+              border-color 0.4s ease-in-out,
+              box-shadow 0.4s ease-in-out;
+}
+
+/*------ liink button Color variations ------*/
+
+/* lemon */
+.liink-btn_lemon a {
+  border: 4px solid #fff719;
+  color: #fff719;
+}
+.liink-btn_lemon a:hover {
+  border-color: #fff719;
+  background-color: #fff719;
+  color: rgba(102,0,255, 0.8);
+}
+
+/* golden rod */
+.liink-btn_goldenrod a {
+  border: 4px solid #ecb000;
+  color: #ecb000;
+}
+.liink-btn_goldenrod a:hover {
+  border-color: #ecb000;
+  background-color: #ecb000;
+  color: rgba(255,255,255, 1);
+}
+
+/* indigo */
+.liink-btn_indigo a {
+  border: 4px solid #6600ff;
+  color: #6600ff;
+}
+.liink-btn_indigo a:hover {
+  border-color: #6600ff;
+  background-color: #6600ff;
+  color: rgba(255,247,25, 1);
+}
+
+/* red salsa */
+.liink-btn_redsalsa a {
+  border: 4px solid #ee5555;
+  color: #ee5555;
+}
+.liink-btn_redsalsa a:hover {
+  border-color: #ee5555;
+  background-color: #ee5555;
+  color: rgba(255,255,255, 1);
+}
+
+/* deep black */
+.liink-btn_deepblack a {
+  border: 4px solid #050203;
+  color: #050203;
+}
+.liink-btn_deepblack a:hover {
+  border-color: #050203;
+  background-color: #050203;
+  color: rgba(255,255,255, 1);
+}
+
+
 /* -------------------------------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 /* -------------------------------------------------------------------------------- */
 @media (min-width: 20rem) {  
-  /* --------- Splash screen --------- */
-  .liink-btn {
-    min-width: 12rem;
-  }
+  /* --------- Splash screen --------- */  
   .splash {
     position: fixed;
     z-index: 250;
