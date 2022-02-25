@@ -98,7 +98,7 @@ window.addEventListener("DOMContentLoaded", () => {
     nav.classList.remove("bg-white", "navbar-light");
     nav.classList.add("navbar-dark");
     logo.src =
-      "../assets/icoon_LIINK-wit.webp";
+      "./assets/icoon_LIINK-wit.webp";
   }
 
   if (window.innerWidth > 992) {
