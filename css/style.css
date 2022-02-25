@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@charset "UTF-8";
+@charset "utf-8";
 
 /* Body */
 body {
@@ -609,9 +609,7 @@ p,
     } */
     border-bottom: 4px solid #fff719;
   }
-  .contact-chunk_area .btn {
-    
-  }
+  
   
   /* --------- Footer section --------- */
   footer {
@@ -989,8 +987,7 @@ p,
     grid-template: 4fr / min-content 1fr;
     padding: 0 0.7em 1.2em;
   }
-  .package-checkmark-wrap {
-  }
+  
   /* .checkmark-image{
     background-image: url('');
   } */
@@ -1069,9 +1066,6 @@ p,
   /* --------- Navigation --------- */
   .navlogo {
     width: 20%;
-  }  
-  nav ul li {
-/*     margin-right: 24px; */
   }
   
   /* --------- Header/Hero --------- */
@@ -1102,10 +1096,6 @@ p,
     grid-row: 3 / span 2;
     grid-column-start: 6;
     grid-column-end: span 5;
-  }
-  .laughing-us {
-/*     width:; */
-/*     bottom: -120px; */
   }
 
   /* --------- Service section --------- */
@@ -1216,12 +1206,6 @@ p,
     padding-bottom: 9vh;
     grid-template-columns: 1fr 170px 170px 1fr;
     gap: 3rem;
-  }
-  .pricing-catg1,
-  .pricing-catg2,
-  .pricing-catg3,
-  .pricing-catg4 {
-    
   }
   .pricing-list-wrap {
     display: grid;
