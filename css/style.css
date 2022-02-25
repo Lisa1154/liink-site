@@ -1,10 +1,10 @@
-/* Basic page style resets */
+@charset "utf-8";
 
+/* Basic page style resets */
 * {
   box-sizing: border-box;
 }
 
-@charset "utf-8";
 
 /* Body */
 body {
@@ -86,7 +86,7 @@ p,
 .liink-btn a {
   max-width: 14rem;
   border-radius: 0;
-  padding: 0.7em 0.7em;
+  padding: 0.6em 0.7em 0.5em;
   background: transparent;
   text-decoration: none;
   text-transform: uppercase;
