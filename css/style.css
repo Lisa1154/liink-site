@@ -79,9 +79,9 @@ p,
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-/*   letter-spacing: 0.1rem; */
+  letter-spacing: 0.1rem;
 }
 .liink-btn a {
   max-width: 14rem;
