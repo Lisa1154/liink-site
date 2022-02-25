@@ -92,13 +92,13 @@ window.addEventListener("DOMContentLoaded", () => {
     nav.classList.add("bg-white", "navbar-light");
     nav.classList.remove("navbar-dark", "shadow");
     logo.src =
-      "https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/logo_LIINK.png?v=1643813514737";
+      "./assets/logo_LIINK.webp";
   }
   function setMenuDark() {
     nav.classList.remove("bg-white", "navbar-light");
     nav.classList.add("navbar-dark");
     logo.src =
-      "https://cdn.glitch.global/e712696b-e143-452d-a9a6-169e01e61598/icoon_LIINK-wit.png?v=1643813514667";
+      "../assets/icoon_LIINK-wit.webp";
   }
 
   if (window.innerWidth > 992) {
