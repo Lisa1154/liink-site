@@ -126,6 +126,7 @@
       <div class="contact-page_inner-wrap shadow-lg">
         <h6 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">{{ contacterName }}!</span></h6>
         <div class="contact-page_form-wrap">
+          <!-- TODO: recaptcha!!  -->
           <form class="contact-page_form" action="./contact-thankyou.html" @submit.prevent="sendMail">
             <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
@@ -228,7 +229,7 @@
               {
                 "name":document.getElementById('contacter-name').value,
                 "email":document.getElementById('contacter-email').value,
-                "message":"test test test"
+                "message":document.getElementById('contacter-mssg').value
               });
             let requestOptions = {
               method: 'POST',
@@ -239,10 +240,13 @@
 
             fetch("https://us-central1-liink-site.cloudfunctions.net/sendMail", requestOptions)
               .then(response => response.text())
-              .then(result => console.log(result))
+              .then(result => { 
+                console.log(result);
+                window.location.href = './contact-thankyou.html';
+              })
               .catch(error => console.log('error', error));
               
-            //  window.location.href = './contact-thankyou.html'
+             
               // html => sendMailEl.submit()
           }
       }
