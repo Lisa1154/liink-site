@@ -421,16 +421,7 @@ p,
 /*     margin: 0 auto; */
   /*   border-left: 6px solid #6600FF; */
   }
-  .service-wrap .card-title {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    color: #050203;
-  }
-  .service-wrap .card-body {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    color: #050203;
-  }
+
   
   /* --------- liink-icon spacer --------- */
   .liink_icon_spacer {
@@ -455,10 +446,7 @@ p,
   
   
   /* --------- Folio section --------- */
-  /* .folio {
-    min-height: 100vh;
-    padding: 9vh 0 6vh;
-  } */
+  
   
   /* --------- About Section --------- */
   .about-wrap {
@@ -500,7 +488,6 @@ p,
   }
   .method-wrap p {
     padding: 0.6em 1.2em 2em;
-    text-align: justify;
   }
 
   .why-us {
@@ -1003,6 +990,38 @@ p,
     text-align: center;
   }
   
+  /* ------------------------------------- */
+  /* --------- SUB page graphicD --------- */
+  /* ------------------------------------- */
+  .logo_package,
+  .branding_package {
+    margin: 2em 1.2em;
+  }
+  /* .logo_package .package-card-title,
+  .branding_package .package-card-title {
+    padding: 0;
+  } */
+  .logo_package .h4,
+  .branding_package .h4 {
+    text-align: center;
+  }
+  /* .logo_package .underbar,
+  .branding_package .underbar {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .logo_package .underbar::after,
+  .branding_package .underbar::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    height: 4px;
+    width: 100%;
+    left: 0%;
+    background-color: rgba(238, 85, 85, 0.9);
+  } */
+
   
 }
 
