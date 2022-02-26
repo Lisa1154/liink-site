@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+/* liink color pallette */
+:root {
+  --liink_indigo: #6600ff;
+  --liink_lemon:#fff719;
+  --liink_goldenrod: #ecb000;
+  --liink_redsalsa: #ee5555;
+  --liink_deepblack: #050203;
+  --liink_spacegrey: #333333;
+  --liink_greywhite: #f8f8f8;
+  --liink_white: #ffffff;
+}
 
 /* Body */
 body {
