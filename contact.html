@@ -16,9 +16,22 @@
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   </style>
+  <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
   <!-- Navigation -->
+  <div class="container-fluid p-0" id="js-scroll-container">
+    <div class="splash">
+      <span class="splash-header">
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FIcon_LIINK_DEF.png?v=1639054889678"/>
+        </span>
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FLIINK_DEF_crop.png?v=1639169260632"/>
+        </span>
+      </span>
+  </div>
+
   <nav class="my-nav nav navbar navbar-expand-md fixed-top navbar-light" style="z-index: 240;">
     <div class="container">
       <!-- Navbar brand -->
@@ -110,18 +123,18 @@
           
   <!--  Contact-page form section  -->
   <section id="contact-page" class="container-fluid p-0">
-    <div class="contact-page_wrap">
+    <div class="contact-page_wrap" id="app">
       <div class="contact-page_inner-wrap shadow-lg">
-        <h3 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">Jan!</span></h3>
+        <h3 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">{{ contacterName }}!</span></h3>
         <div class="contact-page_form-wrap">
-          <form class="contact-page_form">
+          <form class="contact-page_form" action="./contact-thankyou.html" @submit.prevent="sendMail">
             <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
-              <input type="name" class="form-control custom-caret" id="contacter-name" placeholder="" required autofocus>              
+              <input type="name" class="form-control custom-caret" id="contacter-name" @keyup="this.$data.contacterName = $event.target.value" :value="contacterName" required autofocus>              
             </div>
             <div class="input-wrap">
               <label for="contacter-email" class="form-label h5">Emailadres</label>
-              <input type="email" class="form-control custom-caret" id="contacter-email" placeholder="" required>              
+              <input type="email" class="form-control custom-caret" id="contacter-email" :value="contacterEmail" placeholder="" required>              
             </div>
             
             <div class="contacter-service_wrap">
@@ -165,12 +178,7 @@
               <textarea class="form-control p-custom-caret shadow-sm" id="contacter-mssg" rows="9" placeholder="Schrijf hier je bericht..." required></textarea>
             </div>
             <div class="liink-btn liink-btn_goldenrod">
-              <a class=""
-                type="submit"
-                href="./contact-thankyou.html"
-                role="button"
-                rel="nofollow"
-                target="">Verzenden</a>
+              <button type="submit">Verzenden</button>
             </div>
           </form>
         </div>
@@ -198,6 +206,41 @@
   
   <!--------- Custom JavaScript --------->
   <script src="./js/script.js"></script>
+  <script>
+
+    Vue.createApp({
+
+    data() {
+      return {
+        contacterName: this.getParam('name'),
+        contacterEmail: this.getParam('email')
+      }
+    },
+    methods: {
+          getParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+          },
+          sendMail() {
+            const url = 'https://us-central1-liink-site.cloudfunctions.net/sendMail';
+
+            fetch(url, {
+                method : "POST",
+                body : JSON.stringify({
+                    name: document.getElementById('contacter-name').value,
+                    email: document.getElementById('contacter-email').value,
+                    message: "test testt test"
+                })
+            }).then(
+                response => console.log(response.text())
+            ).then(
+              window.location.href = './contact-thankyou.html'
+              // html => sendMailEl.submit()
+            );
+          }
+      }
+  }).mount('#app')
+  </script>
   
 </body>
 </html>
