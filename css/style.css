@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+/* liink color palette */
+:root {
+  --liink_indigo: #6600ff;
+  --liink_lemon:#fff719;
+  --liink_goldenrod: #ecb000;
+  --liink_redsalsa: #ee5555;
+  --liink_deepblack: #050203;
+  --liink_spacegrey: #333333;
+  --liink_greywhite: #f8f8f8;
+  --liink_white: #ffffff;
+}
 
 /* Body */
 body {
@@ -15,7 +26,7 @@ body {
   margin-left: 0px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #050203;
 }
 
@@ -29,7 +40,7 @@ p {
 }
 p,
 .b1 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .b2 {
   font-size: 1rem;
@@ -40,14 +51,17 @@ p,
 
 .h1,
 .h2,
-.h3,
+.h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  color: #6600ff;
+}
 .h4,
 .h5,
 .h6 {
-  font-family: 'Roboto Slab', serif;
-/*   font-family: "Ubuntu", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  color: #333333;
+  color: #050203;
 }
 .h1 {
   font-size: 60px;
@@ -68,7 +82,7 @@ p,
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 1.25rem;
-  color: #333333;
+  color: #050203;
 }
 .h6 {
   font-size: 16px;
@@ -351,11 +365,7 @@ p,
     min-height: 90vh;
     padding: 9vh 0;
   }
-  .services h2 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    color: #333333;
-  }
+
   .services-grid {
     padding: 3vh 0;
     display: grid;
@@ -383,7 +393,7 @@ p,
     left: 0%;
     background-color: rgba(238, 85, 85, 0.9);
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
   line-height: 0.9;
   }
   .services-grid-item1 {
@@ -411,16 +421,7 @@ p,
 /*     margin: 0 auto; */
   /*   border-left: 6px solid #6600FF; */
   }
-  .service-wrap .card-title {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    color: #050203;
-  }
-  .service-wrap .card-body {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    color: #050203;
-  }
+
   
   /* --------- liink-icon spacer --------- */
   .liink_icon_spacer {
@@ -445,10 +446,7 @@ p,
   
   
   /* --------- Folio section --------- */
-  /* .folio {
-    min-height: 100vh;
-    padding: 9vh 0 6vh;
-  } */
+  
   
   /* --------- About Section --------- */
   .about-wrap {
@@ -482,6 +480,16 @@ p,
     padding: 1em 0 0;
   }    
   
+  .method-wrap .h3 {
+    margin: 0.7em;
+  }
+  .method-wrap .h4 {
+    padding: 1em 1.2em 0em;
+  }
+  .method-wrap p {
+    padding: 0.6em 1.2em 2em;
+  }
+
   .why-us {
     /*   adjust simultaneously with min-height of reasons-wrap!?   */
     min-height: 80vh; 
@@ -507,7 +515,6 @@ p,
     margin: 4em 0 0;
   }
   .unqspt {
-    color: #ee5555;
     text-decoration: none;
   }  
   .unqspt1 {
@@ -983,6 +990,38 @@ p,
     text-align: center;
   }
   
+  /* ------------------------------------- */
+  /* --------- SUB page graphicD --------- */
+  /* ------------------------------------- */
+  .logo_package,
+  .branding_package {
+    margin: 2em 1.2em;
+  }
+  /* .logo_package .package-card-title,
+  .branding_package .package-card-title {
+    padding: 0;
+  } */
+  .logo_package .h4,
+  .branding_package .h4 {
+    text-align: center;
+  }
+  /* .logo_package .underbar,
+  .branding_package .underbar {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1.2rem;
+  }
+  .logo_package .underbar::after,
+  .branding_package .underbar::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    height: 4px;
+    width: 100%;
+    left: 0%;
+    background-color: rgba(238, 85, 85, 0.9);
+  } */
+
   
 }
 
@@ -1096,7 +1135,7 @@ p,
     grid-column: 3 / span 7;
     margin: 0 0 6vh;
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
     line-height: 0.5;
   }
   .services-grid-item1 {
@@ -1151,7 +1190,7 @@ p,
     grid-row: 1;
     grid-column: 3 / span 5;
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
     line-height: 0.5;
   }
   .why-unqspt-wrap {
@@ -1182,23 +1221,6 @@ p,
     grid-column: -2 / -1;
   }
   
-  
-  /* --------- Pricing info section --------- */
-  .pricing-cats {
-    padding-top: 6vh;
-    padding-bottom: 9vh;
-    grid-template-columns: 1fr 170px 170px 1fr;
-    gap: 3rem;
-  }
-  .pricing-list-wrap {
-    display: grid;
-    grid-template: 4fr / 3rem 1fr;
-    padding: 2rem;
-  }
-  .catg-wrap .h5 {
-    position: absolute;
-    z-index: 3;
-  }
 
   /* --------- Contact section --------- */
   .contact-head {
