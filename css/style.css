@@ -97,7 +97,8 @@ p,
   line-height: 1.5;
   letter-spacing: 0.1rem;
 }
-.liink-btn a {
+.liink-btn a,
+.liink-btn button {
   max-width: 14rem;
   border-radius: 0;
   padding: 0.6em 0.7em 0.5em;
@@ -117,55 +118,65 @@ p,
 /*------ liink button Color variations ------*/
 
 /* lemon */
-.liink-btn_lemon a {
+.liink-btn_lemon a,
+.liink-btn_lemon button {
   border: 4px solid #fff719;
   color: #fff719;
 }
-.liink-btn_lemon a:hover {
+.liink-btn_lemon a:hover
+.liink-btn_lemon button:hover {
   border-color: #fff719;
   background-color: #fff719;
   color: rgba(102,0,255, 0.8);
 }
 
 /* golden rod */
-.liink-btn_goldenrod a {
+.liink-btn_goldenrod a,
+.liink-btn_goldenrod button {
   border: 4px solid #ecb000;
   color: #ecb000;
 }
-.liink-btn_goldenrod a:hover {
+.liink-btn_goldenrod a:hover
+.liink-btn_goldenrod button:hover {
   border-color: #ecb000;
   background-color: #ecb000;
   color: rgba(255,255,255, 1);
 }
 
 /* indigo */
-.liink-btn_indigo a {
+.liink-btn_indigo a,
+.liink-btn_indigo button {
   border: 4px solid #6600ff;
   color: #6600ff;
 }
-.liink-btn_indigo a:hover {
+.liink-btn_indigo a:hover
+.liink-btn_indigo button:hover {
   border-color: #6600ff;
   background-color: #6600ff;
   color: rgba(255,247,25, 1);
 }
 
 /* red salsa */
-.liink-btn_redsalsa a {
+.liink-btn_redsalsa a,
+.liink-btn_redsalsa button {
   border: 4px solid #ee5555;
   color: #ee5555;
 }
-.liink-btn_redsalsa a:hover {
+.liink-btn_redsalsa a:hover
+.liink-btn_redsalsa button:hover {
   border-color: #ee5555;
   background-color: #ee5555;
   color: rgba(255,255,255, 1);
 }
 
 /* deep black */
-.liink-btn_deepblack a {
+.liink-btn_deepblack a,
+.liink-btn_deepblack button {
   border: 4px solid #050203;
   color: #050203;
 }
-.liink-btn_deepblack a:hover {
+.liink-btn_deepblack a:hover
+.liink-btn_deepblack button:hover {
   border-color: #050203;
   background-color: #050203;
   color: rgba(255,255,255, 1);
