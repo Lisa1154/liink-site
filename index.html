@@ -357,21 +357,19 @@
           <div class="container">
             <div class="row justify-content-end">
               <div class="col-xs-12 col-10">
-                <form class="contact-chunk_form">
+                <form id="pre-contact-form" class="contact-chunk_form" action="./contact.html" method="get">
                   <div class="input-group mb-4">
                     <span class="input-group-text"><i class="input-icon bi bi-person"></i></span>
-                    <input class="form-control" type="text" id="name" required="" placeholder="Hoe noemen we je?">
+                    <input class="form-control" type="text" name="name" required placeholder="Hoe noemen we je?">
                   </div>
                   <div class="input-group mb-4">
                     <span class="input-group-text"><i class="input-icon bi bi-at"></i></span>
-                    <input class="form-control" type="email" id="email" required="" placeholder="En je e-mailadres?">
+                    <input class="form-control" type="email" name="email" required placeholder="En je e-mailadres?">
                   </div>
                   <div class="justify-content-end liink-btn liink-btn_indigo">
-                    <a class=""
-                    href="./contact.html"
-                    role="button"
-                    rel="nofollow"
-                    target=""><i class="bi bi-arrow-right"></i></a>
+                    <button class=""
+                    type="submit"
+                  ><i class="bi bi-arrow-right"></i></button>
                   </div>
                 </form>
               </div>
