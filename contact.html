@@ -240,10 +240,13 @@
 
             fetch("https://us-central1-liink-site.cloudfunctions.net/sendMail", requestOptions)
               .then(response => response.text())
-              .then(result => console.log(result))
+              .then(result => { 
+                console.log(result);
+                window.location.href = './contact-thankyou.html';
+              })
               .catch(error => console.log('error', error));
               
-              window.location.href = './contact-thankyou.html'
+             
               // html => sendMailEl.submit()
           }
       }
