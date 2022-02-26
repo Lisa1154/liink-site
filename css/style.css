@@ -487,7 +487,10 @@ p,
     padding: 1em 1.2em 0em;
   }
   .method-wrap p {
-    padding: 0.6em 1.2em 2em;
+    padding: 0.6em 1.2em 1.6em;
+  }
+  .method-wrap p:last-of-type {
+    padding-bottom: 6em;
   }
 
   .why-us {
@@ -977,8 +980,7 @@ p,
     display: grid;
     grid-template: 4fr / min-content 1fr;
     padding: 0 0.7em 1.2em;
-  }
-  
+  }  
   /* .checkmark-image{
     background-image: url('');
   } */
@@ -989,7 +991,22 @@ p,
   .package_a_wrap {
     text-align: center;
   }
-  
+
+  .package_other {
+    margin: 6em 0;
+  }
+  .package_other img {
+    width: 44%;
+    margin: 1em 0;
+  }
+  .package_other .liink-btn {
+    margin-top: 2.4em;
+  }
+  .loose_div {
+    margin: -9% 0 3em;
+  }
+
+
   /* ------------------------------------- */
   /* --------- SUB page graphicD --------- */
   /* ------------------------------------- */
@@ -1001,26 +1018,10 @@ p,
   .branding_package .package-card-title {
     padding: 0;
   } */
-  .logo_package .h4,
-  .branding_package .h4 {
+  .logo_package .card-body,
+  .branding_package .card-body {
     text-align: center;
   }
-  /* .logo_package .underbar,
-  .branding_package .underbar {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 1.2rem;
-  }
-  .logo_package .underbar::after,
-  .branding_package .underbar::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    height: 4px;
-    width: 100%;
-    left: 0%;
-    background-color: rgba(238, 85, 85, 0.9);
-  } */
 
   
 }
