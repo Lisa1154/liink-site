@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* liink color pallette */
+/* liink color palette */
 :root {
   --liink_indigo: #6600ff;
   --liink_lemon:#fff719;
@@ -362,11 +362,7 @@ p,
     min-height: 90vh;
     padding: 9vh 0;
   }
-  .services h2 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    color: #333333;
-  }
+
   .services-grid {
     padding: 3vh 0;
     display: grid;
@@ -394,7 +390,7 @@ p,
     left: 0%;
     background-color: rgba(238, 85, 85, 0.9);
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
   line-height: 0.9;
   }
   .services-grid-item1 {
@@ -1107,7 +1103,7 @@ p,
     grid-column: 3 / span 7;
     margin: 0 0 6vh;
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
     line-height: 0.5;
   }
   .services-grid-item1 {
@@ -1162,7 +1158,7 @@ p,
     grid-row: 1;
     grid-column: 3 / span 5;
   }
-  .headings-combi .h2 {
+  .headings-combi .h3 {
     line-height: 0.5;
   }
   .why-unqspt-wrap {
@@ -1193,23 +1189,6 @@ p,
     grid-column: -2 / -1;
   }
   
-  
-  /* --------- Pricing info section --------- */
-  .pricing-cats {
-    padding-top: 6vh;
-    padding-bottom: 9vh;
-    grid-template-columns: 1fr 170px 170px 1fr;
-    gap: 3rem;
-  }
-  .pricing-list-wrap {
-    display: grid;
-    grid-template: 4fr / 3rem 1fr;
-    padding: 2rem;
-  }
-  .catg-wrap .h5 {
-    position: absolute;
-    z-index: 3;
-  }
 
   /* --------- Contact section --------- */
   .contact-head {
