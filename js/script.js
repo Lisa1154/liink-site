@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
   Object.keys(window).forEach((key) => {
     if (/^onclick/.test(key)) {
       window.addEventListener(key.slice(2), (event) => {
-        collapseMenu();
+        collapseMenu(event);
       });
     }
   });
@@ -60,13 +60,11 @@ window.addEventListener("DOMContentLoaded", () => {
     setMenu();
   });
 
-  document.body.onscroll = collapseMenu;
-
-  function collapseMenu(e) {
+  function collapseMenu(event) {
     let checkIfNavbarItem = async function () {
       let navbarItem = false;
-
-      for (path of event.path) {
+      var path = event.path || (event.composedPath && event.composedPath());
+      for (path of path) {
         if (path.className && path.className.includes("navbar")) {
           navbarItem = true;
         }
@@ -130,13 +128,14 @@ window.addEventListener("DOMContentLoaded", () => {
    const highlight = document.getElementById('js-scroll-highlight');
    let containerHeight;
 
-   window.onscroll = function(){
-     containerHeight = container.offsetHeight - window.innerHeight;
-     let containerPos = container.getBoundingClientRect();
-     let diff = containerHeight + containerPos.top;
-     let progressPercentage = diff / containerHeight * 100;
-     let cssWidth = Math.floor(100 - progressPercentage);
-     highlight.style.width = cssWidth + "%";
+   window.onscroll = function(e){
+      collapseMenu(e);
+      containerHeight = container.offsetHeight - window.innerHeight;
+      let containerPos = container.getBoundingClientRect();
+      let diff = containerHeight + containerPos.top;
+      let progressPercentage = diff / containerHeight * 100;
+      let cssWidth = Math.floor(100 - progressPercentage);
+      highlight.style.width = cssWidth + "%";
    }
 });
 
