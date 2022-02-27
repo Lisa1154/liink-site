@@ -634,55 +634,68 @@ p,
   
   
   /* --------- Footer section --------- */
-  footer {
+  .footer-wrap {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 6em 0 4em;
+    font-weight: 500;
     font-size: 1rem;
+    color: #050203;
   /*     background: linear-gradient(-65deg, #62c27b, #f04a12 );
       background-size: 400% 400%;
       animation:  10s ease infinite; */
   }
-  /* .footer-nav-group {
-      border-right: 2px solid #ffffff;
-  } */
+  .footer-group_wrap {
+    margin: 0;
+  }
   footer ul {
     list-style: none;
+    padding-left: 0;
+    margin: 1em 0;
+  }
+  img.footer-logo {
+    width: 90%;
+    height: 90%;
+  }
+  footer li {
+    padding: 0.4em 0;
   }
   footer ul li a {
     text-decoration: none;
-    color: #999999 !important;
+    color: #050203 !important;
+    transition: all 0.3s ease;
   }
   footer ul li a:hover {
     color: #6600ff !important;
   }
-  footer i {
-    font-size: 1.3rem;
+  /* .footer_socials-wrap {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+  .footer_social {
+    display: inline-block;
+    padding: 0 1.1em;
   }
-  img.footer-logo {
-    width: 24%;
-    height: 24%;
+  footer i {
+    font-size: 1.6rem;
+  }
+  .footer-group4 {
+    margin-top: 2.4em;
+  }
+  .footer-group4 li {
+    padding: 0.1em 0;
   }
   .carbonbadge {
   /*   font-size: 0.6rem; */
-    color: #999999 !important;
+    color: #f8f8f8 !important;
   }
   .copyright {
-    border-top: 1px solid #DDDDDD;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
     text-align: center;
-  /*   background-color: #ffffff; */
-    color: #999999;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 1px;
-  }
-  .liink_phone-nmbr,
-  .liink_email {
-    text-decoration: none;
-    color: rgba(238, 85, 85, 0.6);
-    transition: all 0.3s ease;
-  }
-  .liink_phone-nmbr:hover,
-  .liink_email:hover {
-    color: #050203;
   }
   
   
