@@ -34,7 +34,7 @@
   <nav class="my-nav nav navbar navbar-expand-md fixed-top navbar-light" style="z-index: 240;">
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand navlogo" href="./index.html">
+      <a class="navbar-brand navlogo" href="/">
         <img class="d-inline-block" id="js-imgsrc" src="./assets/icoon_LIINK-wit.webp" width="60%" height="60%" alt="logo"/>
       </a>
       <!-- toggle button for mobile nav -->
@@ -56,18 +56,18 @@
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./webdev.html">Webdevelopment</a></li>
-              <li><a class="dropdown-item" href="./graphicdesign.html">Grafisch Ontwerp</a></li>
+              <li><a class="dropdown-item" href="./webdev">Webdevelopment</a></li>
+              <li><a class="dropdown-item" href="./graphicdesign">Grafisch Ontwerp</a></li>
             </ul>
           </li>
 <!--           <li class="nav-item">
-            <a class="nav-link" href="/index.html#portfolio" target="">Portfolio</a>
+            <a class="nav-link" href="/index#portfolio" target="">Portfolio</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#about" target="">Over Ons</a>
+            <a class="nav-link" href="/#about" target="">Over Ons</a>
           </li>            
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#contact-chunk" target="">Contact</a>
+            <a class="nav-link" href="/#contact-chunk" target="">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav">
@@ -127,7 +127,7 @@
         <h6 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">{{ contacterName }}</span>!</h6>
         <div class="contact-page_form-wrap">
           <!-- TODO: recaptcha!!  -->
-          <form class="contact-page_form" action="./contact-thankyou.html" @submit.prevent="sendMail">
+          <form class="contact-page_form" action="./contact-thankyou" @submit.prevent="sendMail">
             <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
               <input type="name" class="form-control custom-caret" id="contacter-name" @keyup="this.$data.contacterName = $event.target.value" :value="contacterName" required autofocus>              
@@ -225,7 +225,7 @@
         <div class="footer-group_wrap col-md-4">
           <ul class="footer-group1 text-center">
             <li class="footer-logo">
-              <a class="" href="./index.html">
+              <a class="" href="/">
                 <img class="" src="./assets/logo_LIINK.webp" alt="LIINK. logo" />
               </a>
             </li>              
@@ -273,27 +273,27 @@
         <div class="footer-group_wrap col-md-4">
           <ul class="footer-group3 text-center">
             <li>
-              <a class="" href="./index.html" target="">Home</a>
+              <a class="" href="/" target="">Home</a>
             </li>
             <li>
-              <a class="" href="./index.html/#services" target="">Onze services</a>
+              <a class="" href="/#services" target="">Onze services</a>
             </li>
             <li>
-              <a class="" href="./index.html/#about" target="">Over ons</a>
+              <a class="" href="/#about" target="">Over ons</a>
             </li>
             <li>
-              <a class="" href="./index.html#contact-chunk" target="">Contact</a>
+              <a class="" href="/#contact-chunk" target="">Contact</a>
             </li>
           </ul>
           <ul class="footer-group4 text-center">          
             <li>
-              <a class="" href="./terms.html" target="">Algemene Voorwaarden</a>
+              <a class="" href="./terms" target="">Algemene Voorwaarden</a>
             </li>
             <li>
-              <a class="" href="./privacy.html" target="">Privacyverklaring</a>
+              <a class="" href="./privacy" target="">Privacyverklaring</a>
             </li>
             <li>
-              <a class="" href="./cookies.html" target="">Cookieverklaring</a>
+              <a class="" href="./cookies" target="">Cookieverklaring</a>
             </li>
           </ul>
           <div id="wcb" class="carbonbadge"></div>
@@ -351,7 +351,7 @@
               .then(response => response.text())
               .then(result => { 
                 console.log(result);
-                window.location.href = './contact-thankyou.html';
+                window.location.href = './contact-thankyou';
               })
               .catch(error => console.log('error', error));
               
