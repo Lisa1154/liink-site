@@ -1116,6 +1116,9 @@ p,
   .navlogo {
     width: 20%;
   }
+  .dropdown-menu {
+    border-radius: 0;
+  }
   
   /* --------- Header/Hero --------- */
   .hero {
@@ -1353,7 +1356,7 @@ p,
   /* --------- SUB page webdev --------- */
   /* ----------------------------------- */
   .intro-bit {
-    padding: 30vh 0 3vh;
+    padding: 16vh 0 3vh;
   }
 
   .howwedo_wrap {
