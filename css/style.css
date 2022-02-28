@@ -877,6 +877,9 @@ p,
   /* ----------------------------------- */
   /* --------- SUB page webdev --------- */
   /* ----------------------------------- */
+  .intro-bit {
+    padding: 0 2em;
+  }
   .howwedo_wrap {
     display: grid;
     grid-template: 2rem 1rem 4rem repeat(2, min-content) 2rem / repeat(5, 1fr);
@@ -1342,7 +1345,7 @@ p,
   /* --------- SUB page webdev --------- */
   /* ----------------------------------- */
   .intro-bit {
-    padding: 30vh 2vw 3vh;
+    padding: 30vh 0 3vh;
   }
 
   .howwedo_wrap {
@@ -1470,6 +1473,33 @@ p,
   .package_other .liink-btn {
     margin-top: 2.4em;
   }
+
+
+  /* ------------------------------------- */
+  /* --------- SUB page graphicD --------- */
+  /* ------------------------------------- */
+  .packages_graphicd_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo_package,
+  .branding_package {
+    width: 30%;
+    margin: 2em 1.2em;
+  }
+  /* .logo_package .package-card-title,
+  .branding_package .package-card-title {
+    padding: 0;
+  } */
+  .logo_package .card-body,
+  .branding_package .card-body {
+    text-align: center;
+  }
+  .liink_icon_spacer:first-of-type {
+    display: none;
+  }
+
   
    /* --------- SUB page contact highlight --------- */
   .subpage_ctct-card {
@@ -1500,16 +1530,6 @@ p,
   .subpage_ctct_icon-wrap img {
     width: 36%;
   }
-/*   .liink_phone-nmbr_subp,
-  .liink_email_subp {
-    text-decoration: none;
-    color: #050203;
-    transition: all 0.3s ease;
-  }
-  .liink_phone-nmbr_subp:hover,
-  .liink_email_subp:hover {
-    color: #050203;
-  } */
   p.icon_subtitle {
     margin: 1em 0 0 0;
   }
