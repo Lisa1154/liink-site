@@ -155,6 +155,48 @@
 
 
 
+<!-- KEEP Css for subpages headers on dekstop -->
+.subpage-header-bg-wrap {
+   height: 30%;
+   display: grid;
+   grid-template: 9em min-content 12vh / repeat(10, 10%);
+ }
+ .subpage-header-bg {
+   grid-row: 1 / span 3;
+   grid-column: 2 / -1;
+   background-image: url('../assets/blob-header_indigo.svg');    
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   background-position: 50% 0%;
+   margin: 0 0 0 -10vw;
+ }
+ .subpage-header-bg-img {
+   grid-row: 1 / span 3;
+   grid-column: 2 / -1;    
+   background-repeat: no-repeat;
+   background-size: 90% auto;
+   background-position: 50% 0%;
+   margin: 0vh 0vw 0 -10vw;
+ }
+ .subpage-header {
+   grid-row: 2 / span 1;
+   grid-column: 3 / -1;
+   display: grid;
+   grid-template: repeat(2, min-content) / min-content;
+ }
+ .subpage-header p.huge-type {
+   /* grid-row: 1; */
+   font-size: 4rem;
+ }
+ .subpage-header p.tagline {
+   /* grid-row: 2; */
+   font-size: 2rem;
+ }
+
+
+
+
+
   
   <!--------- Custom JavaScript --------->
   <script src="./js/script.js"></script>
