@@ -1203,7 +1203,7 @@ p,
 
   .why-us {
     display: grid;
-    grid-template: 2fr  / 1fr 5fr 1fr;
+    grid-template: 2fr  / 1fr max-content 1fr;
     padding: 3vh 0 0;
   }
   .why-headings {
@@ -1475,7 +1475,7 @@ p,
   }
   .package_other {
     display: grid;
-    grid-template: 1fr / 1fr 5fr 1fr;
+    grid-template: 1fr / 1fr max-content 1fr;
     margin: 6em 0;
     /* display: flex;
     justify-content: center; */
