@@ -1403,7 +1403,6 @@ p,
     grid-column: 5;
   }
 
-
   .packages_webdev_wrap {
     display: grid;
     grid-template: min-content / 1fr;
@@ -1465,6 +1464,8 @@ p,
   }
   .package_other {
     margin: 6em 0;
+    display: flex;
+    justify-content: center;
   }
   .package_other img {
     width: 12vw;
@@ -1532,25 +1533,15 @@ p,
   }
 
 
-
-
-
-
-
-
 }
 
 /* -------------------------------------------------------------------------------- */
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  /* .hero {
-    display: grid;
-    grid-template: 20% 20% 20% 20% 20% / repeat(5, 20%);
+  .howwedo-img {
+    background-size: 60%;
   }
-  .hero-first {
-    grid-row: 3;
-    margin-top: -3%;
-    grid-column: 2 / span 3;
-  } */
-  
+  .howwedo_websites:nth-of-type(2) {
+    padding-right: 3em;
+  }
 }
