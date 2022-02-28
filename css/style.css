@@ -429,7 +429,7 @@ p,
   }
 
   
-  /* --------- liink-icon spacer --------- */
+  /* --------- liink_icon spacer --------- */
   .liink_icon_spacer {
     display: grid;
     grid-template: minmax(120px, 6vh) / 32% 36% 32%;
@@ -447,7 +447,7 @@ p,
 /*     margin-left: -1vw; */
   }
   .liink_icon_spacer img {
-    opacity: 0.4;
+    opacity: 1.0;
   }
   
   
@@ -798,7 +798,7 @@ p,
   
   
   /* -------------------------------------------- */
-  /* --------- SUB page general styling --------- */
+  /* --------- mobile SUB page general styling --------- */
   /* -------------------------------------------- */
   .subpage-header-bg-wrap {
 /*     min-height: 40vh; */
@@ -1422,7 +1422,7 @@ p,
     background-image: url('../assets/liink-icon_red-salsa.svg');
     background-repeat: no-repeat;
     background-size: 110% auto;
-    opacity: 0.3;
+    /* opacity: 0.3; */
   }
   .packages_webdev_grid {
     grid-row: 1;
