@@ -485,7 +485,9 @@ p,
   .about-tagline {
     padding: 1em 0 0;
   }    
-  
+  .method-wrap {
+    margin-bottom: 4em;
+  }
   .method-wrap .h3 {
     margin: 0.7em;
   }
@@ -494,9 +496,6 @@ p,
   }
   .method-wrap p {
     padding: 0.6em 1.2em 1.6em;
-  }
-  .method-wrap p:last-of-type {
-    padding-bottom: 6em;
   }
 
   .why-us {
@@ -521,7 +520,7 @@ p,
     grid-column: 2;
     display: grid;
     grid-template: repeat(4, 1fr) / 1fr;
-    margin: 2em 0 4em;
+    margin: 2em 0 3em;
     text-align: center;
   }
   .unqspt {
@@ -551,9 +550,13 @@ p,
   .unqspt_content {
     grid-row: 2;
     padding: 0.3em;
-  }  
-  
-  /* --------- Contact section --------- */ 
+  }
+
+  /* --------- Contact section --------- */
+  .asterisk {
+    font-size: 0.8rem;
+    margin: 1em 0.4em;
+  }
   .contact-chunk_head {
     padding-top: 4rem;
     background-color: #6600ff;
@@ -1228,6 +1231,7 @@ p,
     display: grid;
     grid-template: 9rem 1fr / repeat(12, 1fr);
     gap: 2rem;
+    margin-bottom: 9vh;
   }
   .about-headings {    
     grid-row: 1;
@@ -1240,6 +1244,46 @@ p,
   .about-tagline {
     grid-row: 2;
     grid-column: 8 /span 4;
+  }
+
+  .method-wrap {
+    margin-bottom: 6em;
+  }
+  .method-wrap .h3 {
+    padding-left: 1.2em;
+  }
+  .method-grid {
+    display: grid;
+    grid-template: repeat(2, auto) / 1fr 20em 20em 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-gap: 2.5em;
+    margin: 4em 0 4em;
+  }
+  .method-grid > div {
+    padding: 2em 1em 0.4em;
+    box-shadow: 9px 25px 30px 0 rgb(0 0 0 / 30%);
+  }
+  .method-grid .h4 {
+    text-align: center;
+  }
+  .method-grid p {
+    text-align: justify;   
+  }
+  .method-grid_item1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .method-grid_item2 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .method-grid_item3 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .method-grid_item4 {
+    grid-row: 2;
+    grid-column: 3;
   }
 
   .why-us {
@@ -1412,6 +1456,9 @@ p,
   }  
   .method-wrap {
     padding: 0 6vw 3vh;
+  }
+  .method-grid {
+    grid-gap: 3.3em;
   }
   .huge-type {
     font-size: 9rem;
@@ -1722,7 +1769,10 @@ p,
   .howwedo_websites:nth-of-type(2) {
     padding-right: 3em;
   }
-  
+  .method-grid {
+    grid-gap: 4.8em;
+  }
+
   .error {
     margin-top: 8em;
   }
