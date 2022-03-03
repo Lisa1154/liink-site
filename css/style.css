@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import 'style_tablet.css';
 
 /* Basic page style resets */
 * {
@@ -257,11 +258,11 @@ p,
 /*     justify-content: space-evenly; */
   }
   nav ul li {
+    display: inline-block;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-/*     width: 100%; */
     text-align: center;
     letter-spacing: 2px;
     font-family: 'Roboto Slab', serif;
@@ -280,7 +281,6 @@ p,
   }  
   
   .dropdown-menu {
-/*     display: none; */
     list-style: none;
     position: absolute;
     z-index: 300;
@@ -292,7 +292,6 @@ p,
 /*     background-clip: padding-box; */
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
-/*     color: #fff719; */
     font-size: 1rem;
     border: none;
     border-radius: 1rem;
@@ -383,8 +382,7 @@ p,
   }
   .services-grid {
     display: grid;
-    grid-template: repeat(4, min-content) / 0.6rem repeat(3, 1fr) 0.6rem;
-/*     gap: 1.1rem; */
+    grid-template: repeat(4, min-content) / 1rem repeat(3, 1fr) 1rem;
   }  
   .services-grid a:hover {
     cursor: cell;
@@ -392,6 +390,7 @@ p,
   .services-grid-headings {
     grid-row: 2;
     grid-column: 2 / span 3;
+    margin: 4em 0 2em;
   }
   .underbar {
     position: relative;
@@ -422,7 +421,7 @@ p,
     display: grid;
     grid-template: 1fr / 30% 70%;
   }
-  .service-wrap img{
+  .service-wrap img {
     width: 100%;
 /*     margin: 0 auto; */
   /*   border-left: 6px solid #6600FF; */
@@ -467,9 +466,13 @@ p,
   span.liink-dot {
     color: #ee5555;
   }
+  .about-headings {
+    margin: 1em 0 1.4em;
+  }
   .about-pics {
     display: grid;
     padding: 4vh 0;
+    /* max-width: 600px; */
   }
   .about-pics img.nikki {
     width: 100%;
@@ -488,9 +491,9 @@ p,
   .method-wrap {
     margin-bottom: 4em;
   }
-  .method-wrap .h3 {
-    margin: 0.7em;
-  }
+  /* .method-headings {
+    margin: 1em 0 1.4em;
+  } */
   .method-wrap .h4 {
     padding: 1em 1.2em 0em;
   }
@@ -1249,12 +1252,9 @@ p,
   .method-wrap {
     margin-bottom: 6em;
   }
-  .method-wrap .h3 {
-    padding-left: 1.2em;
-  }
   .method-grid {
     display: grid;
-    grid-template: repeat(2, auto) / 1fr 20em 20em 1fr;
+    grid-template: repeat(2, 24em) / 1fr 20em 20em 1fr;
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     grid-gap: 2.5em;
     margin: 4em 0 4em;
