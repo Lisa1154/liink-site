@@ -245,24 +245,22 @@ p,
   .my-nav {
     transition: 0.3s all ease;
   }
-  .navlogo {
-    width: 48%;
-    font-weight: 400;
-    letter-spacing: 3px;
+  .navlogo-wrap {
+    width: 30%;
+  }
+  .navlogo img {
+    width: 100%;
   }
   .navbar-dark .navbar-nav .nav-link {
     color: white;
   }
   nav ul {
     list-style: none;
-/*     justify-content: space-evenly; */
   }
   nav ul li {
-    display: inline-block;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    /* margin: 0; */
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-align: center;
     letter-spacing: 2px;
     font-family: 'Roboto Slab', serif;
@@ -1106,20 +1104,7 @@ p,
 /* -------------------------------------------------------------------------------- */
 /* Small devices (landscape phones) */
 @media (min-width: 321px) and (max-width: 767px) {
-  header nav ul {
-    padding: 0px;
-    float: none;
-  }
-  nav ul li {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    width: 100%;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -1160,8 +1145,8 @@ p,
   }
 
   /* --------- Navigation --------- */
-  .navlogo {
-    width: 20%;
+  .navlogo-wrap {
+    width: 12%;
   }
   .dropdown-menu {
     border-radius: 0;
@@ -1423,6 +1408,9 @@ p,
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* --------- Header/Hero --------- */
+  .navlogo-wrap {
+    width: 10%;
+  }
   .hero {
     display: grid;
     grid-template: repeat(5, 20vh) / 14vw repeat(4, 21.5vw);
