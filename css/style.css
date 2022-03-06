@@ -342,10 +342,10 @@ p,
   .hero {
     height: 100vh;
     display: grid;
-    grid-template: 12% repeat(6, 15%) / 2rem 1fr 2rem;
+    grid-template: 6em min-content 1fr / 2rem 1fr 2rem;
   }
   .hero-first {
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 2;
   }
   .hero .huge-type {
@@ -353,7 +353,7 @@ p,
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.1rem;
-    line-height: 1;
+    line-height: 1.1;
 /*     margin-top: 2.5rem; */
 /*   text-decoration: wavy underline rgba(255,247,25, 0.6); */
   }
@@ -1153,20 +1153,23 @@ p,
   }
   
   /* --------- Header/Hero --------- */
-  .hero {
+  /* .hero {
     display: grid;
-    grid-template: 20% 20% 20% 20% 20% / 12% repeat(4, 22%);
+    grid-template: 1fr min-content / minmax(9em, 1fr) minmax(min-content, 1100px) minmax(9em, 1fr);
+  } */
+  .hero {    
+    display: grid;
+    grid-template: 102px 1fr min-content 1fr / minmax(6em, 1fr) minmax(min-content, 1200px) minmax(9em, 1fr);
   }
   .hero-first {
     grid-row: 3;
-    margin-top: -3%;
-    grid-column: 2 / span 3;
+    grid-column: 2;
   }
   .hero .huge-type {
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: 0.4rem;
-    line-height: 1;
+    line-height: 1.2;
   }
   p.tagline {
     font-weight: 400;
@@ -1411,20 +1414,18 @@ p,
   .navlogo-wrap {
     width: 10%;
   }
-  .hero {
+  /* .hero {    
     display: grid;
-    grid-template: repeat(5, 20vh) / 14vw repeat(4, 21.5vw);
-  }
+    grid-template: 102px 1fr min-content 1fr / minmax(6em, 1fr) minmax(min-content, 1200px) minmax(9em, 1fr);
+  } */
   .hero-first {
     grid-row: 3;
-    margin-top: -6vh;
-    grid-column: 2 / span 3;
+    grid-column: 2;
   }
   .hero .huge-type {
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 0.4rem;
-    line-height: 1;
   }
   p.tagline {
     font-weight: 400;
