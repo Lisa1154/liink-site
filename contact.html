@@ -126,8 +126,9 @@
       <div class="contact-page_inner-wrap shadow-lg">
         <h6 class="h3 text-center">Hi&nbsp;<span class="contacter_hi" style="color:#ee5555;">{{ contacterName }}</span>!</h6>
         <div class="contact-page_form-wrap">
-          <!-- TODO: recaptcha!!  -->
           <form class="contact-page_form" action="./contact-thankyou" @submit.prevent="sendMail">
+            <input type="hidden" id="firstName" name="firstName" value="">
+            <input type="hidden" id="lastName" name="lastName" value="lastName">
             <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
               <input type="name" class="form-control custom-caret" id="contacter-name" @keyup="this.$data.contacterName = $event.target.value" :value="contacterName" required autofocus>              
@@ -140,19 +141,19 @@
             <div class="contacter-service_wrap">
               <label for="" class="h5 label-wrap">Waar mogen we je mee helpen?</label>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_website">
+                <input class="form-check-input" type="checkbox" value="Website" id="checkbox_website">
                 <label class="form-check-label" for="checkbox_website">Website</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_webshop">
+                <input class="form-check-input" type="checkbox" value="Webshop" id="checkbox_webshop">
                 <label class="form-check-label" for="checkbox_webshop">Webshop</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_logo">
+                <input class="form-check-input" type="checkbox" value="Logo" id="checkbox_logo">
                 <label class="form-check-label" for="checkbox_logo">Logo</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_branding">
+                <input class="form-check-input" type="checkbox" value="Huisstijl" id="checkbox_branding">
                 <label class="form-check-label" for="checkbox_branding">Huisstijl</label>
               </div>
             </div>
@@ -160,15 +161,15 @@
             <div class="contacter-service_wrap">
               <label for="" class="h5 label-wrap">Extra services</label>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_product-photography">
+                <input class="form-check-input" type="checkbox" value="Productfotografie" id="checkbox_product-photography">
                 <label class="form-check-label" for="checkbox_product-photography">Productfotografie</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_coorporate-photography">
+                <input class="form-check-input" type="checkbox" value="Bedrijfsfotografie" id="checkbox_coorporate-photography">
                 <label class="form-check-label" for="checkbox_coorporate-photography">Bedrijfsfotografie</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="checkbox_web-copy">
+                <input class="form-check-input" type="checkbox" value="Web copy" id="checkbox_web-copy">
                 <label class="form-check-label" for="checkbox_web-copy">Web copy</label>
               </div>
             </div>
@@ -178,7 +179,7 @@
               <textarea class="form-control p-custom-caret shadow-sm" id="contacter-mssg" rows="9" placeholder="Schrijf hier je bericht..." required></textarea>
             </div>
             <div class="liink-btn liink-btn_goldenrod">
-              <button type="submit">Verzenden</button>
+              <button id="js-submit-contact" type="submit">Verzenden</button>
             </div>
           </form>
         </div>
@@ -331,14 +332,25 @@
             return urlParams.get(name);
           },
           sendMail() {
+            let sumbitBtn = document.getElementById('js-submit-contact');
+            // prevent dubble submit
+            sumbitBtn.disabled = true;
+
+            let firstName = document.getElementById('firstName');
+            let lastName = document.getElementById('lastName');
+            if(firstName.value != '' || lastName.value != 'lastName') {
+              alert('validation failed!');
+            }
+
             let myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Content-Type", "application/json");          
 
             let raw = JSON.stringify(
               {
                 "name":document.getElementById('contacter-name').value,
                 "email":document.getElementById('contacter-email').value,
-                "message":document.getElementById('contacter-mssg').value
+                "message":document.getElementById('contacter-mssg').value,
+                "checkboxes":JSON.stringify(Array.from(document.querySelectorAll("input[type=checkbox]:checked"), e => e.value))
               });
             let requestOptions = {
               method: 'POST',
