@@ -11,10 +11,11 @@ and (orientation: portrait) {
    } */
 
    .hero {
-      grid-template: 18em min-content 1fr / 4em max-content;
+      grid-template: 102px 1fr min-content 1fr / minmax(4em, 1fr) minmax(min-content, 600px) minmax(4em, 1fr);
+      /* grid-template: 6em min-content 1fr / 2rem 1fr 2rem; */
    }
    .hero-first {
-     grid-row: 2;
+     grid-row: 3;
      grid-column: 2;
    }
    .hero .huge-type {
