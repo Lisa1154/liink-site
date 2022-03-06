@@ -1414,10 +1414,6 @@ p,
   .navlogo-wrap {
     width: 10%;
   }
-  /* .hero {    
-    display: grid;
-    grid-template: 102px 1fr min-content 1fr / minmax(6em, 1fr) minmax(min-content, 1200px) minmax(9em, 1fr);
-  } */
   .hero-first {
     grid-row: 3;
     grid-column: 2;
