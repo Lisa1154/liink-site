@@ -90,9 +90,43 @@ and (orientation: portrait) {
       box-shadow: 9px 25px 30px 0 rgb(0 0 0 / 30%);
       margin: 3em;
    }
+
    /* --------- Contact chunk Section --------- */
-   .contact-chunk_head .huge-type {
+   .contact-chunk {
+      /* min-height: 60vh; */
+      grid-template: 1fr 1fr / 1fr;
+    }
+    .contact-chunk_head {
+      min-height: 60vh;
+      padding: 2em;
+      grid-row: 1;
+      grid-column: 1;
+      display: grid;
+      grid-template: 1fr / 1fr;
+      place-items: center;
+      /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
+    }
+    .lets-talk_wrap .huge-type {      
       font-size: 4rem;
-   }
+      letter-spacing: 0.3rem;
+      line-height: 1.2;
+    }  
+    .contact-chunk_area {
+      min-height: 72vh;
+      padding: 2em;
+      grid-row: 2;
+      grid-column: 1;
+      /* display: grid;
+      grid-template: minmax(2em, 1fr) min-content minmax(2em, 1fr); */
+    }
+    
+    .contact-chunk_our-details {
+      margin: 3em 0 0;
+    }    
+    .contact-chunk_socials li {
+      display: inline;
+      padding: 0 0.3em;
+    }
+
 
 }

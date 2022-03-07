@@ -1,0 +1,356 @@
+
+/* -------------------------------------------------------- */
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   /* --------- Header/Hero --------- */
+   .navlogo-wrap {
+      width: 10%;
+   }
+   .hero-first {
+      grid-row: 3;
+      grid-column: 2;
+   }
+   .hero .huge-type {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 0.4rem;
+   }
+   p.tagline {
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.6;
+   }
+   .laughing-us {
+      margin-top: -36%;
+      grid-row: 1;
+      grid-column: 8 / span 5;
+   }
+   .about-wrap {
+      padding: 30vh 0 12vh;
+   }
+   .about-headings {
+      grid-column: 2 / span 10;
+   }  
+   .method-wrap {
+      padding: 0 6vw 3vh;
+   }
+   .method-grid {
+      grid-gap: 3.3em;
+   }
+   .huge-type {
+      font-size: 9rem;
+      letter-spacing: 0.4rem;
+   }
+
+
+   /* ----------------------------------- */
+   /* --------- SUB page webdev --------- */
+   /* ----------------------------------- */
+   .intro-bit {
+      padding: 16vh 0 3vh;
+   }
+
+   .howwedo_wrap {
+      display: grid;
+      grid-template: 3em 4em 3em repeat(2, min-content) 12vh / repeat(5, 1fr);
+   }
+   .howwedo-img {
+      grid-row: 2 / span 3;
+      grid-column: 4 / span 2;
+      background-image: url('../assets/woman_code_bg.webp');
+      background-repeat: no-repeat;
+      background-size: 72%;
+   }
+   .grey-highlight {
+      grid-row: 4 / -1;
+      grid-column: 1 / -1;
+      background-color: #f8f8f8;
+      /* padding: 6em 0 0; */
+      display: grid;
+      grid-template: 3fr 14vh 2em min-content min-content 4em/ 15vw repeat(5, 17vw);
+   }
+   .howwedo_websites {
+      grid-row: 1;
+      grid-column: 2 / span 4;
+      margin-top: 8em;
+   }
+   .howwedo_liink-icon {
+      grid-row: 2;
+      grid-column: 4;
+      background-image: url('../assets/liink-icon_black.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* margin-left: -1em; */
+   }
+   .howwedo_webshops {
+      grid-row: 4;
+      grid-column: 2 / span 4;
+   }
+   .howwedo_list {
+      display: grid;
+      grid-template: repeat(6, min-content) / 3rem 1fr;
+      grid-row-gap: 0.9em;
+      margin: 1.2em 0 2em  1.2em;
+   }
+   .howwedo_list .liink_checkmark-wrap {
+      grid-column: 1;
+   }
+   .howwedo_list .howwedo_list-item {
+      grid-column: 2;
+   /*     margin: 1rem 0; */
+      text-align: left;
+   }
+   .howwedo_a_wrap {
+      grid-row: 5;
+      grid-column: 5;
+   }
+
+   .packages_webdev_wrap {
+      display: grid;
+      grid-template: min-content / 1fr;
+   }  
+   .subpage_huge-icon_bg {
+      /* grid-row: 1 / span 2;
+      grid-column: 1 / span 1; */
+      background-image: url('../assets/liink-icon_red-salsa.svg');
+      background-repeat: no-repeat;
+      background-size: 110% auto;
+      opacity: 0.3;
+   }
+   .packages_webdev_grid {
+      grid-row: 1;
+      display: grid;
+      grid-template: repeat(3, min-content)/ repeat(9, 1fr);
+      grid-row-gap: 6em;
+   }
+   .package1 {
+      grid-row: 2;
+      grid-column: 2 / span 3;
+   }
+   .package2 {
+      grid-row: 2;
+      grid-column: 6 / span 3;
+   }
+   .package3 {
+      grid-row: 3;
+      grid-column: 2 / span 3;
+   }
+   .package4 {
+      grid-row: 3;
+      grid-column: 6 / span 3;
+   }
+   .package5 {
+      grid-row: 4;
+      grid-column: 4 / span 3;
+   }
+
+   .package-card-title {
+      padding: 1.2em 0.4em 1em;
+      text-align: center;
+   }
+   .package-list-wrap {
+      display: grid;
+      grid-template: 4fr / min-content 1fr;
+      padding: 0 0.7em 1.2em;
+   }
+   .package-list-item {
+      text-align: left;
+      margin: 0 0 0 1rem;
+   }
+   .package_a_wrap {
+      text-align: center;
+   }
+
+   .loose_div {
+      margin: 1em 0 3em;
+   }
+   .package_other {
+      display: grid;
+      grid-template: 1fr / 1fr max-content 1fr;
+      margin: 6em 0;
+      /* display: flex;
+      justify-content: center; */
+   }
+   .package_other_grid {
+      grid-column: 2;
+   }
+   .package_other img {
+      width: 12vw;
+      margin: 1em 0;
+   }
+   .package_other .liink-btn {
+      margin-top: 2.4em;
+   }
+
+
+   /* ------------------------------------- */
+   /* --------- SUB page graphicD --------- */
+   /* ------------------------------------- */
+   .packages_graphicd_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   .logo_package,
+   .branding_package {
+      width: 30%;
+      margin: 2em 1.2em;
+   }
+   /* .logo_package .package-card-title,
+   .branding_package .package-card-title {
+      padding: 0;
+   } */
+   .logo_package .card-body,
+   .branding_package .card-body {
+      text-align: center;
+   }
+
+
+      /* --------- SUB page contact highlight --------- */
+   .subpage_ctct-card {
+      border-radius: 0;
+      border: none;
+      padding: 6em 6em 4em;
+      margin: 7em 0 6em;    
+   }
+   .subpage_ctct-card p:last-of-type {
+      padding-bottom: 3em;
+   }
+   .subpage_ctct-icons-wrapper {
+      padding: 4em 0 0;
+      display: grid;
+      grid-template: min-content / repeat(3, 1fr);
+      justify-content: space-evenly;
+      border-top: 4px solid #ee5555;
+   }
+   .subpage_ctct_icon-wrap:first-of-type {
+      grid-column: 1;
+   }
+   .subpage_ctct_icon-wrap {
+      grid-column: 2;
+   }
+   .subpage_ctct_icon-wrap:last-of-type {
+      grid-column: 3;
+   }
+   .subpage_ctct_icon-wrap img {
+      width: 36%;
+   }
+   p.icon_subtitle {
+      margin: 1em 0 0 0;
+   }
+
+
+   /*--------------------------------------*/
+   /* --------- SUB page Contact --------- */
+   /*--------------------------------------*/
+   #contact-page {
+      display: flex;
+      justify-content: center;
+   }
+   .contact-page_wrap {
+      margin: 6em 0 1em;
+      padding: 0 1rem;
+   }
+   .contact-page_inner-wrap  {
+      width: 60vw;
+      margin: 0 0 3em;
+      padding: 2rem;
+   }
+   .contact-page_inner-wrap .h3 {
+      padding: 1em 0;
+   }
+   .contact-page_form-wrap {
+      padding: 0 3em;
+   }
+   .contact-page_form .input-wrap {
+      padding: 0.6em 0;
+   }
+   .contact-page_form input[type="name"],
+   .contact-page_form input[type="email"] {    
+      color: #050203 !important;
+      font-size: 1rem;
+   }
+   .contact-page_form input::-webkit-input-placeholder {    
+      font-size: 1rem;
+   }
+   .contacter-service_wrap {
+      margin: 0.7em 0 0.4em;
+   }
+   .label-wrap {
+      padding: 0.4em 0;
+   }
+   .contact-page_inner-wrap textarea {
+      border: none;
+      border-radius: 0;
+      margin: 0 0 2em;
+      padding: 1em;
+   }  
+   .contact-page_socials {
+      display: grid;
+      grid-template: 1fr 1fr/ 12% 12% 12%;
+      justify-content: space-evenly;
+      padding: 4em 0;
+   }
+   .test1 {
+      grid-row: 1;
+      grid-column: 1 / span 3;
+   }
+   .test2 {
+      grid-row: 2;
+      grid-column: 1;
+   }
+   .test3 {
+      grid-row: 2;
+      grid-column: 2;
+   }
+   .test4 {
+      grid-row: 2;
+      grid-column: 3;
+   }
+
+
+   /*--------------------------------------------*/
+   /*---------  SUB page Contact Thanks ---------*/
+   /*--------------------------------------------*/
+   .contact-thanks_wrap {
+      margin: 0em 1.2em 6em;
+      padding: 2.4em 1.2em;
+   }
+   .contact-thanks_inner-wrap {
+      padding: 0 0.4em 0.6em;
+   }
+   p.contact-thanks_tagline {
+      margin-top: 1em;
+   }
+   .contact-thanks_our-names_content {
+      font-family: "Ubuntu", sans-serif;
+   /*     margin: 0 0 1em; */
+   } 
+
+}
+
+/* -------------------------------------------------------- */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+   .laughing-us {
+      margin-top: -48%;
+      grid-row: 1;
+      grid-column: 9 / span 5;
+   }
+   .howwedo-img {
+      max-width: 800px;
+      background-size: 60%;
+   }
+   .howwedo_websites:nth-of-type(2) {
+      padding-right: 3em;
+   }
+   .method-grid {
+      grid-gap: 4.8em;
+   }
+
+   .error {
+      margin-top: 8em;
+   }
+
+
+}

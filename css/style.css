@@ -1,9 +1,18 @@
 @charset "utf-8";
 @import 'style_tablet.css';
+@import 'style_lapdesktop.css';
 
 /* Basic page style resets */
 * {
   box-sizing: border-box;
+}
+nav ul,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
 }
 
 /* liink color palette */
@@ -53,7 +62,8 @@ p,
 
 .h1,
 .h2,
-.h3 {
+.h3,
+.h3_lg {
   font-family: 'Roboto Slab', serif;
   font-weight: 600;
   color: #6600ff;
@@ -74,6 +84,9 @@ p,
 .h3 {
   font-size: 36px;
 }
+.h3_lg {
+  font-size: 60px;
+}
 .h4 {
   font-size: 1.5rem;
 }
@@ -88,6 +101,23 @@ p,
 }
 .h6 {
   font-size: 16px;
+}
+
+@keyframes cursor-blinker {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.cursor-blinker::after {
+  /* 	content: "\FEFF_"; */
+  content: "_";
+  display: inline;
+  color: #fff719;
+  animation: cursor-blinker 1.5s step-end infinite;
 }
 
 .liink-btn {
@@ -200,11 +230,11 @@ p,
 } */
 
 
-/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 /* -------------------------------------------------------------------------------- */
-@media (min-width: 20rem) {  
+@media (min-width: 20rem) {
   /* --------- Splash screen --------- */  
   .splash {
     position: fixed;
@@ -254,9 +284,6 @@ p,
   .navbar-dark .navbar-nav .nav-link {
     color: white;
   }
-  nav ul {
-    list-style: none;
-  }
   nav ul li {
     /* margin: 0; */
     padding-top: 8px;
@@ -268,15 +295,12 @@ p,
     font-weight: 400;
     /* 	text-transform: uppercase; */
   }
-  nav ul li a {
-    text-decoration: none;
-  }
   nav ul li i {
     font-size: 1.25rem;
   }
   nav ul li:hover a {
     color: #ee5555 !important;
-  }  
+  }
   
   .dropdown-menu {
     list-style: none;
@@ -299,6 +323,15 @@ p,
   .dropdown-menu:hover li {
     color: rgba(236 176 0 / 0.7);
   }
+
+  .my-nav .liink_phone-nmbr {
+    font-weight: 700;
+    color: #fff719 !important;
+    transition: all 0.3s ease;
+  }
+  /* .my-nav .liink_phone-nmbr:hover {
+    color: white !important;
+  } */
   
   /*------  scroll progress line  ------*/
   .scroll_progress{
@@ -553,28 +586,49 @@ p,
     padding: 0.3em;
   }
 
-  /* --------- Contact section --------- */
-  .asterisk {
-    font-size: 0.8rem;
-    margin: 1em 0.4em;
+  /* --------- Contact-chunk section --------- */
+  .contact-chunk {
+    /* min-height: 60vh; */
+    width: 100vw;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
   }
   .contact-chunk_head {
-    padding-top: 4rem;
+    min-height: 60vh;
+    padding: 2em;
+    grid-row: 1;
+    grid-column: 1;
     background-color: #6600ff;
-    /* 	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#fff947,#fff947 50%,#fff947); */
     color: #fff719;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+    /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
   }
-  .huge-type {
-    font-family: "Ubuntu", sans-serif;
+  /* .contact-chunk_head {
+    	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#fff947,#fff947 50%,#fff947);
+  } */
+  .lets-talk_wrap {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+  }
+  span.lets {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+  span.talk {
+    grid-row: 2;
+    grid-column: 2 / span 3;
+  }
+  .lets-talk_wrap .huge-type {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 7rem;
+    font-size: 4rem;
+    text-transform: uppercase;
     letter-spacing: 0.3rem;
-    line-height: 1.1;
-  }  
-  .huge-type span.cursor-blinker {
-    margin-bottom: 3rem;
+    line-height: 1.2;
   }
-  @keyframes cursor-blinker {
+  @keyframes cursor-blinker_red {
     from,
     to {
       opacity: 0;
@@ -583,18 +637,24 @@ p,
       opacity: 1;
     }
   }
-  .cursor-blinker::after {
+  .cursor-blinker_red::after {
     /* 	content: "\FEFF_"; */
     content: "_";
     display: inline;
-    color: #fff719;
+    color: #ee5555;
     animation: cursor-blinker 1.5s step-end infinite;
   }
 
   .contact-chunk_area {
+    min-height: 72vh;
+    padding: 2em;
+    grid-row: 2;
+    grid-column: 1;
     background-color: white;
-    color: #6600ff;
-  }  
+    color: #050203;
+    /* display: grid;
+    grid-template: minmax(2em, 1fr) min-content minmax(2em, 1fr); */
+  }
   .contact-chunk_form input {
     background-color: transparent;
     border: none;
@@ -603,8 +663,8 @@ p,
     border-bottom: 4px solid #6600ff;
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    color: #333333 !important;
-    font-size: 16px;
+    color: rgba(5 2 3 /100%) !important;
+    /* font-size: 1rem; */
   }
   .contact-chunk_form .input-group-text {
     background-color: transparent;
@@ -619,11 +679,9 @@ p,
     font-size: 20px;
   }
   .contact-chunk_form input::-webkit-input-placeholder {
-    color: #333333;
-    opacity: 0.4;
+    color: rgba(5 2 3 / 40%);
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    font-size: 16px;
   }
   .contact-chunk_form input:focus::placeholder {
     opacity: 0;
@@ -640,7 +698,26 @@ p,
     } */
     border-bottom: 4px solid #fff719;
   }
-  
+
+  .contact-chunk_our-details {
+    margin: 3em 0 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .contact-chunk_our-details a {
+    color: #050203 !important;
+    transition: all 0.3s ease;
+  }
+  .contact-chunk_our-details a:hover {
+    color: #6600ff !important;
+  }
+  .contact-chunk_socials li {
+    display: inline;
+    padding: 0 0.3em;
+  }
+  .contact-chunk_socials i {
+    color: #ee5555;
+  }
   
   /* --------- Footer section --------- */
   .footer-wrap {
@@ -1226,7 +1303,7 @@ p,
   }
   .about-headings {    
     grid-row: 1;
-    grid-column: 1 / span 7;
+    grid-column: 1 / span 10;
   }
   .about-pics {
     grid-row: 2;
@@ -1336,13 +1413,35 @@ p,
   
 
   /* --------- Contact section --------- */
-  .contact-head {
-    padding-top: 4rem;
+  .contact-chunk {
+    /* min-height: 60vh; */
+    display: grid;
+    grid-template: 1fr / 50vw 50vw;
   }
-  .huge-type {
+  .contact-chunk_head {
+    min-height: 60vh;
+    padding: 4em 2em 2em;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+    /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
+  }
+  .lets-talk_wrap .huge-type {      
     font-size: 6rem;
     letter-spacing: 0.3rem;
+    line-height: 1.2;
+  }  
+  .contact-chunk_area {
+    min-height: 72vh;
+    padding: 2em;
+    grid-row: 1;
+    grid-column: 2;
+    /* display: grid;
+    grid-template: minmax(2em, 1fr) min-content minmax(2em, 1fr); */
   }
+
   .contact-form input {    
     font-size: 24px;
   }  
@@ -1351,7 +1450,15 @@ p,
   }
   .contact-form input::-webkit-input-placeholder {    
     font-size: 24px;
-  }  
+  }
+  
+  .contact-chunk_our-details {
+    margin: 3em 0 0;
+  }    
+  .contact-chunk_socials li {
+    display: inline;
+    padding: 0 0.3em;
+  }
 
   /* --------- Footer section --------- */
   
@@ -1403,364 +1510,5 @@ p,
   .error .huge-type {
     font-size: 2rem;
   }
-
-
-}
-
-/* -------------------------------------------------------------------------------- */
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* --------- Header/Hero --------- */
-  .navlogo-wrap {
-    width: 10%;
-  }
-  .hero-first {
-    grid-row: 3;
-    grid-column: 2;
-  }
-  .hero .huge-type {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 0.4rem;
-  }
-  p.tagline {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.6;
-  }
-  .laughing-us {
-    margin-top: -36%;
-    grid-row: 1;
-    grid-column: 8 / span 5;
-  }
-  .about-wrap {
-    padding: 30vh 0 12vh;
-  }
-  .about-headings {
-    grid-column: 2 / span 7;
-  }  
-  .method-wrap {
-    padding: 0 6vw 3vh;
-  }
-  .method-grid {
-    grid-gap: 3.3em;
-  }
-  .huge-type {
-    font-size: 9rem;
-    letter-spacing: 0.4rem;
-  }
-
-
-  /* ----------------------------------- */
-  /* --------- SUB page webdev --------- */
-  /* ----------------------------------- */
-  .intro-bit {
-    padding: 16vh 0 3vh;
-  }
-
-  .howwedo_wrap {
-    display: grid;
-    grid-template: 3em 4em 3em repeat(2, min-content) 12vh / repeat(5, 1fr);
-  }
-  .howwedo-img {
-    grid-row: 2 / span 3;
-    grid-column: 4 / span 2;
-    background-image: url('../assets/woman_code_bg.webp');
-    background-repeat: no-repeat;
-    background-size: 72%;
-  }
-  .grey-highlight {
-    grid-row: 4 / -1;
-    grid-column: 1 / -1;
-    background-color: #f8f8f8;
-    /* padding: 6em 0 0; */
-    display: grid;
-    grid-template: 3fr 14vh 2em min-content min-content 4em/ 15vw repeat(5, 17vw);
-  }
-  .howwedo_websites {
-    grid-row: 1;
-    grid-column: 2 / span 4;
-    margin-top: 8em;
-  }
-  .howwedo_liink-icon {
-    grid-row: 2;
-    grid-column: 4;
-    background-image: url('../assets/liink-icon_black.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* margin-left: -1em; */
-  }
-  .howwedo_webshops {
-    grid-row: 4;
-    grid-column: 2 / span 4;
-  }
-  .howwedo_list {
-    display: grid;
-    grid-template: repeat(6, min-content) / 3rem 1fr;
-    grid-row-gap: 0.9em;
-    margin: 1.2em 0 2em  1.2em;
-  }
-  .howwedo_list .liink_checkmark-wrap {
-    grid-column: 1;
-  }
-  .howwedo_list .howwedo_list-item {
-    grid-column: 2;
-/*     margin: 1rem 0; */
-    text-align: left;
-  }
-  .howwedo_a_wrap {
-    grid-row: 5;
-    grid-column: 5;
-  }
-
-  .packages_webdev_wrap {
-    display: grid;
-    grid-template: min-content / 1fr;
-  }  
-  .subpage_huge-icon_bg {
-    /* grid-row: 1 / span 2;
-    grid-column: 1 / span 1; */
-    background-image: url('../assets/liink-icon_red-salsa.svg');
-    background-repeat: no-repeat;
-    background-size: 110% auto;
-    opacity: 0.3;
-  }
-  .packages_webdev_grid {
-    grid-row: 1;
-    display: grid;
-    grid-template: repeat(3, min-content)/ repeat(9, 1fr);
-    grid-row-gap: 6em;
-  }
-  .package1 {
-    grid-row: 2;
-    grid-column: 2 / span 3;
-  }
-  .package2 {
-    grid-row: 2;
-    grid-column: 6 / span 3;
-  }
-  .package3 {
-    grid-row: 3;
-    grid-column: 2 / span 3;
-  }
-  .package4 {
-    grid-row: 3;
-    grid-column: 6 / span 3;
-  }
-  .package5 {
-    grid-row: 4;
-    grid-column: 4 / span 3;
-  }
-  
-  .package-card-title {
-    padding: 1.2em 0.4em 1em;
-    text-align: center;
-  }
-  .package-list-wrap {
-    display: grid;
-    grid-template: 4fr / min-content 1fr;
-    padding: 0 0.7em 1.2em;
-  }
-  .package-list-item {
-    text-align: left;
-    margin: 0 0 0 1rem;
-  }
-  .package_a_wrap {
-    text-align: center;
-  }
-
-  .loose_div {
-    margin: 1em 0 3em;
-  }
-  .package_other {
-    display: grid;
-    grid-template: 1fr / 1fr max-content 1fr;
-    margin: 6em 0;
-    /* display: flex;
-    justify-content: center; */
-  }
-  .package_other_grid {
-    grid-column: 2;
-  }
-  .package_other img {
-    width: 12vw;
-    margin: 1em 0;
-  }
-  .package_other .liink-btn {
-    margin-top: 2.4em;
-  }
-
-
-  /* ------------------------------------- */
-  /* --------- SUB page graphicD --------- */
-  /* ------------------------------------- */
-  .packages_graphicd_wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .logo_package,
-  .branding_package {
-    width: 30%;
-    margin: 2em 1.2em;
-  }
-  /* .logo_package .package-card-title,
-  .branding_package .package-card-title {
-    padding: 0;
-  } */
-  .logo_package .card-body,
-  .branding_package .card-body {
-    text-align: center;
-  }
-
-  
-   /* --------- SUB page contact highlight --------- */
-  .subpage_ctct-card {
-    border-radius: 0;
-    border: none;
-    padding: 6em 6em 4em;
-    margin: 7em 0 6em;    
-  }
-  .subpage_ctct-card p:last-of-type {
-    padding-bottom: 3em;
-  }
-  .subpage_ctct-icons-wrapper {
-    padding: 4em 0 0;
-    display: grid;
-    grid-template: min-content / repeat(3, 1fr);
-    justify-content: space-evenly;
-    border-top: 4px solid #ee5555;
-  }
-  .subpage_ctct_icon-wrap:first-of-type {
-    grid-column: 1;
-  }
-  .subpage_ctct_icon-wrap {
-    grid-column: 2;
-  }
-  .subpage_ctct_icon-wrap:last-of-type {
-    grid-column: 3;
-  }
-  .subpage_ctct_icon-wrap img {
-    width: 36%;
-  }
-  p.icon_subtitle {
-    margin: 1em 0 0 0;
-  }
-
-
-  /*--------------------------------------*/
-  /* --------- SUB page Contact --------- */
-  /*--------------------------------------*/
-  #contact-page {
-    display: flex;
-    justify-content: center;
-  }
-  .contact-page_wrap {
-    margin: 6em 0 1em;
-    padding: 0 1rem;
-  }
-  .contact-page_inner-wrap  {
-    width: 60vw;
-    margin: 0 0 3em;
-    padding: 2rem;
-  }
-  .contact-page_inner-wrap .h3 {
-    padding: 1em 0;
-  }
-  .contact-page_form-wrap {
-    padding: 0 3em;
-  }
-  .contact-page_form .input-wrap {
-    padding: 0.6em 0;
-  }
-  .contact-page_form input[type="name"],
-  .contact-page_form input[type="email"] {    
-    color: #050203 !important;
-    font-size: 1rem;
-  }
-  .contact-page_form input::-webkit-input-placeholder {    
-    font-size: 1rem;
-  }
-  .contacter-service_wrap {
-    margin: 0.7em 0 0.4em;
-  }
-  .label-wrap {
-    padding: 0.4em 0;
-  }
-  .contact-page_inner-wrap textarea {
-    border: none;
-    border-radius: 0;
-    margin: 0 0 2em;
-    padding: 1em;
-  }  
-  .contact-page_socials {
-    display: grid;
-    grid-template: 1fr 1fr/ 12% 12% 12%;
-    justify-content: space-evenly;
-    padding: 4em 0;
-  }
-  .test1 {
-    grid-row: 1;
-    grid-column: 1 / span 3;
-  }
-  .test2 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .test3 {
-    grid-row: 2;
-    grid-column: 2;
-  }
-  .test4 {
-    grid-row: 2;
-    grid-column: 3;
-  }
-
-  
-  /*--------------------------------------------*/
-  /*---------  SUB page Contact Thanks ---------*/
-  /*--------------------------------------------*/
-  .contact-thanks_wrap {
-    margin: 0em 1.2em 6em;
-    padding: 2.4em 1.2em;
-  }
-  .contact-thanks_inner-wrap {
-    padding: 0 0.4em 0.6em;
-  }
-  p.contact-thanks_tagline {
-    margin-top: 1em;
-  }
-  .contact-thanks_our-names_content {
-    font-family: "Ubuntu", sans-serif;
-/*     margin: 0 0 1em; */
-  }
-
-
-
-}
-
-/* -------------------------------------------------------------------------------- */
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  .laughing-us {
-    margin-top: -48%;
-    grid-row: 1;
-    grid-column: 9 / span 5;
-  }
-  .howwedo-img {
-    max-width: 800px;
-    background-size: 60%;
-  }
-  .howwedo_websites:nth-of-type(2) {
-    padding-right: 3em;
-  }
-  .method-grid {
-    grid-gap: 4.8em;
-  }
-
-  .error {
-    margin-top: 8em;
-  }
-
 
 }
