@@ -103,6 +103,7 @@ p,
   font-size: 16px;
 }
 
+
 @keyframes cursor-blinker {
   from,
   to {
@@ -119,6 +120,7 @@ p,
   color: #fff719;
   animation: cursor-blinker 1.5s step-end infinite;
 }
+
 
 .liink-btn {
   display: flex;
@@ -300,6 +302,9 @@ p,
   }
   nav ul li:hover a {
     color: #ee5555 !important;
+  }
+  nav a.liink_phone-nmbr {
+    font-size: 1rem;
   }
   
   .dropdown-menu {
