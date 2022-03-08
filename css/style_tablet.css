@@ -156,12 +156,18 @@ and (orientation: portrait) {
 
    .footer-logo img {
       width: 72%;
-      height: 72%;
    }
 
     /* SUB page header styling */
     /* .subpage-header-bg-wrap {
        display: none;
     } */
+
+   /*--------------------------------------------*/
+   /*---------  SUB page Contact Thanks ---------*/
+   /*--------------------------------------------*/
+   .contact-thanks_wrap {
+      margin: 9em 2.4em 7em;
+   }
 
 }

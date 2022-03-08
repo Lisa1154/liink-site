@@ -743,7 +743,6 @@ p,
   }
   .footer-logo img {
     width: 48%;
-    height: 48%;
   }
   footer li {
     padding: 0.4em 0;
@@ -875,7 +874,7 @@ p,
   /*---------  SUB page Contact Thanks ---------*/
   /*--------------------------------------------*/
   .contact-thanks_wrap {
-    margin: 0em 1.2em 6em;
+    margin: 7em 1.2em 6em;
     padding: 2.4em 1.2em;
   }
   .contact-thanks_inner-wrap {
