@@ -30,6 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const nav = document.querySelector(".my-nav");
   const logo = document.getElementById("js-imgsrc");
+  const navnmbr = document.querySelector('.liink_phone-nmbr');
   setMenu();
   window.addEventListener("scroll", function () {
     setMenu();
@@ -91,12 +92,16 @@ window.addEventListener("DOMContentLoaded", () => {
     nav.classList.remove("navbar-dark", "shadow");
     logo.src =
       "./assets/logo-navbar.svg";
+    navnmbr.style.color = 
+      '#ee5555';
   }
   function setMenuDark() {
     nav.classList.remove("bg-white", "navbar-light");
     nav.classList.add("navbar-dark");
     logo.src =
       "./assets/icon-navbar.svg";
+    navnmbr.style.color = 
+      '#fff719';
   }
 
   if (window.innerWidth > 992) {

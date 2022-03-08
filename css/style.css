@@ -275,7 +275,7 @@ p,
     transition: 0.3s all ease;
   }
   .navlogo-wrap {
-    width: 24%;
+    width: 30%;
   }
   .navlogo img {
     width: 100%;
@@ -328,7 +328,7 @@ p,
 
   .my-nav .liink_phone-nmbr {
     font-weight: 700;
-    color: #fff719 !important;
+    color: #fff719;
     transition: all 0.3s ease;
   }
   /* .my-nav .liink_phone-nmbr:hover {
