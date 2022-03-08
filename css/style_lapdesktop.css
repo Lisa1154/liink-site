@@ -2,6 +2,37 @@
 /* -------------------------------------------------------- */
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+   .h1 {
+      /* =90px */
+      font-size: 5.625rem;
+    }
+    .h2 {
+       /* =72px */
+      font-size: 4.5rem;
+    }
+    .h3 {
+       /* =60px */
+      font-size: 3.75rem;
+    }
+    .h4 {
+       /* =36px */
+      font-size: 2.25rem;
+    }
+    .h5 {
+       /* =30px */
+      font-size: 1.875rem;
+    }
+    .h5b {
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      /* =30px */
+      font-size: 1.875rem;
+      color: #050203;
+    }
+    .h6 {
+       /* =24px */
+      font-size: 1.5rem;
+    }
    /* --------- Header/Hero --------- */
    .navlogo-wrap {
       width: 10%;
@@ -40,6 +71,12 @@
    .huge-type {
       font-size: 9rem;
       letter-spacing: 0.4rem;
+   }
+
+   /* --------- Footer section --------- */
+   .footer-logo img {
+      width: 80%;
+      height: 80%;
    }
 
 

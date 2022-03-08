@@ -90,13 +90,13 @@ window.addEventListener("DOMContentLoaded", () => {
     nav.classList.add("bg-white", "navbar-light");
     nav.classList.remove("navbar-dark", "shadow");
     logo.src =
-      "./assets/logo_LIINK.webp";
+      "./assets/logo-navbar.svg";
   }
   function setMenuDark() {
     nav.classList.remove("bg-white", "navbar-light");
     nav.classList.add("navbar-dark");
     logo.src =
-      "./assets/icoon_LIINK-wit.webp";
+      "./assets/icon-navbar.svg";
   }
 
   if (window.innerWidth > 992) {
