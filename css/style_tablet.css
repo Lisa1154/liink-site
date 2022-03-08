@@ -1,6 +1,37 @@
 /* Medium devices (like tablets, 768px and up) */
 @media (min-width: 768px)
 and (orientation: portrait) {
+   .h1 {
+      /* =72px */
+      font-size: 4.5rem;
+    }
+    .h2 {
+       /* =60px */
+      font-size: 3.75rem;
+    }
+    .h3 {
+       /* =44px */
+      font-size: 2.75rem;
+    }
+    .h4 {
+       /* =30px */
+      font-size: 1.875rem;
+    }
+    .h5 {
+       /* =24px */
+      font-size: 1.5rem;
+    }
+    .h5b {
+      font-family: "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      /* =24px */
+      font-size: 1.5rem;
+      color: #050203;
+    }
+    .h6 {
+       /* =20px */
+      font-size: 1.25rem;
+    }
 
    /* --------- Navigation --------- */
    .navlogo-wrap {
@@ -122,6 +153,11 @@ and (orientation: portrait) {
       display: inline;
       padding: 0 0.4em;
     }
+
+   .footer-logo img {
+      width: 72%;
+      height: 72%;
+   }
 
     /* SUB page header styling */
     /* .subpage-header-bg-wrap {

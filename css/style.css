@@ -84,9 +84,6 @@ p,
 .h3 {
   font-size: 36px;
 }
-.h3_lg {
-  font-size: 60px;
-}
 .h4 {
   font-size: 1.5rem;
 }
@@ -744,9 +741,9 @@ p,
     padding-left: 0;
     margin: 1em 0;
   }
-  img.footer-logo {
-    width: 90%;
-    height: 90%;
+  .footer-logo img {
+    width: 48%;
+    height: 48%;
   }
   footer li {
     padding: 0.4em 0;
