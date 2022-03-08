@@ -76,7 +76,6 @@
    /* --------- Footer section --------- */
    .footer-logo img {
       width: 80%;
-      height: 80%;
    }
 
 
@@ -350,7 +349,7 @@
    /*---------  SUB page Contact Thanks ---------*/
    /*--------------------------------------------*/
    .contact-thanks_wrap {
-      margin: 0em 1.2em 6em;
+      /* margin: 0em 1.2em 6em; */
       padding: 2.4em 1.2em;
    }
    .contact-thanks_inner-wrap {
