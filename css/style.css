@@ -341,7 +341,16 @@ p,
   /* .my-nav .liink_phone-nmbr:hover {
     color: white !important;
   } */
-  
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: white !important;
+  }
+  .bg-indigo {
+    background-color: #6600ff;
+  }
+  background-color: #6600ff;
   /*------  scroll progress line  ------*/
   .scroll_progress{
     height: 4px;

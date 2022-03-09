@@ -37,6 +37,9 @@ and (orientation: portrait) {
    .navlogo-wrap {
       width: 24%;
    }
+   .navbar-dark {
+      background-color: #6600ff;
+   }
    /* nav ul li {
       display: inline-block;
    } */
