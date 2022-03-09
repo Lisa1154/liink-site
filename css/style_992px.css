@@ -14,6 +14,9 @@
    }
  
    /* --------- Navigation --------- */
+   .navbar-dark {
+     background-color: #6600ff;
+   }
    .navlogo-wrap {
      width: 12%;
    }
@@ -404,6 +407,23 @@
   }
   .package_other .liink-btn {
       margin-top: 2.4em;
+  }
+
+
+  /*--------------------------------------------*/
+  /*------------  SUB page GraphicD ------------*/
+  /*--------------------------------------------*/
+  .logo_package,
+  .branding_package {
+    margin: 3em 4em;
+  }
+  
+  .liink_icon_spacer {     
+    grid-template: 1fr / minmax(2em, 1fr) 3em minmax(2em, 1fr);
+    margin: 6em 0 3em;
+  }
+  .package_other {
+    padding: 0 1.2em;
   }
 
 
