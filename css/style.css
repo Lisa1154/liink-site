@@ -173,6 +173,13 @@ p,
   background-color: #ecb000;
   color: rgba(255,255,255, 1);
 }
+.liink-btn_goldenrod a:disabled,
+.liink-btn_goldenrod button:disabled {
+  border-color: grey;
+  background-color: grey;
+  color: rgba(255,255,255, 0.5);
+  pointer-events: none;
+}
 
 /* indigo */
 .liink-btn_indigo a,
@@ -804,7 +811,7 @@ p,
   .contact-page_form .input-wrap {
     padding: 0.6em 0;
   }
-  .contact-page_form input[type="name"],
+  .contact-page_form input[type="text"],
   .contact-page_form input[type="email"] {
     background-color: transparent;
     border: none ;
