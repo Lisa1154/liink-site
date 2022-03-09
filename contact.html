@@ -113,13 +113,16 @@
             <input type="hidden" id="lastName" name="lastName" value="lastName">
             <div class="input-wrap">
               <label for="contacter-name" class="form-label h5">Naam</label>
-              <input type="name" class="form-control custom-caret" id="contacter-name" @keyup="this.$data.contacterName = $event.target.value" :value="contacterName" required autofocus>              
+              <input type="text" class="form-control custom-caret" id="contacter-name" @keyup="this.$data.contacterName = $event.target.value" :value="contacterName" required autofocus>              
             </div>
             <div class="input-wrap">
               <label for="contacter-email" class="form-label h5">Emailadres</label>
               <input type="email" class="form-control custom-caret" id="contacter-email" :value="contacterEmail" placeholder="" required>              
             </div>
-            
+            <div class="input-wrap">
+              <label for="contacter-phone" class="form-label h5">Telefoonnummer</label>
+              <input type="text" class="form-control custom-caret" id="contacter-phone" :value="contacterPhone" placeholder="">              
+            </div>
             <div class="contacter-service_wrap">
               <label for="" class="h5 label-wrap">Waar mogen we je mee helpen?</label>
               <div class="form-check">
@@ -305,7 +308,8 @@
     data() {
       return {
         contacterName: this.getParam('name'),
-        contacterEmail: this.getParam('email')
+        contacterEmail: this.getParam('email'),
+        contacterPhone: this.getParam('phone'),
       }
     },
     methods: {
@@ -318,12 +322,6 @@
             // prevent dubble submit
             sumbitBtn.disabled = true;
 
-            let firstName = document.getElementById('firstName');
-            let lastName = document.getElementById('lastName');
-            if(firstName.value != '' || lastName.value != 'lastName') {
-              alert('validation failed!');
-            }
-
             let myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");          
 
@@ -331,6 +329,7 @@
               {
                 "name":document.getElementById('contacter-name').value,
                 "email":document.getElementById('contacter-email').value,
+                "phone":document.getElementById('contacter-phone').value,
                 "message":document.getElementById('contacter-mssg').value,
                 "checkboxes":JSON.stringify(Array.from(document.querySelectorAll("input[type=checkbox]:checked"), e => e.value))
               });
