@@ -176,9 +176,11 @@ p.tagline {
 }
 
    /* SUB page header styling */
-   /* .subpage-header-bg-wrap {
-      display: none;
-   } */
+   .subpage-header-bg-wrap {
+      /* max-height: 300px; */
+   }
+
+
 
 .subpage_ctct-highlight {
    display: grid;

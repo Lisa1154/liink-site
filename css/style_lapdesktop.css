@@ -165,12 +165,6 @@ p.tagline {
 
 
    /* --------- SUB page contact highlight --------- */
-.subpage_ctct-card {
-   border-radius: 0;
-   border: none;
-   padding: 6em 6em 4em;
-   margin: 7em 0 6em;    
-}
 .subpage_ctct-card p:last-of-type {
    padding-bottom: 3em;
 }
@@ -304,6 +298,10 @@ p.contact-thanks_tagline {
 .method-grid {
    grid-gap: 4.8em;
 }
+/* .subpage_ctct-card {
+   padding: 6em 6em 4em;
+   margin: 7em 0 6em;
+} */
 
 .error {
    margin-top: 8em;

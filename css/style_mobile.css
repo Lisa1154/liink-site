@@ -126,6 +126,7 @@ p,
 }
 .liink-btn a,
 .liink-btn button {
+  min-width: 9rem;
   max-width: 14rem;
   border-radius: 0;
   padding: 0.6em 0.7em 0.5em;
@@ -918,16 +919,22 @@ p,
     grid-row: 2;
   }
 
+  .subpage-header-blobs {
+    display: none;
+  }
+
   /* --------- SUB page contact highlight --------- */
   .subpage_ctct-highlight {
+    display: grid;
+    grid-template: 1fr / minmax(2.4em, 1fr) minmax(min-content, 440px) minmax(2.4em, 1fr);
     background-color: #F8F8F8;
-    padding: 0 2.4em;
   }
   .subpage_ctct-card {
+    grid-column: 2;
     border-radius: 0;
     border: none;
     padding: 2em;
-    margin: 4em 0 9em;
+    margin: 4em 0;
   }
   .subpage_ctct-icons-wrapper {
     padding: 3em 0;
