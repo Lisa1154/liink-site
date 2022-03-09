@@ -157,6 +157,20 @@ and (orientation: portrait) {
    .footer-logo img {
       width: 72%;
    }
+   
+
+   /*--------------------------------------------*/
+   /*-------------  SUB page Webdev -------------*/
+   /*--------------------------------------------*/
+   .howwedo-img {
+      grid-column: 4 / -1;
+   }
+   .subpage_huge-icon_bg {
+      margin: 5em 0 0;
+      background-size: auto 100%;
+   }
+
+
 
     /* SUB page header styling */
     /* .subpage-header-bg-wrap {

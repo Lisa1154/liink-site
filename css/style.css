@@ -173,6 +173,13 @@ p,
   background-color: #ecb000;
   color: rgba(255,255,255, 1);
 }
+.liink-btn_goldenrod a:disabled,
+.liink-btn_goldenrod button:disabled {
+  border-color: grey;
+  background-color: grey;
+  color: rgba(255,255,255, 0.5);
+  pointer-events: none;
+}
 
 /* indigo */
 .liink-btn_indigo a,
@@ -804,7 +811,7 @@ p,
   .contact-page_form .input-wrap {
     padding: 0.6em 0;
   }
-  .contact-page_form input[type="name"],
+  .contact-page_form input[type="text"],
   .contact-page_form input[type="email"] {
     background-color: transparent;
     border: none ;
@@ -1045,17 +1052,21 @@ p,
   
   .packages_webdev_wrap {
     display: grid;
-    grid-template: 2em repeat(2, min-content) / 1fr;
-  }  
+    grid-template: 1fr / 1fr;
+  }
   .subpage_huge-icon_bg {
-    grid-row: 2 / -1;
-    grid-column: 1 / -1;
+    grid-row: 1;
+    grid-column: 1;
+    margin: 2em 0 0;
     background-image: url('../assets/liink-icon_red-salsa.svg');
+    opacity: 0.3;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position-x: center;
   }
   .packages_webdev_grid {
-    grid-row: 3 / -1;
+    grid-row: 1;
+    grid-column: 1;
     display: grid;
     grid-template: 6em repeat(6, min-content) 2em / 2em 1fr 2em;
     grid-row-gap: 4em;
