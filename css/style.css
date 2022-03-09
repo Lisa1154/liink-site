@@ -466,28 +466,6 @@ p,
 /*     margin: 0 auto; */
   /*   border-left: 6px solid #6600FF; */
   }
-
-  
-  /* --------- liink_icon spacer --------- */
-  .liink_icon_spacer {
-    display: grid;
-    grid-template: minmax(120px, 6vh) / 32% 36% 32%;
-    margin: 4em 0 3em;
-  }
-  .spacer_icon_wrap {
-    grid-row: 1;
-    grid-column: 2;
-    display: grid;
-    grid-template: min-content / 30% 35% 35%;
-  }
-  .spacer_icon {
-    grid-row: 1;
-    grid-column: 2;
-/*     margin-left: -1vw; */
-  }
-  .liink_icon_spacer img {
-    opacity: 1.0;
-  }
   
   
   /* --------- Folio section --------- */
@@ -938,6 +916,7 @@ p,
   /* --------- SUB page contact highlight --------- */
   .subpage_ctct-highlight {
     background-color: #F8F8F8;
+    padding: 0 2.4em;
   }
   .subpage_ctct-card {
     border-radius: 0;
@@ -1068,7 +1047,7 @@ p,
     grid-row: 1;
     grid-column: 1;
     display: grid;
-    grid-template: 6em repeat(6, min-content) 2em / 2em 1fr 2em;
+    grid-template: 4em repeat(6, min-content) 2em / 2em 1fr 2em;
     grid-row-gap: 4em;
   }
   .package {
@@ -1140,7 +1119,7 @@ p,
   /* ------------------------------------- */
   .logo_package,
   .branding_package {
-    margin: 2em 1.2em;
+    margin: 3em 1.2em 5em;
   }
   /* .logo_package .package-card-title,
   .branding_package .package-card-title {
@@ -1149,6 +1128,22 @@ p,
   .logo_package .card-body,
   .branding_package .card-body {
     text-align: center;
+  }
+  .logo_package .package-list-wrap,
+  .branding_package .package-list-wrap {
+    padding-left: 0;
+  }
+
+  /* --------- liink_icon spacer --------- */
+  .liink_icon_spacer {
+    display: grid;
+    grid-template: 1fr / minmax(2em, 1fr) 2em minmax(2em, 1fr);
+    margin: 5em 0 3em;
+  }
+  .spacer_icon_wrap {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: -1vw;
   }
 
   /* ------------------------------------- */

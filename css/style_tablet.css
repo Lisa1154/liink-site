@@ -162,6 +162,9 @@ and (orientation: portrait) {
    /*--------------------------------------------*/
    /*-------------  SUB page Webdev -------------*/
    /*--------------------------------------------*/
+   .intro-bit {
+      padding: 5em 3em 0;
+   }
    .howwedo-img {
       grid-column: 4 / -1;
    }
@@ -170,12 +173,40 @@ and (orientation: portrait) {
       background-size: auto 100%;
    }
 
-
-
     /* SUB page header styling */
     /* .subpage-header-bg-wrap {
        display: none;
     } */
+
+   .subpage_ctct-highlight {
+      display: grid;
+      grid-template: 1fr / minmax(6em, 1fr) minmax(min-content, 440px) minmax(6em, 1fr);
+   }
+   .subpage_ctct-card {
+      grid-column: 2;
+      border-radius: 0;
+      border: none;
+      padding: 2em;
+      margin: 4em 0 6em;
+   }
+
+   /*--------------------------------------------*/
+   /*------------  SUB page GraphicD ------------*/
+   /*--------------------------------------------*/
+   .logo_package,
+   .branding_package {
+      margin: 3em 6em;
+      padding: 2em 2.4em;
+   }
+   .liink_icon_spacer {     
+      grid-template: 1fr / minmax(2em, 1fr) 3em minmax(2em, 1fr);
+      margin: 8em 0 6em;
+    }
+   .package_other {
+      padding: 0 1.2em;
+   }
+
+
 
    /*--------------------------------------------*/
    /*---------  SUB page Contact Thanks ---------*/
