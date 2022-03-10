@@ -179,6 +179,16 @@ p.tagline {
    margin: 5em 0 0;
    background-size: auto 100%;
 }
+.package-list-wrap {  
+   padding: 0 3em 2em;
+ }
+.package_other img {
+   width: 24%;
+   margin: 1.2em 1em;
+}
+.package_other .liink-btn {
+   margin-top: 2.4em;
+}
 
 .subpage_ctct-highlight {
    display: grid;
