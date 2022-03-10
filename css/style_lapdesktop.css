@@ -55,7 +55,7 @@ p.tagline {
    grid-column: 8 / span 5;
 }
 .about-wrap {
-   padding: 30vh 0 12vh;
+   padding: 7em 0 3em;
 }
 .about-headings {
    grid-column: 2 / span 10;
@@ -66,6 +66,7 @@ p.tagline {
 .method-grid {
    grid-gap: 3.3em;
 }
+
 .huge-type {
    font-size: 9rem;
    letter-spacing: 0.4rem;
@@ -307,6 +308,9 @@ p.contact-thanks_tagline {
    }
    .howwedo_websites:nth-of-type(2) {
       padding-right: 3em;
+   }
+   .about-wrap {
+      padding: 7em 0 1em;
    }
    .method-grid {
       grid-gap: 4.8em;

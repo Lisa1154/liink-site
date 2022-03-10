@@ -190,18 +190,17 @@
     display: grid;
     grid-template: 1fr / 5em 1fr;
     margin: 1em 0;
+    align-items: center;
   }
   .unqspt_img {
     grid-row: 1;
     grid-column: 1;
-    /* min-width: 5em;
-    max-width: 5em; */
-    margin: 0.2em 1em;
+    width: 5em;
   }
   .unqspt_content {
     grid-row: 1;
     grid-column: 2;
-    padding: 0.3em;
+    padding-left: 2em;
   }
 
   
