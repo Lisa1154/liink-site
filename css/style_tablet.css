@@ -168,7 +168,12 @@ p.tagline {
    padding: 5em 3em 0;
 }
 .howwedo-img {
+   /* grid-row: ; */
    grid-column: 4 / -1;
+   /* background-size: 90% auto; */
+ }
+.grey-highlight {
+   grid-template: 3fr 14vh 2rem 3fr min-content 4rem / 3em repeat(5, 1fr) 3em;
 }
 .subpage_huge-icon_bg {
    margin: 5em 0 0;

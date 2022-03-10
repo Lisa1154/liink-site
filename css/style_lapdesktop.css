@@ -110,26 +110,25 @@ p.tagline {
    grid-row: 4 / -1;
    grid-column: 1 / -1;
    background-color: #f8f8f8;
-   /* padding: 6em 0 0; */
    display: grid;
-   grid-template: 3fr 14vh 2em min-content min-content 4em/ 15vw repeat(5, 17vw);
+   grid-template: 3fr 6em 2em 3fr min-content 3.3em / minmax(3em, 1fr) minmax(min-content, 1100px) minmax(3em, 1fr);
 }
 .howwedo_websites {
    grid-row: 1;
-   grid-column: 2 / span 4;
+   grid-column: 2;
    margin-top: 8em;
 }
 .howwedo_liink-icon {
    grid-row: 2;
-   grid-column: 4;
+   grid-column: 2;
    background-image: url('../assets/liink-icon_black.svg');
    background-repeat: no-repeat;
    background-size: contain;
-   /* margin-left: -1em; */
+   background-position-x: center;
 }
 .howwedo_webshops {
    grid-row: 4;
-   grid-column: 2 / span 4;
+   grid-column: 2;
 }
 .howwedo_list {
    display: grid;
@@ -147,7 +146,8 @@ p.tagline {
 }
 .howwedo_a_wrap {
    grid-row: 5;
-   grid-column: 5;
+   grid-column: 2;
+   background-position-x: right;
 }
 
 
