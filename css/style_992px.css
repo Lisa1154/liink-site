@@ -217,7 +217,7 @@
     grid-template: 1fr / 1fr;
     place-items: center;
   }
-  .lets-talk_wrap .huge-type {      
+  .lets-talk_wrap .huge-type {
     font-size: 5rem;
     letter-spacing: 0.3rem;
     line-height: 1.2;
