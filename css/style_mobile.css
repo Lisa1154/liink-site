@@ -142,6 +142,10 @@ p,
               border-color 0.3s ease-in-out,
               box-shadow 0.3s ease-in-out;
 }
+.liink-btn .chunk-btn {
+  min-width: 3em;
+  max-width: 3em;
+}
 
 /*------ liink button Color variations ------*/
 
