@@ -642,7 +642,7 @@ p,
 
   .contact-chunk_area {
     min-height: 72vh;
-    padding: 0.6em 2em 2em;
+    padding: 2em;
     grid-row: 2;
     grid-column: 1;
     background-color: white;
