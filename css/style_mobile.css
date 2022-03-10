@@ -585,13 +585,12 @@ p,
 
   /* --------- Contact-chunk section --------- */
   .contact-chunk {
-    /* min-height: 60vh; */
     width: 100vw;
     display: grid;
-    grid-template: 1fr 1fr / 1fr;
+    grid-template: 1fr 2fr / 1fr;
   }
   .contact-chunk_head {
-    min-height: 60vh;
+    max-height: 60vh;
     padding: 2em;
     grid-row: 1;
     grid-column: 1;
@@ -599,8 +598,7 @@ p,
     color: #fff719;
     display: grid;
     grid-template: 1fr / 1fr;
-    place-items: center;
-    /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
+    place-items: center;    
   }
   /* .contact-chunk_head {
     	background: linear-gradient(0deg,#fff 3%,hsla(0,0%,100%,0)),linear-gradient(-257deg,#fff947,#fff947 50%,#fff947);
@@ -644,7 +642,7 @@ p,
 
   .contact-chunk_area {
     min-height: 72vh;
-    padding: 2em;
+    padding: 0.6em 2em 2em;
     grid-row: 2;
     grid-column: 1;
     background-color: white;

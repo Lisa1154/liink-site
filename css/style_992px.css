@@ -155,9 +155,6 @@
     grid-column: 2;
     padding-left: 4em;
   }
-  /* .why-headings .headings-combi .h3 {
-    line-height: 0.5;
-  } */
   .why-unqspt-wrap {
     grid-row: 2;
     grid-column: 1 / span 3;
@@ -212,43 +209,38 @@
     grid-template: 1fr / 50vw 50vw;
   }
   .contact-chunk_head {
+    max-height: none;
     padding: 4em 2em 2em;
     grid-row: 1;
     grid-column: 1;
     display: grid;
     grid-template: 1fr / 1fr;
     place-items: center;
-    /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
   }
   .lets-talk_wrap .huge-type {      
-    font-size: 6rem;
+    font-size: 7rem;
     letter-spacing: 0.3rem;
     line-height: 1.2;
   }  
   .contact-chunk_area {
-    padding: 2em;
+    padding: 3em 2em 2em;
     grid-row: 1;
     grid-column: 2;
-    /* display: grid;
-    grid-template: minmax(2em, 1fr) min-content minmax(2em, 1fr); */
   }
-
-  .contact-form input {    
+  .contact-chunk_form {
+    margin: 1em 3em;
+  }
+  .contact-chunk_form input {    
+    font-size: 20px;
+  }
+  .contact-chunk_form input::-webkit-input-placeholder {    
+    font-size: 20px;
+  }
+  .contact-chunk_form i {
     font-size: 24px;
   }  
-  .contact-form i {
-    font-size: 30px;    
-  }
-  .contact-form input::-webkit-input-placeholder {    
-    font-size: 24px;
-  }
-  
   .contact-chunk_our-details {
-    margin: 3em 0 0;
-  }    
-  .contact-chunk_socials li {
-    display: inline;
-    padding: 0 0.3em;
+    margin: 2.4em 0 0;
   }
 
   /* --------- Footer section --------- */
