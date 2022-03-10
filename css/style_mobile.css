@@ -698,7 +698,9 @@ p,
   .contact-chunk_our-details {
     margin: 3em 0 0;
     text-align: center;
-    font-weight: 700;
+  }
+  .contact-chunk_our-details span {
+    font-weight: 500;
   }
   .contact-chunk_our-details a {
     color: #050203 !important;
@@ -938,6 +940,9 @@ p,
     border: none;
     padding: 2em;
     margin: 4em 0;
+  }
+  .subpage_ctct-card > p {
+    font-weight: 500;
   }
   .subpage_ctct-icons-wrapper {
     padding: 3em 0;
