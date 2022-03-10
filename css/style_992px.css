@@ -101,6 +101,7 @@
   .about-headings {    
     grid-row: 1;
     grid-column: 1 / span 10;
+    margin-bottom: 2em;
   }
   .about-pics {
     grid-row: 2;
