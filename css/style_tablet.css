@@ -125,18 +125,18 @@ p.tagline {
 }
 
 /* --------- Contact chunk Section --------- */
-.contact-chunk {
+   .contact-chunk {
    display: grid;
    grid-template: 1fr / 1fr 1fr;
    }
    .contact-chunk_head {
+   max-height: none;
    padding: 2em;
    grid-row: 1;
    grid-column: 1;
    display: grid;
    grid-template: 1fr / 1fr;
    place-items: center;
-   /* grid-template: minmax(72px, 1fr) min-content minmax(72px, 1fr) / minmax(72px, 1fr) min-content minmax(72px, 1fr); */
    }
    .lets-talk_wrap .huge-type {      
    font-size: 4rem;
@@ -145,20 +145,19 @@ p.tagline {
    }  
    .contact-chunk_area {
    min-height: 72vh;
-   padding: 2em;
+   padding: 3em 2em 2em;
    grid-row: 1;
    grid-column: 2;
    /* display: grid;
    grid-template: minmax(3em, 1fr) min-content minmax(3em, 1fr); */
    }  
    .contact-chunk_socials li {
-   display: inline;
    padding: 0 0.4em;
    }
 
-.footer-logo img {
+   .footer-logo img {
    width: 72%;
-}
+   }
 
 
 /*--------------------------------------------*/
@@ -174,13 +173,6 @@ p.tagline {
    margin: 5em 0 0;
    background-size: auto 100%;
 }
-
-   /* SUB page header styling */
-   .subpage-header-bg-wrap {
-      /* max-height: 300px; */
-   }
-
-
 
 .subpage_ctct-highlight {
    display: grid;

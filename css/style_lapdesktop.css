@@ -71,6 +71,21 @@ p.tagline {
    letter-spacing: 0.4rem;
 }
 
+/* --------- Contact section --------- */
+.lets-talk_wrap .huge-type {      
+   font-size: 9rem;
+   letter-spacing: 0.4rem;
+   line-height: 1.1;
+ } 
+ .contact-chunk_form {
+   margin: 1em 3em;
+ }
+ .contact-chunk_socials li {
+   padding: 0 0.4em;
+ }
+
+
+
 /* --------- Footer section --------- */
 .footer-logo img {
    width: 80%;
@@ -280,32 +295,42 @@ p.contact-thanks_tagline {
 } 
 
 
+
+
+
 /* -------------------------------------------------------- */
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-.laughing-us {
-   margin-top: -48%;
-   grid-row: 1;
-   grid-column: 9 / span 5;
-}
-.howwedo-img {
-   max-width: 800px;
-   background-size: 60%;
-}
-.howwedo_websites:nth-of-type(2) {
-   padding-right: 3em;
-}
-.method-grid {
-   grid-gap: 4.8em;
-}
-/* .subpage_ctct-card {
-   padding: 6em 6em 4em;
-   margin: 7em 0 6em;
-} */
+   .laughing-us {
+      margin-top: -48%;
+      grid-row: 1;
+      grid-column: 9 / span 5;
+   }
+   .howwedo-img {
+      max-width: 800px;
+      background-size: 60%;
+   }
+   .howwedo_websites:nth-of-type(2) {
+      padding-right: 3em;
+   }
+   .method-grid {
+      grid-gap: 4.8em;
+   }
+   /* contact Chunk section */
+   .contact-chunk_area {
+      padding: 3em 3em 2em;
+   }
+   .contact-chunk_form {
+     margin: 2em 2em 1em;
+   }
+   /* .subpage_ctct-card {
+      padding: 6em 6em 4em;
+      margin: 7em 0 6em;
+   } */
 
-.error {
-   margin-top: 8em;
-}
+   .error {
+      margin-top: 8em;
+   }
 
 
 }
