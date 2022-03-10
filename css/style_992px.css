@@ -217,6 +217,11 @@
     grid-template: 1fr / 1fr;
     place-items: center;
   }
+  .lets-talk_wrap .huge-type {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.2;
+  }  
   .contact-chunk_area {
     padding: 3em 2em 2em;
     grid-row: 1;
