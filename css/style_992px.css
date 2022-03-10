@@ -125,6 +125,9 @@
   .method-grid .h4 {
     text-align: center;
   }
+  .method-grid .h4:first-of-type {
+    margin-left: -1rem;
+  }
   .method-grid p {
     text-align: justify;   
   }

@@ -119,6 +119,7 @@ p.tagline {
 }
 .method-grid > div {
    max-width: 600px;
+   min-height: 24.5rem;
    padding: 1.2em 2em;
    box-shadow: 9px 25px 30px 0 rgb(0 0 0 / 30%);
    margin: 3em;
