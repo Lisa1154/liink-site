@@ -323,11 +323,6 @@
     letter-spacing: 0.3rem;
     line-height: 1.2;
   }
-  /* 
-  .subpage-header-indigo-blob p:last-of-type {
-    grid-row: 1;
-    grid-column: 1;
-  } */
   .subpage-header-redsalsa-blob {
     grid-row: 3 / span 6;
     grid-column: 7 / span 5;
