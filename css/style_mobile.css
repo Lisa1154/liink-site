@@ -1101,7 +1101,7 @@ p,
   .package-list-wrap {
     display: grid;
     grid-template: 4fr / min-content 1fr;
-    padding: 0 0.7em 1.2em;
+    padding: 0 0.7em 1.2em 0.2em;
   }  
   /* .checkmark-image{
     background-image: url('');

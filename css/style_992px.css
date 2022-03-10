@@ -375,8 +375,6 @@
 
 
 
-
-
   .packages_webdev_wrap {
   display: grid;
   grid-template: 1fr 9em / 1fr;
@@ -423,7 +421,7 @@
 .package-list-wrap {
     display: grid;
     grid-template: 4fr / min-content 1fr;
-    padding: 0 0.7em 1.2em;
+    padding: 0 0.7em 2em;
 }
 .package-list-item {
     text-align: left;
@@ -447,8 +445,8 @@
     grid-column: 2;
 }
 .package_other img {
-    width: 12vw;
-    margin: 1em 0;
+  width: 24%;
+  margin: 2em 1.2em;
 }
 .package_other .liink-btn {
     margin-top: 2.4em;
@@ -456,7 +454,7 @@
 
 /*--------- subpage contact highlight ---------*/
 .subpage_ctct-highlight {
-  grid-template: 1fr / minmax(20em, 1fr) minmax(min-content, 1100px) minmax(20em, 1fr);
+  grid-template: 1fr / minmax(6em, 1fr) minmax(min-content, 720px) minmax(6em, 1fr);
 }
 .subpage_ctct-card {
   grid-column: 2;

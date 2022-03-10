@@ -150,6 +150,19 @@ p.tagline {
    background-position-x: right;
 }
 
+.package_other img {
+   width: 20%;
+   margin: 2em 1.2em;
+ }
+ .package_other .liink-btn {
+     margin-top: 2.4em;
+ }
+
+
+/*--------- subpage contact highlight ---------*/
+.subpage_ctct-highlight {
+   grid-template: 1fr / minmax(6em, 1fr) minmax(min-content, 900px) minmax(6em, 1fr);
+ }
 
 
 /* ------------------------------------- */
