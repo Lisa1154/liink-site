@@ -404,6 +404,7 @@
     grid-row: 3;
     grid-column: 2 / span 3;
 }
+
 .package4 {
     grid-row: 3;
     grid-column: 6 / span 3;
@@ -416,7 +417,11 @@
 .package-card-title {
     padding: 1.2em 0.4em 1em;
     text-align: center;
+    font-size: 1.5rem;
 }
+/* .package3 .package-card-title {
+  word-break: keep-all;
+} */
 .package-list-wrap {
     display: grid;
     grid-template: 4fr / min-content 1fr;
