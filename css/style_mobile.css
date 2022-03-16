@@ -1058,6 +1058,10 @@ p,
     margin: 2em 0 0;
     background-image: url('../assets/liink-icon_red-salsa.svg');
     opacity: 0.3;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    -ms-opacity: 0.3;
+    -o-opacity: 0.3;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position-x: center;
