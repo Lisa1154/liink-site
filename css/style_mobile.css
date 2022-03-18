@@ -823,8 +823,8 @@ p,
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
   }
-  .contact-page_form input[type="name"]:focus,
-  .contact-page_form input[type="name"]:active,
+  .contact-page_form input[type="text"]:focus,
+  .contact-page_form input[type="text"]:active,
   .contact-page_form input[type="email"]:focus,  
   .contact-page_form input[type="email"]:active {
     box-shadow: none;
