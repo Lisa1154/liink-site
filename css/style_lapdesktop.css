@@ -92,7 +92,7 @@ p.tagline {
 /* --------- SUB page webdev --------- */
 /* ----------------------------------- */
 .intro-bit {
-   padding: 16vh 0 3vh;
+   padding: 6em 0 2em;
 }
 
 .howwedo_wrap {
@@ -224,7 +224,7 @@ p.icon_subtitle {
    justify-content: center;
 }
 .contact-page_wrap {
-   margin: 6em 0 1em;
+   margin: 4em 0 1em;
    padding: 0 1rem;
 }
 .contact-page_inner-wrap  {
