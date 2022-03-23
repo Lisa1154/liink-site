@@ -179,7 +179,7 @@ p.tagline {
    .subpage-header-indigo-blob {
    grid-row: 1 / span 8;
    grid-column: 1 / span 9;
-   background-image: url('../assets/blob_electric-indigo.svg');
+   background-image: url('../assets/blob_electric-indigo_trans.svg');
    background-repeat: no-repeat;
    }
    .subpage-header-hero-text {
@@ -196,7 +196,7 @@ p.tagline {
    .subpage-header-redsalsa-blob {
    grid-row: 3 / span 6;
    grid-column: 8 / span 5;
-   background-image: url('../assets/blob_red-salsa.svg');
+   background-image: url('../assets/blob_red-salsa_trans.svg');
    background-repeat: no-repeat;
    opacity: 0.6;
    }
