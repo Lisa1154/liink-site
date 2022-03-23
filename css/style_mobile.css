@@ -391,7 +391,7 @@ p,
     background-attachment: fixed;
   }
   .hero {
-    height: 100vh;
+    /* height: 30vh; */
     display: grid;
     grid-template: 6em min-content 1fr / 2rem 1fr 2rem;
   }
