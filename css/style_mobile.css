@@ -779,9 +779,14 @@ p,
     letter-spacing: 1px;
   }
 
-  /* div.whatsapp-chat {
-    
-  } */
+  div.whatsapp-chat {
+    position: fixed;
+    bottom: 12px; 
+    right: 12px;
+    z-index: 239;
+    cursor: pointer; 
+    box-shadow: 0 25px 30px 0 rgb(64 195 81 / 40%);
+  }
   
   
   /*--------------------------------------*/
