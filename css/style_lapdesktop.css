@@ -86,6 +86,9 @@ p.tagline {
 .footer-logo img {
    width: 80%;
 }
+div.whatsapp-chat {
+   display: none;
+}
 
 
 /* ----------------------------------- */
