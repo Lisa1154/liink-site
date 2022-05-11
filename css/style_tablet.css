@@ -208,6 +208,10 @@ p.tagline {
    z-index: 1;
    }
 
+/* --------- Footer Section --------- */
+   div.whatsapp-chat {
+   display:none; 
+   }
 
 
 
