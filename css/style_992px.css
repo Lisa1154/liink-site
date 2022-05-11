@@ -253,7 +253,9 @@
   .footer-logo img {
   width: 60%;
   }
-
+  div.whatsapp-chat {
+    display: none;
+  }
 
 
   /* ----------------------------------- */
