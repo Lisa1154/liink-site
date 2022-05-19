@@ -1181,6 +1181,32 @@ p,
   }
 
   /* ------------------------------------- */
+  /* ---- SUB page Terms & Conditions ---- */
+  /* ------------------------------------- */
+  .terms-section {
+    justify-content: center;
+  }
+  .terms_download {
+    min-height: 480px;
+    min-width: 12em;
+    padding: 3em 2em;
+    text-align: center;
+  }
+  .terms_download a {
+    height: 2em;
+    width: 2em;
+    color: #050203;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    margin: 3em 2em;
+    /* font-size: 1.6rem; */
+  }
+  .terms_download a:hover {
+    color:#6600ff;
+  }
+
+
+  /* ------------------------------------- */
   /* ----------- SUB 404 error ----------- */
   /* ------------------------------------- */
   .error {
