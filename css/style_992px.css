@@ -503,6 +503,19 @@
   }
 
 
+  .terms_download a {
+    height: 3em;
+    width: 3em;
+    color: #050203;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    margin: 3em 2em;
+    /* font-size: 1.6rem; */
+  }
+  .terms_download a:hover {
+    color:#6600ff;
+  }
+
   /* ----------------------------------- */
   /* ---------- SUB 404 error ---------- */
   /* ----------------------------------- */
