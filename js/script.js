@@ -128,6 +128,17 @@ window.addEventListener("DOMContentLoaded", () => {
         });
       });
   }
+  if (window.innerWidth > 768) {
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/628ba6ff7b967b117990d0fd/1g3oo8m06';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  }
   // srcoll progress line
    const container = document.getElementById('js-scroll-container');
    const highlight = document.getElementById('js-scroll-highlight');
