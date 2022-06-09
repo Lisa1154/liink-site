@@ -88,9 +88,6 @@
     height: 3em;
   }
 
-  /* --------- Folio section --------- */
-  
-
   /* --------- About Section --------- */
   .about-wrap {
     display: grid;
@@ -112,6 +109,128 @@
     grid-column: 8 /span 4;
   }
 
+  /* ------------ Folio  ------------ */
+  .folio-wrap {
+    display: grid;
+    grid-template-columns: minmax(3em, 1fr) minmax(600px, 56em) minmax(3em, 1fr);
+    margin: 6em 0;
+  }
+  .folio-headings {
+    grid-column: 2;
+    margin-bottom: 4em;
+  }
+  .folio-list {
+    grid-column: 2;
+    display: grid;
+    /* grid-template-rows: 2; */
+    grid-template-columns: 50% 50%;
+  }
+  .folio-thumb1 {
+    grid-row: 1;
+    grid-column: 1;
+    transform: translate(0, -2em);
+  }
+  .folio-thumb2 {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 4em;
+  }
+  .folio-thumb3 {
+    grid-row: 2;
+    grid-column: 1;
+    transform: translate(0, -2em);
+  }
+  .folio-thumb4 {
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 4em;
+  }
+  .folio-thumbnail {
+    padding: 0 2em;
+  }
+  a.folio-thumbnail__wrapper {
+    position: relative;
+    color: #050203;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  /* a.folio-thumbnail__wrapper:hover {
+    color: #fff719;
+  } */
+  .thumbnail__img {
+    position: relative;
+  }
+  .thumb-img__wrap {
+    position: relative;
+    z-index: 2;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+    transition: 0.3s ease-in-out;
+  }
+  .thumb-img__wrap:hover {
+    transform: translate3d(-25px, -25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+  }
+  .thumb-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    /* max width said 'none' */
+  }
+  .thumb-img__border {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    margin: -5px;
+    /* margin pulls border in under the img so invisible */
+    background-color: #6600ff;
+    /* -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); */
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 0.9) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+    transition: 0.3s ease-in-out;
+  }
+  .thumb-img__border:hover {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+  }
+  .thumb-img__bg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    background-color: #6600ff;
+  }
+  .thumbnail__title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #ecb000;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .folio-text {
+    line-height: 30px;
+  }
+  .thumbnail-divider {
+    border-bottom: 4px solid #6600ff;
+    width: 90px;
+    height: 2px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  .thumbnail-tags {
+    font-size: 1.2rem;
+    /* line-height: 20px; */
+    color: #6600ff;
+    opacity: 0.7;
+    font-style: italic;
+  }
+
+
+  /* ------------ Method ------------ */
   .method-wrap {
     margin-bottom: 6em;
   }

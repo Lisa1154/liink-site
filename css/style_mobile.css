@@ -477,9 +477,6 @@ p,
   }
   
   
-  /* --------- Folio section --------- */
-  
-  
   /* --------- About Section --------- */
   .about-wrap {
     min-height: 90vh;
@@ -514,7 +511,103 @@ p,
   }
   .about-tagline {
     padding: 1em 0 0;
-  }    
+  }
+
+
+  /* ------------ Folio  ------------ */
+  /* .folio-wrap {
+  } */
+  .folio-headings {
+    margin-bottom: 1.2em;
+  }
+  .folio-list {
+    padding: 0 0.3em;
+  }
+  .folio-thumb1 {
+    grid-row: 1;
+  }
+  .folio-thumb2 {
+    grid-row: 2;
+  }
+  .folio-thumb3 {
+    grid-row: 3;
+  }
+  .folio-thumb4 {
+    grid-row: 4;
+    margin-bottom: 2em;
+  }
+  .folio-thumbnail {
+    padding: 1em 1em 1.5em;
+  }
+  a.folio-thumbnail__wrapper {
+    position: relative;
+    color: #050203;
+  }
+  .thumbnail__img {
+    position: relative;
+  }
+  .thumb-img__wrap {
+    position: relative;
+    /* z-index: 2;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+    transition: 0.3s ease-in-out; */
+  }
+  .thumb-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    /* max width said 'none' */
+  }
+  /* .thumb-img__border {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    margin: -5px;
+    background-color: #6600ff;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 0.9) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+    transition: 0.3s ease-in-out;
+  } */
+  .thumb-img__bg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    background-color: #6600ff;
+  }
+  .thumbnail__title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #ecb000;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .folio-text {
+    line-height: 1.4;
+  }
+  .thumbnail-divider {
+    border-bottom: 4px solid #6600ff;
+    width: 90px;
+    /* height: 2px; */
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  .thumbnail-tags {
+    font-size: 1.2rem;
+    /* line-height: 20px; */
+    color: #6600ff;
+    opacity: 0.7;
+    font-style: italic;
+  }
+
+
+
+  /* ------------ Method ------------ */
   .method-wrap {
     margin-bottom: 4em;
   }
