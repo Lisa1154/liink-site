@@ -63,9 +63,9 @@ p.tagline {
 .method-wrap {
    padding: 0 6vw 3vh;
 }
-.method-grid {
+/* .method-grid {
    grid-gap: 3.3em;
-}
+} */
 
 .huge-type {
    font-size: 9rem;
@@ -328,10 +328,10 @@ p.contact-thanks_tagline {
    .about-wrap {
       padding: 7em 0 1em;
    }
-   .method-grid {
+   /* .method-grid {
       grid-gap: 4.8em;
-   }
-   /* contact Chunk section */
+   } */
+   /* ------ contact Chunk section ------ */
    .lets-talk_wrap .huge-type {      
       font-size: 9rem;
       letter-spacing: 0.4rem;
