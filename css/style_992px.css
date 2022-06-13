@@ -120,14 +120,15 @@
     grid-template: repeat(2, 24em) / 1fr 20em 20em 1fr; */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     /* grid-gap: 2.5em; */
-    margin: 2em 0;
+    margin: 4em 0;
+    justify-content: center;
   }
   .method-grid > div {
     max-width: 800px;
     /* min-height: 24.5rem; */
     padding: 1em 1em 0.4em;
     box-shadow: 9px 25px 30px 0 rgb(0 0 0 / 30%);
-    /* margin: 3em; */
+    margin-bottom: 6em;
  }
   /* .method-grid .h4 {
     text-align: center;
