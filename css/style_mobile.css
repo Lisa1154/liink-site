@@ -1181,6 +1181,41 @@ p,
   }
 
   /* ------------------------------------- */
+  /* ----------- SUB page Blog ----------- */
+  /* ------------------------------------- */
+  .blog_main-wrap {
+    display: grid;
+    grid-template-columns: minmax(3em, 1fr) minmax(min-content, 18em) minmax(3em, 1fr);
+    margin: 6em 0;
+    background-color: #F4F3EF;
+    text-align: center;
+  }
+  .blog_header {
+    grid-column: 2;
+    min-height: 6em;
+  }
+  .blog-headings {
+    grid-column: 2;
+    margin-bottom: 4em;
+  }
+  .blog-list {
+    grid-column: 2;
+  }
+  .blog_social {
+    grid-column: 2;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .social-gallery {
+    display: grid;
+  }
+  .blog_contact {
+    min-height: 12em;
+    background-color: #F8F8F8;
+  }
+
+
+  /* ------------------------------------- */
   /* ---- SUB page Terms & Conditions ---- */
   /* ------------------------------------- */
   .terms-section {
