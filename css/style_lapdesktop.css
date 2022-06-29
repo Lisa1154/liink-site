@@ -59,6 +59,7 @@ p.tagline {
    display: grid;
    grid-template: 1fr / 30% 70%;
    grid-gap: 0.6em;
+   height: 100%;
 }
 .service-img-wrap {
    grid-column: 1;
