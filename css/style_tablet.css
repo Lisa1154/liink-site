@@ -76,27 +76,17 @@ p.tagline {
    grid-column: 2 / span 5;
    margin: 4em 0 2em;
    }
-   .services-grid-item1 {
+.services-grid-item1 {
    grid-row: 3;
    grid-column: 2 / span 5;
-   }
-   .services-grid-item2 {
+}
+.services-grid-item2 {
    grid-row: 4;
    grid-column: 2 / span 5;
-   }
-   .service-wrap {
-      display: grid;
-      grid-template: 1fr / 30% 70%;
-    }
-   .service-img-wrap {
-      grid-column: 1;
-   }
-   .service-wrap img {
-      width: 90%;
-   }
-   .service-text-wrap {
-      grid-column: 2;
-   }
+}
+.service-wrap img {
+   width: 90%;
+}
 
 /* --------- About Section --------- */
 .about-wrap {
