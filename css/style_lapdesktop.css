@@ -58,16 +58,16 @@ p.tagline {
 .service-wrap {
    display: grid;
    grid-template: 1fr / 30% 70%;
+   grid-gap: 0.6em;
 }
 .service-img-wrap {
    grid-column: 1;
-   display: grid;
-   justify-items: center;
 }
 .service-wrap img {
-   width: 30%;
+   width: 100%;
 }
 .service-text-wrap {
+   grid-row: 1;
    grid-column: 2;
 }
 
