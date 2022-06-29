@@ -468,12 +468,21 @@ p,
   }  
   .service-wrap {
     display: grid;
-    grid-template: 1fr / 30% 70%;
+    grid-template: 30% 70% / 1fr;
+  }
+  .service-img-wrap {
+    grid-row: 1;
+    display: grid;
+    justify-items: center;
   }
   .service-wrap img {
-    width: 100%;
-/*     margin: 0 auto; */
+    width: 48%;
   /*   border-left: 6px solid #6600FF; */
+  }
+  .service-text-wrap {
+    grid-row: 2;
+    margin-left: 1em;
+    margin-top: 0.9em;
   }
   
   
@@ -919,7 +928,7 @@ p,
   }
   .subpage-header {
     grid-row: 2 / span 1;
-    grid-column: 3 / -1;
+    grid-column: 3 / -3;
     display: grid;
     grid-template: 5.5rem 2.7rem / 1fr 1fr 1fr;
   }

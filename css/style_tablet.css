@@ -84,9 +84,20 @@ p.tagline {
    grid-row: 4;
    grid-column: 2 / span 5;
    }
+   .service-wrap {
+      display: grid;
+      grid-template: 1fr / 30% 70%;
+    }
+   .service-img-wrap {
+      grid-column: 1;
+   }
    .service-wrap img {
       width: 90%;
    }
+   .service-text-wrap {
+      grid-column: 2;
+   }
+
 /* --------- About Section --------- */
 .about-wrap {
    display: grid;
