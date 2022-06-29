@@ -54,6 +54,24 @@ p.tagline {
    grid-row: 1;
    grid-column: 8 / span 5;
 }
+
+.service-wrap {
+   display: grid;
+   grid-template: 1fr / 30% 70%;
+}
+.service-img-wrap {
+   grid-column: 1;
+   display: grid;
+   justify-items: center;
+}
+.service-wrap img {
+   width: 30%;
+}
+.service-text-wrap {
+   grid-column: 2;
+}
+
+
 .about-wrap {
    padding: 7em 0 3em;
 }
