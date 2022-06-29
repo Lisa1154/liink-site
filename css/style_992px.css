@@ -89,9 +89,9 @@
     display: grid;
     justify-items: center;
   } */
-  .service-wrap img {
-    /* width: 60%; */
-  }
+  /* .service-wrap img {
+    width: 60%;
+  } */
   /* .service-text-wrap {
     grid-row: 2;
     padding-left: 0.3em;
