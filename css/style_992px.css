@@ -374,7 +374,7 @@
     grid-row: 4 / -1;
     grid-column: 1 / -1;
     background-color: #f8f8f8;
-    padding: 6em 0 0;
+    padding: 2.4em 0 0;
     display: grid;
     grid-template: 3fr 6em 2em 3fr min-content 3.3em / minmax(3em, 1fr) minmax(min-content, 850px) minmax(3em, 1fr);
   }
