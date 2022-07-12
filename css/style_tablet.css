@@ -39,13 +39,9 @@
 .navbar-dark {
    background-color: #6600ff;
 }
-/* nav ul li {
-   display: inline-block;
-} */
 
 .hero {
    grid-template: 102px 1fr min-content 1fr / minmax(4em, 1fr) minmax(min-content, 600px) minmax(4em, 1fr);
-   /* grid-template: 6em min-content 1fr / 2rem 1fr 2rem; */
 }
 .hero-first {
    grid-row: 3;
@@ -157,8 +153,6 @@ p.tagline {
    padding: 3em 2em 2em;
    grid-row: 1;
    grid-column: 2;
-   /* display: grid;
-   grid-template: minmax(3em, 1fr) min-content minmax(3em, 1fr); */
    }  
    .contact-chunk_socials li {
    padding: 0 0.4em;
@@ -221,8 +215,6 @@ p.tagline {
    display: none;
    }
 
-
-
 /*--------------------------------------------*/
 /*-------------  SUB page Webdev -------------*/
 /*--------------------------------------------*/
@@ -232,7 +224,6 @@ p.tagline {
 .howwedo-img {
    /* grid-row: ; */
    grid-column: 4 / -1;
-   /* background-size: 90% auto; */
  }
 .grey-highlight {
    grid-template: 3fr 14vh 2rem 3fr min-content 4rem / 3em repeat(5, 1fr) 3em;
@@ -279,8 +270,6 @@ p.tagline {
 .package_other {
    padding: 0 1.2em;
 }
-
-
 
 /*--------------------------------------------*/
 /*---------  SUB page Contact Thanks ---------*/
