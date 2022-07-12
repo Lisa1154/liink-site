@@ -937,6 +937,7 @@ p,
   }
   .subpage-header p.tagline {
     grid-row: 2;
+    display: none;
   }
 
   .subpage-header-blobs {
