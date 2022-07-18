@@ -167,6 +167,10 @@ p,
 .liink-btn_goldenrod button {
   border-width: 4px;
   border-style: solid;
+  -webkit-border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
+  -moz-border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
+  -ms-border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
+  -o-border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
   border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
   color: #ecb000;
 }
@@ -1016,11 +1020,11 @@ p,
     grid-column: 1;
     margin: 2em 0 0;
     background-image: url('../assets/liink-icon_red-salsa.svg');
-    opacity: 0.3;
     -webkit-opacity: 0.3;
     -moz-opacity: 0.3;
     -ms-opacity: 0.3;
     -o-opacity: 0.3;
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position-x: center;
