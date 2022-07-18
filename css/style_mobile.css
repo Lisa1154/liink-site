@@ -165,13 +165,14 @@ p,
 /* golden rod */
 .liink-btn_goldenrod a,
 .liink-btn_goldenrod button {
-  border: 4px solid #ecb000;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(120deg, #ECB000, #FFF719) 1 / 4px;
   color: #ecb000;
 }
 .liink-btn_goldenrod a:hover,
 .liink-btn_goldenrod button:hover {
-  border-color: #ecb000;
-  background-color: #ecb000;
+  background: linear-gradient(120deg, #ECB000, #FFF719);
   color: rgba(255,255,255, 1);
 }
 .liink-btn_goldenrod a:disabled,
