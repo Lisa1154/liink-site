@@ -182,7 +182,6 @@ p,
 .liink-btn_goldenrod button:hover {
   background: linear-gradient(120deg, #ECB000, #FFF719);
   color: rgba(255,255,255, 1);
-  /* outline: 0; */
   background-origin: border-box;
 }
 .liink-btn_goldenrod a:disabled,
