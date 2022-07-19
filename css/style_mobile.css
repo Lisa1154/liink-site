@@ -146,6 +146,10 @@ p,
   min-width: 3em;
   max-width: 3em;
 }
+.chunk-btn:hover i{
+  color:#F8F8F8;
+  /* transform: translate(4px); */
+}
 
 /*------ liink button Color variations ------*/
 
@@ -178,6 +182,7 @@ p,
 .liink-btn_goldenrod button:hover {
   background: linear-gradient(120deg, #ECB000, #FFF719);
   color: rgba(255,255,255, 1);
+  outline: 0;
 }
 .liink-btn_goldenrod a:disabled,
 .liink-btn_goldenrod button:disabled {
