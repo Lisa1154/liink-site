@@ -1185,9 +1185,10 @@ p,
   /* ------------------------------------- */
   .blog_main-wrap {
     display: grid;
-    grid-template-columns: minmax(3em, 1fr) minmax(min-content, 18em) minmax(3em, 1fr);
+    grid-template-columns: minmax(1.2em, 1fr) minmax(min-content, 17.6em) minmax(1.2em, 1fr);
     margin: 6em 0;
-    background-color: #F4F3EF;
+    /* background-color: #F4F3EF; */
+    /* background-color: #F5F5F5; */
     text-align: center;
   }
   .blog_header {
@@ -1198,9 +1199,123 @@ p,
     grid-column: 2;
     margin-bottom: 4em;
   }
+  .blog-headings .h5 {
+    padding-top: 1em;
+    text-align: start;
+  }
   .blog-list {
     grid-column: 2;
+    display: grid;
+    grid-column: 16em;
+    grid-auto-rows: min-content;
+    gap: 2em;
   }
+  .article-thumb {
+    overflow: hidden;
+    border: 1px solid #CFCFCF;
+    height: max-content;
+    /* -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -ms-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3); */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+  }
+  .article-thumb_img-wrap {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .article-thumb_img-wrap img {
+    width: 100%;
+    height: auto;
+  }
+  .article_times {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    padding: 0.4em 0.6em 0.4em 0.24em;
+  }
+  .article-thumb_title {
+    color: var(--liink_deepblack);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .article-thumb_text {
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin: 1.6em 1.6em 1em;
+    color: var(--liink_spacegrey);
+  }
+  .article-thumb_text a {
+    color: var(--liink_spacegrey);
+  }
+  .article_stats {
+    display: flex;
+    justify-content: space-evenly;
+    color: #aaaaaa;
+    padding: 0.3em 0 0.4em;
+  }
+  .article-thumb_divider {
+    position: relative;
+    /* display: inline-block; */
+    /* padding-bottom: 1.2rem; */
+  }
+  .article-thumb_divider::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    height: 1px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #CFCFCF;
+  }
+  .stats {
+    margin: 0.6em auto;
+    font-size: 1rem;
+  }
+  .article_times a,
+  .stats a {
+    text-decoration: none;
+    color: #aaaaaa;
+  }
+  .article-thumb:hover {
+    -webkit-transform: rotate(-2deg) translateY(-6px) scale(1.025);
+    -moz-transform: rotate(-2deg) translateY(-6px) scale(1.025);
+    -ms-transform: rotate(-2deg) translateY(-6px) scale(1.025);
+    -o-transform: rotate(-2deg) translateY(-6px) scale(1.025);
+    transform: rotate(-2deg) translateY(-6px) scale(1.025);
+    -webkit-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -moz-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -ms-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -o-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+  }
+  
+  .article-thumb:nth-child(even):hover {
+    -webkit-transform: rotate(2deg) translateY(6px) scale(1.025);
+    -moz-transform: rotate(2deg) translateY(6px) scale(1.025);
+    -ms-transform: rotate(2deg) translateY(6px) scale(1.025);
+    -o-transform: rotate(2deg) translateY(6px) scale(1.025);
+    transform: rotate(2deg) translateY(6px) scale(1.025);
+    -webkit-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -moz-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -ms-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    -o-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
+    box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09); 
+  }
+
+
   .blog_social {
     grid-column: 2;
     background-color: #ffffff;
