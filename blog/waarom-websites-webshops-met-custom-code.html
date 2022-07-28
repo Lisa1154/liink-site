@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="nl-NL">
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog &mdash;&nbsp;Waarom we websites en webshops met custom code schrijven</title>
+  <meta name="description" content="Lees de laatste updates">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog &mdash;&nbsp;Waarom we websites en webshops met custom code schrijven">
+  <meta property="og:description" content="Lees de laatste updates">
+  <meta property="og:url" content="https://www.studioliink.com/">
+  <meta property="og:image" content="https://studioliink.com/assets/full-logo_liink.jpg">
+  <meta property="og:image:alt" content="logo LIINK. creative studio" />
+  <meta name="twitter:title" content="Blog &mdash;&nbsp;Waarom we websites en webshops met custom code schrijven">
+  <meta name="twitter:description" content="Lees de laatste updates">
+  <meta name="twitter:image" content="https://studioliink.com/assets/full-logo_liink.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ee5555">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://www.studioliink.com"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228029845-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-228029845-1');
+    gtag('config', 'G-QKN8BK8ELN');
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body class="article_body-bg">
+  <div class="container-fluid p-0" id="js-scroll-container">
+    <div class="splash">
+      <span class="splash-header">
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FIcon_LIINK_DEF.png?v=1639054889678"/>
+        </span>
+        <span class="splash-logo">
+          <img src="https://cdn.glitch.me/e712696b-e143-452d-a9a6-169e01e61598%2FLIINK_DEF_crop.png?v=1639169260632"/>
+        </span>
+      </span>
+  </div>
+  <!-- Navigation -->
+  <nav class="my-nav nav navbar navbar-expand-lg fixed-top navbar-dark" style="z-index: 240;">
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand navlogo-wrap" href="/">
+        <img class="d-inline-block" id="js-imgsrc" src="../assets/icon-navbar.svg" alt="logo"/>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar links -->
+      <div id="main-nav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+<!--               <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#intro">Home</a>
+          </li> -->
+<!--               <li class="nav-item">
+            <a class="nav-link" href="#services" target="">Services</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../webdev">Webdevelopment</a></li>
+              <li><a class="dropdown-item" href="../graphicdesign">Grafisch Ontwerp</a></li>
+            </ul>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link" href="/index#portfolio" target="">Portfolio</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/#about" target="">Over Ons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog" target="">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact-chunk" target="">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link liink_phone-nmbr" href="tel:0031645433377">+316 454 333 77</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--     scroll progress line     -->
+    <div class="scroll_progress">
+      <div class="scroll_progress_highlight" id="js-scroll-highlight"></div>
+    </div>
+  </nav>
+
+   <!-- Article main body -->
+   <div class="article_main-wrap">
+      <div class="article_hero">
+         <img src="../assets/website-webshop-op-maat.webp" alt="">
+      </div>
+      <div class="article_header">
+        <div class="article-headings">
+         <h2 class="h3">Waarom we websites en webshops met custom code <span class="cursor-blinker_red">schrijven</span></h2>
+         <!-- <h3 class="h5">Blijf up to date met ons nieuws over de laatste web-ontwikkelingen!</h3> -->
+        </div>
+        <div class="article_times">
+         <div class="date_read-time">
+           <i class="bi bi-calendar4-event"></i>&nbsp;26 juli '22
+           &nbsp;&mdash;&nbsp;
+           <i class="bi bi-clock"></i>&nbsp;<span id="reading-time"></span> minute read
+         </div>
+         <div class="article-thumb_share">
+           <a href="/"><i class="bi bi-share"></i></a>
+         </div>
+       </div>
+      </div>
+      <div class="article_body">
+         <p class="lead">
+            Een websitebouwer zoals het populaire WordPress wordt veel gebruikt. Waarom wij er dan toch voor kiezen om een website of webshop volledig met eigen code te schrijven en niet met een websitebouwer zoals WordPress? Dat heeft een aantal gunstige redenen, zowel voor onszelf als voor jou als klant.
+         </p>
+         <div class="article_text">
+            <h3>Schone code</h3>
+            <p>
+               Websitebouwers zoals WordPress of Wix zijn heel makkelijk in gebruik, vooral wanneer je nog nooit eerder een website hebt gebouwd. Ideaal! Maar wat je aan de voorkant niet kunt zien is dat deze websitebouwers door hun ‘drag & drop’ methode vaak overbodige code bevatten. Hiervan is vaak minder dan 10% écht van belang voor de klant. Ook lijkt het ruime aanbod in al die plugins op het eerste gezicht erg handig, maar vaak worden deze gemaakt door hobbyisten, én gratis, waardoor ze slechte code kunnen bevatten.
+            </p>
+            <p>
+               Waarom schone code zo belangrijk is? Wanneer jouw nieuwe website net online is gaat Google deze afstruinen om de inhoud te beoordelen. Hoe schoner de code, hoe gemakkelijker het voor Google is om de inhoud van de website te beoordelen.
+            </p>
+            <p>
+               Omdat wij onze websites en webshops volledig in onze eigen code schrijven, gekoppeld aan <a href="https://craftcms.com/">Craft</a>, is van overbodige code geen sprake.
+            </p>
+            <h3>Snelle laadtijd</h3>
+            <p>
+               Schone code zorgt daarnaast voor een snelle laadtijd van je website of webshop. Een trage website met een overkill aan plugins en slechte code heeft een sterk negatieve invloed op de ranking in zoekmachines. Een betere positie in Google is natuurlijk wat je wilt!
+            </p>
+            <h3>Easy onderhoud</h3>
+            <p>
+               Een ander voordeel van het schrijven met eigen code is dat, mocht er een probleem zijn ontstaan in de code, deze snel kan worden gevonden en opgelost. Je hoeft namelijk niet in andermans code te duiken, wat een hoop tijd scheelt.
+            </p>
+            <p>
+               Ook werken updates altijd, die zijn het eerste jaar zelfs helemaal gratis. Je hebt niet te maken met (veelal) in elkaar geknutselde plugins die na zo’n update vaak niet meer werken.
+            </p>
+            <h3>Maatwerk, maar dan écht</h3>
+            <p>
+               Custom code betekent ook: altijd een uniek design, want we werken niet met standaard thema’s. Daardoor kan er precies gebouwd worden wat er nodig is (zie ook punt 1). Je website of webshop is helemaal op maat in te richten en je kunt zelf heel eenvoudig aanpassingen doen.
+            </p>
+            <h3>Veiligheid gaat voor alles</h3>
+            <p>
+               Een website waarin grote hoeveelheden gratis plugins wordt gebruikt is kwetsbaar en kan daardoor aantrekkelijk zijn voor hackers. Aan Craft kunnen ook plugins gekoppeld worden. Deze zijn altijd gebouwd door professionals die veiligheid voorop stellen.  Over het algemeen zit de meeste functionaliteit al standaard in het systeem. Lees hier <a href="../webdev.html">meer</a> over. 
+            </p>
+         </div>
+      </div>
+      <!-- <div class="blog_social">
+         <p>Volg ons <strong><span style="color: #ee5555;">@studioliink</span></strong> we zijn best sociaal ;)
+         </p>
+         <div class="social-gallery">
+            <div class="gallery-item gallery-item1">
+
+            </div>
+         </div>
+      </div> -->
+   </div>
+
+   <!-- Footer Section -->
+   <div class="footer-wrap">
+   <footer class="container-lg">
+   <div class="row justify-content-center align-items-top">
+   <div class="footer-group_wrap col-md-4">
+   <ul class="footer-group1 text-center">
+   <li class="footer-logo">
+   <a class="" href="/">
+   <img class="" src="../assets/logo_LIINK_incl-studio.svg" alt="LIINK. logo" />
+   </a>
+   </li>              
+   </ul>
+   </div>
+   <div class="footer-group_wrap col-md-4">
+   <ul class="footer-group2 text-center">
+   <li>
+   LIINK. V.O.F.
+   </li>
+   <li>
+   <a class="liink_email" href="mailto:info@studioliink.com">info@studioliink.com</a>
+   </li>
+   <li>
+   <a class="liink_phone-nmbr" href="tel:0031645433377">+316 454 333 77</a>
+   </li>
+   <li>
+   KvK: 85086754
+   </li>
+   <li>
+   BTW: NL863503081B01
+   </li>
+   <li>
+   <ul class="footer_socials-wrap">
+   <li class="footer_social">
+   <a class="" href="https://www.facebook.com/studioliink" rel="nofollow" target="_blank">
+   <i class="bi bi-facebook"></i>
+   </a>
+   </li>
+   <li class="footer_social">
+   <a class="" href="https://www.instagram.com/studioliink" rel="nofollow"
+   target="_blank">
+   <i class="bi bi-instagram"></i>
+   </a>
+   </li>              
+   <li class="footer_social">
+   <a class="" href="https://www.linkedin.com/company/studioliink" rel="nofollow" target="_blank">
+   <i class="bi bi-linkedin"></i>
+   </a>
+   </li>
+   </ul>
+   </li>                            
+   </ul>
+   </div>          
+   <div class="footer-group_wrap col-md-4">
+   <ul class="footer-group3 text-center">
+   <li>
+   <a class="" href="/" target="">Home</a>
+   </li>
+   <li>
+   <a class="" href="/#services" target="">Onze services</a>
+   </li>
+   <li>
+   <a class="" href="/#about" target="">Over ons</a>
+   </li>
+   <li>
+   <a class="" href="/#contact-chunk" target="">Contact</a>
+   </li>
+   </ul>
+   <ul class="footer-group4 text-center">          
+   <li>
+   <a class="" href="../algemenevoorwaarden" target="">Algemene Voorwaarden</a>
+   </li>
+   <li>
+   <a class="" href="../error" target="">Privacyverklaring</a>
+   </li>
+   <li>
+   <a class="" href="../error" target="">Cookieverklaring</a>
+   </li>
+   </ul>
+   <div id="wcb" class="carbonbadge"></div>
+   <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+   </div>
+   </div>
+   <!-- Copyright Section (footer built-in) -->
+   <div class="container-lg">
+   <div class="copyright row">
+   <div class="col-10">
+   <strong>LIINK.</strong><br>
+   &copy;2022
+   </div>
+   </div>
+   </div>
+   <div class="whatsapp-chat">
+   <a href="https://api.whatsapp.com/send?phone=31645433377&text=&source=&data=&app_absent=" target="_blank" rel="noopener noreferrer"><img src="../assets/whatsapp_chat60.svg">
+   </a>
+   </div>
+   </footer>
+   </div>
+
+   <!--------- Custom JavaScript --------->
+   <script src="../js/script.js"></script>
+ 
+</body>
+</html>

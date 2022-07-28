@@ -1181,9 +1181,13 @@ p,
   }
 
   /* ------------------------------------- */
-  /* ----------- SUB page Blog ----------- */
+  /* ----- SUB page Blog AND Article ----- */
   /* ------------------------------------- */
-  .blog_main-wrap {
+  /* .article_body-bg {
+    background-color: var(--liink_spacegrey);
+  } */
+  .blog_main-wrap,
+  .article_main-wrap {
     display: grid;
     grid-template-columns: minmax(1.2em, 1fr) minmax(min-content, 17.6em) minmax(1.2em, 1fr);
     margin: 6em 0;
@@ -1191,17 +1195,15 @@ p,
     /* background-color: #F5F5F5; */
     text-align: center;
   }
+  .blog_header,
+  .article_header {
+    grid-column: 2;
+  }
   .blog_header {
-    grid-column: 2;
-    min-height: 6em;
+    margin-bottom: 2em;
   }
-  .blog-headings {
-    grid-column: 2;
-    margin-bottom: 4em;
-  }
-  .blog-headings .h5 {
-    padding-top: 1em;
-    text-align: start;
+  .article_header {
+    margin: 2em 0em 1.2em;
   }
   .blog-list {
     grid-column: 2;
@@ -1240,7 +1242,7 @@ p,
     justify-content: space-between;
     color: #aaaaaa;
     font-size: 0.9rem;
-    padding: 0.4em 0.6em 0.4em 0.24em;
+    padding: 0.5em 0.4em 0.9em;
   }
   .article-thumb_title {
     color: var(--liink_deepblack);
@@ -1300,8 +1302,7 @@ p,
     -ms-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
     -o-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
     box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
-  }
-  
+  }  
   .article-thumb:nth-child(even):hover {
     -webkit-transform: rotate(2deg) translateY(6px) scale(1.025);
     -moz-transform: rotate(2deg) translateY(6px) scale(1.025);
@@ -1314,7 +1315,38 @@ p,
     -o-box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09);
     box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09); 
   }
-
+  /* ----- vvv on Article page vvv ----- */
+  .article_hero {
+    grid-column: 2;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 2.4em;
+  }
+  .article_hero img {
+    width: 100%;
+    height: auto;
+  }
+  .article-headings .h3 {
+    text-align: start;
+  }
+  .article_header .article_times {
+    padding: 1em 0.3em 0em;
+  }
+  .article_body {
+    grid-column: 2;
+    text-align: start;
+  }
+  .article_body a {
+    color: var(--liink_goldenrod);
+  }
+  p.lead {
+    font-style: italic;
+  }
+  .article_text {
+    margin-top: 2em;
+  }
 
   .blog_social {
     grid-column: 2;
