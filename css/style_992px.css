@@ -537,11 +537,20 @@
   grid-template-columns: minmax(3em, 1fr) minmax(600px, 44em) minmax(3em, 1fr);
   margin: 6em 0;
 }
-.article_hero {
+.article_hero_sm {
+  display: none;
+}
+.article_hero_lg {
+  grid-column: 2;
+  display: block;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
   border-radius: 3em;
   margin-bottom: 3em;
 }
-.article_hero img {
+.article_hero_lg img {
   width: 100%;
   max-height: 66vh;
   object-fit: cover;

@@ -1316,7 +1316,7 @@ p,
     box-shadow: 0 12px 30px rgba(4, 4, 4, 0.09); 
   }
   /* ----- vvv on Article page vvv ----- */
-  .article_hero {
+  .article_hero_sm {
     grid-column: 2;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -1324,9 +1324,12 @@ p,
     overflow: hidden;
     border-radius: 2.4em;
   }
-  .article_hero img {
+  .article_hero_sm img {
     width: 100%;
     height: auto;
+  }
+  .article_hero_lg {
+    display: none;
   }
   .article-headings .h3 {
     text-align: start;
